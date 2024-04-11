@@ -7,6 +7,11 @@ import {
   sizeDesktopBtnWallet,
   sizeTabletBtnWallet,
   sizeDesktopBtnSpanWallet,
+  sizeTabletBtnSpanWallet,
+  sizeDesktopSearchInput,
+  sizeTabletSearchInput,
+  sizeDesktopLoupeImg,
+  sizeTabletLoupeImg,
 } from "./constants.js";
 const Header = () => {
   return (
@@ -26,16 +31,22 @@ const Header = () => {
         </nav>
       </div>
       <div className="flex flex-row items-center justify-between  w-[57%]">
-        <div className="flex">
-          <img src={loupe} className="relative left-11" alt="loupe" />
+        <div className="flex justify-start">
+          <img
+            src={loupe}
+            className={`relative text-black border-none font-poppins ${sizeTabletLoupeImg} ${sizeDesktopLoupeImg}`}
+            alt="loupe"
+          />
           <input
             type="text"
             placeholder="Search Art Work / Creator"
-            className="bg-[#EDEDED] text-black pl-[4rem] w-[348.45px] h-[57px] rounded-lg border-none font-poppins  font-medium text-[15.71px]"
+            className={`${sizeDesktopSearchInput} ${sizeTabletSearchInput}`}
           />
         </div>
-        <button className={`${sizeDesktopBtnWallet} ${sizeTabletBtnWallet}`}>
-          <span className={`${sizeDesktopBtnSpanWallet}`}>
+        <button className={` ${sizeDesktopBtnWallet} ${sizeTabletBtnWallet}`}>
+          <span
+            className={`${sizeDesktopBtnSpanWallet} ${sizeTabletBtnSpanWallet}`}
+          >
             {btnText.toUpperCase()}
           </span>
         </button>
