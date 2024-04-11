@@ -17,7 +17,12 @@ export const sizeTabletBtnSpanWallet = `inter font-semibold max-lg:w-[108px] max
 
 //search input
 export const sizeDesktopSearchInput = `bg-[#EDEDED] left-11 leading-[18.46px]  pl-[4rem] w-[348.45px] h-[57px] rounded-lg   font-medium text-[15.71px]`;
-export const sizeDesktopLoupeImg = `left-11 w-[21.51px] h-[21.51px] top-4`;
+export const sizeDesktopLoupeImg = `left-9 w-[21.51px] h-[21.51px] top-4`;
 
 export const sizeTabletSearchInput = `  max-lg:leading-[13.13px] max-lg:pl-[2.5rem] max-lg:w-[247.81px] max-lg:h-[40.54px] max-lg:rounded-lg   max-lg:font-medium max-lg:text-[11.17px]`;
-export const sizeTabletLoupeImg = `max-lg:left-7 max-lg:w-[15.3px] max-lg:h-[15.3px] max-lg:top-3`;
+export const sizeTabletLoupeImg = `max-lg:left-3 max-lg:w-[15.3px] max-lg:h-[15.3px] max-lg:top-3`;
+
+//navList
+
+export const sizeDesktopNavItem = ` font-medium text-[17.83px]	leading-[26.74px]`;
+export const sizeTabletNavItem = `  max-lg:font-medium max-lg:text-[12.68px]	max-lg:leading-[19.02px]`;
