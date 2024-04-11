@@ -1,15 +1,16 @@
 import logo from "../../assets/logo.svg";
 import loupe from "../../assets/loupe.svg";
 import { Link } from "react-router-dom";
-const linkNav = [
-  { text: "Discover", src: "#", id: 1 },
-  { text: "creators", src: "#", id: 2 },
-  { text: "Sell", src: "#", id: 3 },
-  { text: "stats", src: "#", id: 4 },
-];
+import {
+  btnText,
+  linkNav,
+  sizeDesktopBtnWallet,
+  sizeTabletBtnWallet,
+  sizeDesktopBtnSpanWallet,
+} from "./constants.js";
 const Header = () => {
   return (
-    <header className="flex flex-row items-center justify-between mt-[45px] w-[90.86%] h-[58px]">
+    <header className="flex flex-row items-center justify-between  mt-[45px] w-[90.86%] h-[58px]">
       <div className="flex flex-row items-center justify-between w-[40%] ">
         <img src={logo} className="w-[53px] h-[53px]" alt="logo" />
         <nav className="flex justify-between  w-[80%]">
@@ -33,8 +34,10 @@ const Header = () => {
             className="bg-[#EDEDED] text-black pl-[4rem] w-[348.45px] h-[57px] rounded-lg border-none font-poppins  font-medium text-[15.71px]"
           />
         </div>
-        <button className="w-[199.52px] h-[57.34px] self-end">
-          Connect Wallet
+        <button className={`${sizeDesktopBtnWallet} ${sizeTabletBtnWallet}`}>
+          <span className={`${sizeDesktopBtnSpanWallet}`}>
+            {btnText.toUpperCase()}
+          </span>
         </button>
       </div>
     </header>
