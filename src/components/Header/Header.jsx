@@ -39,10 +39,15 @@ const Header = () => {
           alt="logo"
         />
         {windowWidth < 768 && (
+          <span className="max-md:relative max-md:right-[20%] max-[320px]:right-[15%] max-md:bottom-8 max-md:text-black max-md:text-[21.36px] max-md:leading-[27.77px] max-md:font-poppins max-md:font-semibold">
+            DiveSea
+          </span>
+        )}
+        {windowWidth < 768 && (
           <img
             onClick={() => setIsOpenMenu(!isShowMenu)}
             src={menuMobileOpen}
-            className="relative left-[40%] bottom-[1.75rem] w-[31.5px] h-[22.33px] "
+            className="relative left-[40%] bottom-[3.50rem] w-[31.5px] h-[22.33px] "
             alt="img for open menu at mobile responsive"
           />
         )}

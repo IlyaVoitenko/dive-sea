@@ -19,7 +19,7 @@ export const sizeTabletBtnSpanWallet = `inter font-semibold max-lg:w-[108px] max
 
 export const sizeDesktopBtnWallet = `w-[199.52px] h-[57.34px] rounded-[16.17px]  `;
 export const sizeTabletBtnWallet = `max-lg:w-[148px] max-lg:h-[41px]  max-lg:rounded-[11.5px] `;
-export const sizeMobileBtnWallet = `inter font-semibold mt-2`;
+export const sizeMobileBtnWallet = `inter font-semibold max-md:mt-2`;
 
 //search input
 export const sizeDesktopSearchInput = `bg-[#EDEDED] left-11 leading-[18.46px]  pl-[4rem] w-[348.45px] h-[57px] rounded-lg   font-medium text-[15.71px]`;
