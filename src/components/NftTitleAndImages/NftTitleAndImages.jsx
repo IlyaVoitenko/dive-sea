@@ -8,8 +8,14 @@ import {
   sizeTabletSubtitleNft,
   sizeLaptopNftBtn,
   sizeTabletNftBtn,
-  sizeLaptopSpanNftBtn,
-  sizeTabletSpanNftBtn,
+  sizeLaptopItemTitle,
+  sizeLaptopItemSubtitle,
+  sizeTabletItemTitle,
+  sizeTabletItemSubtitle,
+  sizeLaptopExploreBtn,
+  sizeTabletExploreBtn,
+  sizeTabletTextNftBtns,
+  sizeLaptopTextNftBtns,
 } from "./constants";
 
 const NftTitleAndImages = () => {
@@ -25,37 +31,41 @@ const NftTitleAndImages = () => {
           Discover And Create NFTs
         </h1>
         <h5
-          className={`${sizeLaptopSubtitleNft} ${sizeTabletSubtitleNft} font-inter text-gray-400 text-justify   font-normal  tablet:w-[354.88px] `}
+          className={`${sizeLaptopSubtitleNft} ${sizeTabletSubtitleNft} mt-3 font-inter text-gray-400 text-justify font-normal`}
         >
           Discover, Create and Sell NFTs On Our NFT Marketplace With Over
           Thousands Of NFTs And Get a{" "}
-          <span className="font-inter font-semibold text-black text-[18px] leading-[28px] text-justify">
+          <span
+            className={`font-inter font-semibold text-black ${sizeLaptopSubtitleNft} ${sizeTabletSubtitleNft}  text-justify`}
+          >
             $20 bonus.
           </span>
         </h5>
-        <div className=" flex justify-between laptop:w-[340px] laptop:mt-[2rem] tablet:w-[241.8px]">
-          <button className="rounded-[12.41px] laptop:w-[179px] laptop:h-[60px] ">
-            Explore More
+        <div className=" flex justify-between laptop:w-[340px] laptop:mt-[2rem] tablet:w-[241.8px] tablet:mt-[1.5rem]">
+          <button
+            className={`rounded-[12.41px] ${sizeLaptopExploreBtn} ${sizeTabletExploreBtn} font-poppins text-white font-medium ${sizeLaptopTextNftBtns} ${sizeTabletTextNftBtns}`}
+          >
+            EXPLORE MORE
           </button>{" "}
           <button
-            className={`bg-white border-black border-solid ${sizeLaptopNftBtn} ${sizeTabletNftBtn}`}
+            className={`bg-white border-black border-solid ${sizeLaptopNftBtn} ${sizeTabletNftBtn} font-poppins text-black font-medium tracking-[1%] ${sizeLaptopTextNftBtns} ${sizeTabletTextNftBtns}`}
           >
-            <span
-              className={`font-poppins text-black font-medium tracking-[1%] ${sizeLaptopSpanNftBtn} ${sizeTabletSpanNftBtn}`}
-            >
-              CREATE NFT
-            </span>
+            CREATE NFT
           </button>
         </div>
       </div>
-      <div className="flex flow-row justify-between laptop:mt-[3.75rem]  laptop:w-[452.96px]">
+      <div className="flex flow-row justify-between laptop:mt-[3.75rem]  laptop:w-[452.96px] tablet:w-[322.29px] tablet:mt-[3rem]">
         {featuresList.map((item, index) => (
           <div key={index}>
-            <span className="text-[#141416] text-[36.77px] font-public font-semibold leading-[45.96px]">
+            <span
+              className={`text-[#141416] font-public font-semibold ${sizeLaptopItemTitle} ${sizeTabletItemTitle}`}
+            >
               {item.title}
             </span>
             <br></br>
-            <span className="text-[#848586] font-inter font-medium laptop:leading-[18.39px] laptop:text-[12.26px]">
+            <span
+              className={`text-[#848586] font-inter font-medium ${sizeLaptopItemSubtitle} ${sizeTabletItemSubtitle}`}
+            >
               {item.subtitle}
             </span>
           </div>

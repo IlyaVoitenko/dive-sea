@@ -29,7 +29,7 @@ export const sizeMobileLoupeImg = `mobile:left-[1.40rem] mobile:w-[15.3px] mobil
 
 //search input
 export const sizeDesktopSearchInput = `bg-[#EDEDED] left-11 leading-[18.46px]  pl-[4rem] w-[348.45px] h-[57px] rounded-lg   font-medium text-[15.71px]`;
-export const sizeTabletSearchInput = ` tablet:leading-[13.13px] tablet:pl-[2.3rem] tablet:w-[247.81px] tablet:h-[40.54px] tablet:rounded-lg   tablet:font-medium tablet:text-[11.17px]`;
+export const sizeTabletSearchInput = ` tablet:leading-[13.13px] tablet:pl-[2.3rem] tablet:w-[247.81px] tablet:h-[40.54px] tablet:rounded-lg   tablet:font-medium tablet:text-[10.17px]`;
 export const sizeMobileSearchInput = `mobile:w-[200px] mobile:left-[-7px] mobile:pl-[2.5rem] mobile:w-full`;
 
 //navList

@@ -13,13 +13,25 @@ export const sizeLaptopTitleNft = `laptop:text-[75px] laptop:leading-[90px] lapt
 export const sizeTabletTitleNft = `tablet:text-[53.34px] tablet:leading-[64.01px] tablet:tracking-[-2.13px]`;
 
 //NFT Subtitle
-export const sizeLaptopSubtitleNft = `laptop:w-[499px] laptop:mt-3 laptop:leading-[28px] laptop:text-[18px]`;
-export const sizeTabletSubtitleNft = `tablet:w-[354.88px] tablet:mt-3 tablet:leading-[19.91px] tablet:text-[12.8px]`;
+export const sizeLaptopSubtitleNft = `laptop:w-[499px]  laptop:leading-[28px] laptop:text-[18px]`;
+export const sizeTabletSubtitleNft = `tablet:w-[354.88px]  tablet:leading-[19.91px] tablet:text-[12.8px]`;
 
-// NFT Btn
+// NFT Btns
 
 export const sizeLaptopNftBtn = `laptop:rounded-[12.41px] laptop:border-[1.5px] laptop:w-[138px] laptop:h-[60px]`;
 export const sizeTabletNftBtn = `tablet:w-[98.14px] tablet:h-[42.67px] tablet:rounded-[8.83px]`;
+export const sizeLaptopExploreBtn = `laptop:w-[179px] laptop:h-[60px]`;
+export const sizeTabletExploreBtn = `tablet:w-[127.3px] tablet:h-[42.67px] `;
 
-export const sizeLaptopSpanNftBtn = `laptop:w-[96px] laptop:h-[24px] laptop:text-[16.27px] laptop:leading-[24.41px]`;
-export const sizeTabletSpanNftBtn = ` tablet:text-[11.57px] tablet:w-[68px] tablet:h-[17px]`;
+// NFT Btns text
+
+export const sizeLaptopTextNftBtns = ` laptop:text-[16.27px] laptop:leading-[24.41px]`;
+export const sizeTabletTextNftBtns = ` tablet:text-[11.57px] tablet:leading-[17.36px]`;
+
+//Title of statistic NFT
+
+export const sizeLaptopItemTitle = `laptop:leading-[45.96px] laptop:text-[36.77px]`;
+export const sizeTabletItemTitle = `tablet:text-[26.15px] tablet:text-center tablet:leading-[32.69px]`;
+
+export const sizeLaptopItemSubtitle = `laptop:leading-[18.39px] laptop:text-[12.26px]`;
+export const sizeTabletItemSubtitle = `tablet:leading-[13.08px] tablet:text-[8.72px]`;

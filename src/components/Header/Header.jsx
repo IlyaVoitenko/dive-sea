@@ -33,7 +33,7 @@ const Header = () => {
   const searchRef = useRef(null);
   return (
     <header className="flex flex-row mobile:flex-col items-center justify-between  mt-[45px] w-[90.86%] h-[58px]  mobile:bg-white mobile:z-40">
-      <div className="flex flex-row mobile:flex-col items-center justify-between w-[40%] mobile:w-full  mobile:bg-white mobile:z-40">
+      <div className="flex flex-row mobile:flex-col items-center justify-between w-[45%]  mobile:w-full  mobile:bg-white mobile:z-40">
         <img
           src={logo}
           className={`${sizeDesktopImgLogo} ${sizeTabletImgLogo} ${sizeMobileImgLogo}`}
