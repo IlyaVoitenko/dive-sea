@@ -29,7 +29,7 @@ const handleSearchInput = (ref) => ref.current.value;
 const Header = () => {
   const windowWidth = useWindowDimensions();
   const [isShowMenu, setIsOpenMenu] = useState(false);
-  const searchRef = useRef("");
+  const searchRef = useRef(null);
   return (
     <header className="flex flex-row max-md:flex-col items-center justify-between  mt-[45px] w-[90.86%] h-[58px] ">
       <div className="flex flex-row max-md:flex-col items-center justify-between w-[40%] max-md:w-full ">
@@ -68,7 +68,7 @@ const Header = () => {
         </nav>
       </div>
       <div
-        className={`flex flex-row max-md:flex-col items-center justify-between  w-[58%] ${
+        className={`flex flex-row max-md:flex-col items-center justify-between xl:w-[46%] max-[1197px]:w-[53%] max-[1024px]:w-[58%] ${
           windowWidth < 768 && isShowMenu === false ? "hidden" : "block"
         } `}
       >
