@@ -14,6 +14,7 @@ import {
   sizeMobileBtnWallet,
   sizeDesktopBtnSpanWallet,
   sizeTabletBtnSpanWallet,
+  sizeMobileBtnSpanWallet,
   sizeDesktopSearchInput,
   sizeTabletSearchInput,
   sizeMobileSearchInput,
@@ -31,15 +32,16 @@ const Header = () => {
   const [isShowMenu, setIsOpenMenu] = useState(false);
   const searchRef = useRef(null);
   return (
-    <header className="flex flex-row max-md:flex-col items-center justify-between  mt-[45px] w-[90.86%] h-[58px] ">
-      <div className="flex flex-row max-md:flex-col items-center justify-between w-[40%] max-md:w-full ">
+    <header className="flex flex-row mobile:flex-col items-center justify-between  mt-[45px] w-[90.86%] h-[58px]  mobile:bg-white mobile:z-40">
+      <div className="flex flex-row mobile:flex-col items-center justify-between w-[40%] mobile:w-full  mobile:bg-white mobile:z-40">
         <img
           src={logo}
           className={`${sizeDesktopImgLogo} ${sizeTabletImgLogo} ${sizeMobileImgLogo}`}
           alt="logo"
         />
+        {/* max-[320px]:right-[15%] */}
         {windowWidth < 768 && (
-          <span className="max-md:relative max-md:right-[20%] max-[320px]:right-[15%] max-md:bottom-8 max-md:text-black max-md:text-[21.36px] max-md:leading-[27.77px] max-md:font-poppins max-md:font-semibold">
+          <span className="mobile:relative mobile:right-[3rem] mobile:bottom-[2.5rem] mobile:text-black mobile:text-[21.36px] mobile:leading-[27.77px] mobile:font-poppins mobile:font-semibold">
             DiveSea
           </span>
         )}
@@ -47,12 +49,12 @@ const Header = () => {
           <img
             onClick={() => setIsOpenMenu(!isShowMenu)}
             src={menuMobileOpen}
-            className="relative left-[40%] bottom-[3.50rem] w-[31.5px] h-[22.33px] "
+            className="relative left-[40%] bottom-[4rem] w-[31.5px] h-[22.33px] "
             alt="img for open menu at mobile responsive"
           />
         )}
         <nav
-          className={`flex justify-between max-md:flex-col  max-md:items-center w-[80%] ${
+          className={`flex  justify-between mobile:flex-col  mobile:items-center w-[80%] ${
             windowWidth < 768 && isShowMenu === false ? "hidden" : "block"
           }`}
         >
@@ -68,11 +70,11 @@ const Header = () => {
         </nav>
       </div>
       <div
-        className={`flex flex-row max-md:flex-col items-center justify-between xl:w-[46%] max-[1197px]:w-[53%] max-[1024px]:w-[58%] ${
+        className={`flex flex-row mobile:flex-col tablet:justify-end items-center  mobile:justify-center xl:w-[46%] max-[1197px]:w-[53%] max-[1024px]:w-[58%] mobile:bg-white mobile:z-40 mobile:w-full  ${
           windowWidth < 768 && isShowMenu === false ? "hidden" : "block"
         } `}
       >
-        <div className="flex">
+        <div className="flex  mobile:w-[80%] tablet:w-[50%] laptop:w-[60%]">
           <img
             src={loupe}
             className={`relative z-20  ${sizeTabletLoupeImg} ${sizeDesktopLoupeImg} ${sizeMobileLoupeImg}`}
@@ -90,7 +92,7 @@ const Header = () => {
           className={`${sizeDesktopBtnWallet} ${sizeTabletBtnWallet} ${sizeMobileBtnWallet}`}
         >
           <span
-            className={`${sizeDesktopBtnSpanWallet} ${sizeTabletBtnSpanWallet}`}
+            className={`${sizeDesktopBtnSpanWallet} ${sizeTabletBtnSpanWallet} ${sizeMobileBtnSpanWallet}`}
           >
             {btnText.toUpperCase()}
           </span>
