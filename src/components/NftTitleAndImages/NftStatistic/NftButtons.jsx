@@ -1,3 +1,4 @@
+import { widthWindowProps } from "../../../props";
 import greenStartLabel from "../../../assets/greenStartLabel.svg";
 import star from "../../../assets/start.svg";
 import {
@@ -50,6 +51,6 @@ const NftStatistic = ({ widthWindow }) => {
     </div>
   );
 };
-NftStatistic.propTypes = { widthWindow: Number };
+NftStatistic.propTypes = widthWindowProps;
 
 export default NftStatistic;

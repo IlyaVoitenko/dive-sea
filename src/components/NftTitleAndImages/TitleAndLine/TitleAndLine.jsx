@@ -1,5 +1,5 @@
 import { sizeLaptopHr, sizeTableHr, sizeMobileHr } from "../constants";
-
+import { widthWindowProps } from "../../../props";
 const TitleAndLine = ({ widthWindow }) => {
   return (
     <div className="flex mobile:flex-row  mobile:justify-center mobile:items-center">
@@ -14,5 +14,6 @@ const TitleAndLine = ({ widthWindow }) => {
     </div>
   );
 };
-TitleAndLine.propTypes = { widthWindow: Number };
+TitleAndLine.propTypes = widthWindowProps;
+
 export default TitleAndLine;
