@@ -39,7 +39,6 @@ const Header = () => {
           className={`${sizeDesktopImgLogo} ${sizeTabletImgLogo} ${sizeMobileImgLogo}`}
           alt="logo"
         />
-        {/* max-[320px]:right-[15%] */}
         {windowWidth < 768 && (
           <span className="mobile:relative mobile:right-[3rem] mobile:bottom-[2.5rem] mobile:text-black mobile:text-[21.36px] mobile:leading-[27.77px] mobile:font-poppins mobile:font-semibold">
             DiveSea
