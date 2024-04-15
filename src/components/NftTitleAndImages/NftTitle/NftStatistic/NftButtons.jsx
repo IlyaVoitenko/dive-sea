@@ -1,6 +1,6 @@
-import { widthWindowProps } from "../../../props";
-import greenStartLabel from "../../../assets/greenStartLabel.svg";
-import star from "../../../assets/start.svg";
+import { widthWindowProps } from "../../../../props";
+import greenStartLabel from "../../../../assets/greenStartLabel.svg";
+import star from "../../../../assets/start.svg";
 import {
   starts,
   featuresList,
@@ -8,7 +8,7 @@ import {
   sizeTabletItemTitle,
   sizeTabletItemSubtitle,
   sizeLaptopItemSubtitle,
-} from "../constants";
+} from "../../constants";
 
 const NftStatistic = ({ widthWindow }) => {
   return (

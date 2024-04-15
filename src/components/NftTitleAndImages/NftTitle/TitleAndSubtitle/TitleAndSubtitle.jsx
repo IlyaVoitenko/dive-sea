@@ -5,7 +5,7 @@ import {
   sizeLaptopSubtitleNft,
   sizeTabletSubtitleNft,
   sizeMobileSubtitleNft,
-} from "../constants";
+} from "../../constants";
 const TitleAndSubtitle = () => {
   return (
     <>

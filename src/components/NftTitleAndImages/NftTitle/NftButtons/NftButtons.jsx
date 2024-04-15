@@ -5,7 +5,7 @@ import {
   sizeTabletExploreBtn,
   sizeLaptopNftBtn,
   sizeTabletNftBtn,
-} from "../constants";
+} from "../../constants";
 const NftButtons = () => {
   return (
     <div className="flex justify-between mobile:w-full laptop:w-[340px] laptop:mt-[2rem] tablet:w-[241.8px] tablet:mt-[1.5rem] mobile:mt-[1rem]">
