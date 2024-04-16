@@ -11,9 +11,10 @@ import {
 } from "../../constants";
 
 const NftStatistic = ({ widthWindow }) => {
+  console.log(widthWindow);
   return (
-    <div className="flex flow-row justify-between mobile:justify-center laptop:mt-[3.75rem]  laptop:w-[452.96px] tablet:w-[322.29px] tablet:mt-[3rem]">
-      {widthWindow > 425 ? (
+    <div className="flex flow-row justify-between mobile:justify-center  laptop:mt-[3.75rem]  laptop:w-[452.96px] tablet:w-[322.29px] tablet:mt-[3rem]">
+      {widthWindow > 426 ? (
         featuresList.map((item, index) => (
           <div key={index}>
             <span
