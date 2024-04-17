@@ -6,45 +6,49 @@ import netting from "../../../../assets/netting.svg";
 import BtnsArrows from "./BtnsArrows";
 
 import {
+  stonesDesktop,
   stonesLaptop,
   stonesTablet,
+  arrowDesktop,
   arrowLaptop,
   arrowTablet,
   arrowMobile,
   orangeCircleLaptop,
   orangeCircleTablet,
+  orangeCircleDesktop,
+  nettingDesktop,
   nettingLaptop,
   nettingTablet,
   nettingMobile,
 } from "./style";
 const NftImages = () => {
   return (
-    <figure className=" flex laptop:h-[553.99px] w-full mobile:h-[400px] mobile:bg-[#FCFCFD] mobile:mt-[3rem]">
-      <div className=" flex flex-col laptop:justify-start laptop:items-center tablet:justify-evenly items-center ">
+    <figure className=" flex laptop:h-[553.99px] desktop:justify-between w-full mobile:h-[400px] mobile:bg-[#FCFCFD] mobile:mt-[3rem]">
+      <div className=" flex flex-col laptop:justify-start laptop:items-center tablet:justify-evenly items-center desktop:w-[70%] ">
         <img
           src={stones}
           alt="stones"
-          className={` ${stonesLaptop} ${stonesTablet}`}
+          className={`${stonesDesktop} ${stonesLaptop} ${stonesTablet}`}
         />
         <BtnsArrows />
       </div>
-      <div className=" flex flex-col laptop:items-center laptop:justify-end">
-        <div className=" flex relative  laptop:top-[5%] mobile:top-[3%] mobile:left-[1%] tablet:top-[12%] laptop:w-[280px] tablet:w-[130px]  justify-between tablet:justify-evenly items-end ">
+      <div className=" flex flex-col  desktop:w-[40%] desktop:items-end laptop:justify-center ">
+        <div className=" flex relative  laptop:top-[5%] mobile:top-[3.6%] mobile:left-[1%] tablet:top-[12%] laptop:w-full tablet:w-[130px] justify-end items-end desktop:justify-between mobile:justify-between">
           <img
             src={arrow}
             alt="arrow"
-            className={`${arrowLaptop} ${arrowTablet} ${arrowMobile}`}
+            className={`${arrowDesktop}  ${arrowLaptop} ${arrowTablet} ${arrowMobile}`}
           />
           <img
             src={netting}
             alt="netting"
-            className={` ${nettingLaptop} ${nettingTablet} ${nettingMobile}`}
+            className={`${nettingDesktop} ${nettingLaptop} ${nettingTablet} ${nettingMobile}`}
           />
         </div>
         <img
           src={orangeCircle}
           alt="orange circle"
-          className={`${orangeCircleLaptop} ${orangeCircleTablet}`}
+          className={`${orangeCircleDesktop} ${orangeCircleLaptop} ${orangeCircleTablet} `}
         />
       </div>
     </figure>

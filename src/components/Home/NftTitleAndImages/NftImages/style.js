@@ -1,20 +1,25 @@
 //stones
+export const stonesDesktop = `desktop:w-full  desktop:h-[418.5px] `;
 export const stonesLaptop = `laptop:w-[362px]  laptop:h-[418.5px] `;
 export const stonesTablet = `laptop:w-[362px]  laptop:h-[418.5px] `;
 
 //arrow
-export const arrowLaptop = `laptop:w-[128.78px]  laptop:h-[124.22px]  tablet:h-[100px]`;
-export const arrowTablet = `tablet:h-[58.34px] tablet:w-[51.59px]`;
+export const arrowDesktop = `desktop:w-[80%] desktop:h-[124.22px] desktop:pr-[3.25rem] `;
+export const arrowLaptop = `laptop:w-[80px] laptop:h-[124.22px] laptop:pr-5 `;
+export const arrowTablet = `tablet:h-[58.34px] tablet:w-[51.59px] tablet:pr-3`;
 export const arrowMobile = `mobile:h-[56.71px] mobile:w-[58.79px]`;
 
 //orangeCircle
-export const orangeCircleLaptop = `laptop:w-[280.48px] laptop:h-[343px]`;
+export const orangeCircleDesktop = `desktop:w-[280.48px] desktop:h-[343px]`;
+
+export const orangeCircleLaptop = `laptop:w-[280.48px] laptop:h-[239px]`;
 export const orangeCircleTablet = `tablet:w-[180.48px] tablet:h-[243px]`;
 
 //netting
-export const nettingLaptop = `laptop:w-[130px] laptop:h-[192.22px]`;
+export const nettingDesktop = `desktop:w-[170px] desktop:h-[200px]`;
+export const nettingLaptop = `laptop:w-[80px] laptop:h-[127.22px]`;
 export const nettingTablet = `tablet:w-[86.04px] tablet:h-[100px]`;
-export const nettingMobile = `mobile:w-[92.25px] mobile:h-[102.5px]`;
+export const nettingMobile = `mobile:w-[72.25px] mobile:h-[102.5px]`;
 
 //buttons
 
