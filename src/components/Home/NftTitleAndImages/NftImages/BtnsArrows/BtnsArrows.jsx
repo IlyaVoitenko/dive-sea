@@ -1,5 +1,5 @@
-import arrowLeft from "../../../../assets/arrowLeft.svg";
-import arrowRight from "../../../../assets/arrowRight.svg";
+import arrowLeft from "../../../../../assets/arrowLeft.svg";
+import arrowRight from "../../../../../assets/arrowRight.svg";
 
 import {
   containerButtonsLaptop,

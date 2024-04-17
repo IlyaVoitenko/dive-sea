@@ -1,6 +1,6 @@
-import { widthWindowProps } from "../../../../props";
-import greenStartLabel from "../../../../assets/greenStartLabel.svg";
-import star from "../../../../assets/start.svg";
+import { widthWindowProps } from "../../../../../props";
+import greenStartLabel from "../../../../../assets/greenStartLabel.svg";
+import star from "../../../../../assets/start.svg";
 import {
   starts,
   featuresList,
@@ -11,7 +11,6 @@ import {
 } from "../../constants";
 
 const NftStatistic = ({ widthWindow }) => {
-  console.log(widthWindow);
   return (
     <div className="flex flow-row justify-between mobile:justify-center  laptop:mt-[3.75rem]  laptop:w-[452.96px] tablet:w-[322.29px] tablet:mt-[3rem]">
       {widthWindow > 426 ? (

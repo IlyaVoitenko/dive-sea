@@ -2,7 +2,7 @@ import NftStatistic from "./NftStatistic";
 import NftButtons from "./NftButtons";
 import TitleAndLine from "./TitleAndLine";
 import TitleAndSubtitle from "./TitleAndSubtitle";
-import useWindowDimensions from "../../../hooks/useWindowDimensions";
+import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 
 const NftTitle = () => {
   const widthWindow = useWindowDimensions();

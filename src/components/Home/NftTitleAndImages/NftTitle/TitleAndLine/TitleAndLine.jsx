@@ -1,5 +1,5 @@
 import { sizeLaptopHr, sizeTableHr, sizeMobileHr } from "../../constants";
-import { widthWindowProps } from "../../../../props";
+import { widthWindowProps } from "../../../../../props";
 const TitleAndLine = ({ widthWindow }) => {
   return (
     <div className="flex mobile:flex-row  mobile:justify-center mobile:items-center">
