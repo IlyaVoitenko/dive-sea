@@ -2,17 +2,12 @@ import { headerWithShowMenuFuncProps } from "../../../props";
 import menuMobileOpen from "../../../assets/menuMobileOpen.svg";
 import logo from "../../../assets/logo.svg";
 
-import {
-  sizeDesktopImgLogo,
-  sizeTabletImgLogo,
-  sizeMobileImgLogo,
-} from "../constants.js";
 const LogoAndShowMenuBtn = ({ setIsOpenMenu, windowWidth, isShowMenu }) => {
   return (
     <>
       <img
         src={logo}
-        className={`${sizeDesktopImgLogo} ${sizeTabletImgLogo} ${sizeMobileImgLogo}`}
+        className={`sizeDesktopImgLogo sizeTabletImgLogo sizeMobileImgLogo`}
         alt="logo"
       />
       {windowWidth < 768 && (

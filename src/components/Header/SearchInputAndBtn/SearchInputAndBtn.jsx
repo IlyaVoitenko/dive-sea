@@ -2,21 +2,7 @@ import { useRef } from "react";
 import { widthAndIsShowMenuProps } from "../../../props";
 import loupe from "../../../assets/loupe.svg";
 import { handleSearchInput } from "../../../helper";
-import {
-  btnText,
-  sizeDesktopSearchInput,
-  sizeTabletSearchInput,
-  sizeMobileSearchInput,
-  sizeDesktopLoupeImg,
-  sizeTabletLoupeImg,
-  sizeMobileLoupeImg,
-  sizeDesktopBtnWallet,
-  sizeDesktopBtnSpanWallet,
-  sizeTabletBtnSpanWallet,
-  sizeTabletBtnWallet,
-  sizeMobileBtnWallet,
-  sizeMobileBtnSpanWallet,
-} from "../constants";
+import { btnText } from "../constants";
 const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
   const searchRef = useRef(null);
   return (

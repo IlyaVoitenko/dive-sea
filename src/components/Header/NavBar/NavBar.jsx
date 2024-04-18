@@ -1,11 +1,6 @@
 import { widthAndIsShowMenuProps } from "../../../props";
 import { Link } from "react-router-dom";
-import {
-  linkNav,
-  sizeDesktopNavItem,
-  sizeTabletNavItem,
-  sizeMobileNavItem,
-} from "../constants";
+import { linkNav } from "../constants";
 const NavBar = ({ windowWidth, isShowMenu }) => {
   return (
     <nav
@@ -17,7 +12,7 @@ const NavBar = ({ windowWidth, isShowMenu }) => {
         <Link
           key={item.id}
           to={item.src}
-          className={`font-inter text-[#606060] hover:text-black ${sizeDesktopNavItem} ${sizeTabletNavItem} ${sizeMobileNavItem}`}
+          className={`font-inter text-[#606060] hover:text-black sizeDesktopNavItem sizeTabletNavItem sizeMobileNavItem`}
         >
           {item.text.toUpperCase()}
         </Link>
