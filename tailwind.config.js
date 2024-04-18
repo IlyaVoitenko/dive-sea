@@ -2,9 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    dropShadow: {
-      custom: "0px 43.12px 34.49px -25.87px ",
-    },
     screens: {
       smallMobile: { max: "375px" },
 
