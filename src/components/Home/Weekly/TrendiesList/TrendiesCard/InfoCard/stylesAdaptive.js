@@ -16,4 +16,4 @@ export const subtitleLaptop = ``;
 
 //mark
 
-export const mark = `desktop:leading-[24.7px] desktop:text-[16.47px]`;
+export const markDesktop = `desktop:leading-[24.7px] desktop:text-[16.47px]`;

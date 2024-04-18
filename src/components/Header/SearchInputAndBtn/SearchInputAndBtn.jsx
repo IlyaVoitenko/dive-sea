@@ -28,7 +28,7 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
       <div className="flex  mobile:w-[80%] tablet:w-[50%] laptop:w-[60%]">
         <img
           src={loupe}
-          className={`relative z-20  ${sizeTabletLoupeImg} ${sizeDesktopLoupeImg} ${sizeMobileLoupeImg}`}
+          className={`relative z-20  sizeTabletLoupeImg sizeDesktopLoupeImg sizeMobileLoupeImg`}
           alt="loupe"
         />
         <input
@@ -36,14 +36,14 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
           ref={searchRef}
           onChange={() => handleSearchInput(searchRef)}
           placeholder="Search Art Work / Creator"
-          className={`relative z-10 left-[-1rem] text-black border-none font-poppins ${sizeDesktopSearchInput} ${sizeTabletSearchInput} ${sizeMobileSearchInput}`}
+          className={`relative z-10 left-[-1rem] text-black border-none font-poppins sizeDesktopSearchInput sizeTabletSearchInput sizeMobileSearchInput`}
         />
       </div>
       <button
-        className={`${sizeDesktopBtnWallet} ${sizeTabletBtnWallet} ${sizeMobileBtnWallet}`}
+        className={`sizeDesktopBtnWallet sizeTabletBtnWallet sizeMobileBtnWallet`}
       >
         <span
-          className={`${sizeDesktopBtnSpanWallet} ${sizeTabletBtnSpanWallet} ${sizeMobileBtnSpanWallet}`}
+          className={`sizeDesktopBtnSpanWallet sizeTabletBtnSpanWallet sizeMobileBtnSpanWallet`}
         >
           {btnText.toUpperCase()}
         </span>

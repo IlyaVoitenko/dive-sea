@@ -2,6 +2,85 @@
 
 @tailwind base;
 @tailwind components;
+@layer components {
+  /* logoImg */
+  .sizeDesktopImgLogo {
+    @apply w-[53px] h-[53px];
+  }
+
+  .sizeTabletImgLogo {
+    @apply tablet:w-[37.69px] tablet:h-[37.69px];
+  }
+
+  .sizeMobileImgLogo {
+    @apply mobile:relative right-[40%];
+  }
+
+  /* btnWallet */
+  .sizeDesktopBtnSpanWallet {
+    @apply font-inter font-semibold w-[151px] h-[25px] leading-[24.26px] text-[16.17px];
+  }
+
+  .sizeTabletBtnSpanWallet {
+    @apply font-inter font-semibold  tablet:w-[108px] tablet:h-[18px] flex justify-center items-center	 tablet:text-[10.5px]  tablet:leading-[17.25px];
+  }
+
+  .sizeMobileBtnSpanWallet {
+    @apply font-inter font-semibold  mobile:w-[213px] mobile:h-[18px] flex justify-center items-center	 mobile:text-[16px]  mobile:leading-[17.25px];
+  }
+
+  .sizeDesktopBtnWallet {
+    @apply w-[199.52px] h-[57.34px] rounded-[16.17px];
+  }
+
+  .sizeTabletBtnWallet {
+    @apply tablet:w-[148px] tablet:h-[41px]  tablet:rounded-[11.5px];
+  }
+
+  .sizeMobileBtnWallet {
+    @apply font-inter font-semibold mobile:mt-2 mobile:w-[76%] mobile:flex mobile:justify-center mobile:items-center;
+  }
+
+  /* search loupe */
+  .sizeDesktopLoupeImg {
+    @apply left-9 w-[21.51px] h-[21.51px] top-4;
+  }
+
+  .sizeTabletLoupeImg {
+    @apply tablet:left-3 tablet:w-[15.3px] tablet:h-[15.3px] tablet:top-3;
+  }
+
+  .sizeMobileLoupeImg {
+    @apply mobile:left-[1.40rem] mobile:w-[15.3px] mobile:h-[15.3px] mobile:top-[1.30rem];
+  }
+
+  /* search input */
+  .sizeDesktopSearchInput {
+    @apply bg-[#EDEDED] left-11 leading-[18.46px]  pl-[4rem] w-[348.45px] h-[57px] rounded-lg   font-medium text-[15.71px];
+  }
+
+  .sizeTabletSearchInput {
+    @apply tablet:leading-[13.13px] tablet:pl-[2.3rem] tablet:w-[247.81px] tablet:h-[40.54px] tablet:rounded-lg   tablet:font-medium tablet:text-[10.17px];
+  }
+
+  .sizeMobileSearchInput {
+    @apply mobile:left-[-7px] mobile:pl-[3.5rem] mobile:w-full;
+  }
+
+  /* navList */
+  .sizeDesktopNavItem {
+    @apply font-medium text-[17.83px]	leading-[26.74px];
+  }
+
+  .sizeTabletNavItem {
+    @apply tablet:font-medium tablet:text-[12.68px]	tablet:leading-[19.02px];
+  }
+
+  .sizeMobileNavItem {
+    @apply tablet:font-medium mobile:mt-2 mobile:mb-2;
+  }
+}
+
 @tailwind utilities;
 
 @layer utilities {
@@ -58,15 +137,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -97,17 +167,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
