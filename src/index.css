@@ -79,6 +79,158 @@
   .sizeMobileNavItem {
     @apply tablet:font-medium mobile:mt-2 mobile:mb-2;
   }
+  /* Size for HR */
+  .sizeLaptopHr {
+    @apply laptop:w-[195px];
+  }
+
+  .sizeTabletHr {
+    @apply tablet:w-[138.68px];
+  }
+
+  .sizeMobileHr {
+    @apply mobile:w-[33.29px];
+  }
+
+  /* NFT Title */
+  .sizeLaptopTitleNft {
+    @apply laptop:text-[75px] laptop:leading-[90px] laptop:tracking-[-3px];
+  }
+
+  .sizeTabletTitleNft {
+    @apply tablet:text-[53.34px] tablet:leading-[64.01px] tablet:tracking-[-2.13px];
+  }
+
+  .sizeMobileTitleNft {
+    @apply mobile:text-[47.4px] mobile:leading-[56.88px] mobile:tracking-[-1.9px] mobile:text-center;
+  }
+
+  /* NFT Subtitle */
+  .sizeLaptopSubtitleNft {
+    @apply laptop:w-[499px]  laptop:leading-[28px] laptop:text-[18px];
+  }
+
+  .sizeTabletSubtitleNft {
+    @apply tablet:w-[354.88px]  tablet:leading-[19.91px] tablet:text-[12.8px];
+  }
+
+  .sizeMobileSubtitleNft {
+    @apply mobile:w-[315.36px]  mobile:leading-[17.7px] mobile:text-[11.38px];
+  }
+
+  /* NFT Btns */
+  .sizeLaptopNftBtn {
+    @apply laptop:rounded-[12.41px] laptop:border-[1.5px] laptop:w-[138px] laptop:h-[60px];
+  }
+
+  .sizeTabletNftBtn {
+    @apply tablet:w-[98.14px] tablet:h-[42.67px] tablet:rounded-[8.83px];
+  }
+
+  .sizeLaptopExploreBtn {
+    @apply laptop:w-[179px] laptop:h-[60px];
+  }
+
+  .sizeTabletExploreBtn {
+    @apply tablet:w-[127.3px] tablet:h-[42.67px];
+  }
+
+  /* NFT Btns text */
+  .sizeLaptopTextNftBtns {
+    @apply laptop:text-[16.27px] laptop:leading-[24.41px];
+  }
+
+  .sizeTabletTextNftBtns {
+    @apply tablet:text-[11.57px] tablet:leading-[17.36px];
+  }
+
+  /* Title of statistic NFT */
+  .sizeLaptopItemTitle {
+    @apply laptop:leading-[45.96px] laptop:text-[36.77px];
+  }
+
+  .sizeTabletItemTitle {
+    @apply tablet:text-[26.15px] tablet:text-center tablet:leading-[32.69px];
+  }
+
+  .sizeLaptopItemSubtitle {
+    @apply laptop:leading-[18.39px] laptop:text-[12.26px];
+  }
+
+  .sizeTabletItemSubtitle {
+    @apply tablet:leading-[13.08px] tablet:text-[8.72px];
+  }
+  .stonesDesktop {
+    @apply desktop:w-full  desktop:h-[418.5px];
+  }
+
+  .stonesLaptop {
+    @apply laptop:w-[362px]  laptop:h-[418.5px];
+  }
+
+  .stonesTablet {
+    @apply laptop:w-[362px]  laptop:h-[418.5px];
+  }
+
+  /* arrow */
+  .arrowDesktop {
+    @apply desktop:w-[80%] desktop:h-[124.22px] desktop:pr-[3.25rem];
+  }
+
+  .arrowLaptop {
+    @apply laptop:w-[80px] laptop:h-[124.22px] laptop:pr-5;
+  }
+
+  .arrowTablet {
+    @apply tablet:h-[58.34px] tablet:w-[51.59px] tablet:pr-3;
+  }
+
+  .arrowMobile {
+    @apply mobile:h-[56.71px] mobile:w-[58.79px];
+  }
+
+  /* orangeCircle */
+  .orangeCircleDesktop {
+    @apply desktop:w-[280.48px] desktop:h-[343px];
+  }
+
+  .orangeCircleLaptop {
+    @apply laptop:w-[280.48px] laptop:h-[239px];
+  }
+
+  .orangeCircleTablet {
+    @apply tablet:w-[180.48px] tablet:h-[243px];
+  }
+
+  /* netting */
+  .nettingDesktop {
+    @apply desktop:w-[170px] desktop:h-[200px];
+  }
+
+  .nettingLaptop {
+    @apply laptop:w-[80px] laptop:h-[127.22px];
+  }
+
+  .nettingTablet {
+    @apply tablet:w-[86.04px] tablet:h-[100px];
+  }
+
+  .nettingMobile {
+    @apply mobile:w-[72.25px] mobile:h-[102.5px];
+  }
+
+  /* buttons */
+  .containerButtonsLaptop {
+    @apply laptop:w-[166px] laptop:h-[68.99px];
+  }
+
+  .containerButtonsTablet {
+    @apply tablet:w-[118.06px] tablet:h-[49.06px];
+  }
+
+  .containerButtonsMobile {
+    @apply mobile:w-[118.06px] mobile:h-[49.06px];
+  }
 }
 
 @tailwind utilities;

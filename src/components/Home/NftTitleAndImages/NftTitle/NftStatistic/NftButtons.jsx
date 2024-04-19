@@ -1,14 +1,7 @@
 import { widthWindowProps } from "../../../../../props";
 import greenStartLabel from "../../../../../assets/greenStartLabel.svg";
 import star from "../../../../../assets/start.svg";
-import {
-  starts,
-  featuresList,
-  sizeLaptopItemTitle,
-  sizeTabletItemTitle,
-  sizeTabletItemSubtitle,
-  sizeLaptopItemSubtitle,
-} from "../../constants";
+import { starts, featuresList } from "../../constants";
 
 const NftStatistic = ({ widthWindow }) => {
   return (
@@ -17,13 +10,13 @@ const NftStatistic = ({ widthWindow }) => {
         featuresList.map((item, index) => (
           <div key={index}>
             <span
-              className={`text-[#141416] font-public font-semibold ${sizeLaptopItemTitle} ${sizeTabletItemTitle}`}
+              className={`text-[#141416] font-public font-semibold sizeLaptopItemTitle sizeTabletItemTitle`}
             >
               {item.title}
             </span>
             <br></br>
             <span
-              className={`text-[#848586] font-inter font-medium ${sizeLaptopItemSubtitle} ${sizeTabletItemSubtitle}`}
+              className={`text-[#848586] font-inter font-medium sizeLaptopItemSubtitle sizeTabletItemSubtitle`}
             >
               {item.subtitle}
             </span>
