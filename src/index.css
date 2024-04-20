@@ -3,6 +3,61 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* TrendiesList */
+  .containerDesktopTrendiesList {
+    @apply desktop:h-[402.28px] desktop:mt-[4rem] desktop:mb-[4rem];
+  }
+  .containerLaptopTrendiesList {
+    @apply laptop:h-[402.28px] laptop:mt-[4rem] laptop:mb-[4rem];
+  }
+  /* InfoCard */
+  .containerDesktopInfoCard {
+    @apply desktop:w-[281.13px] desktop:h-[95.95px];
+  }
+
+  .containerLaptopInfoCard {
+    @apply laptop:w-[281.13px] laptop:h-[95.95px];
+  }
+
+  .titleDesktop {
+    @apply desktop:text-[21.17px] desktop:leading-[29.64px];
+  }
+
+  .titleLaptop {
+    @apply laptop:text-[21.17px] laptop:leading-[29.64px];
+  }
+
+  .subtitleDesktop {
+    @apply desktop:text-[14.12px] desktop:leading-[21.17px] desktop:tracking-[0.12px];
+  }
+
+  .subtitleLaptop {
+    @apply laptop:text-[14.12px] laptop:leading-[21.17px] laptop:tracking-[0.12px];
+  }
+
+  .markDesktop {
+    @apply desktop:leading-[24.7px] desktop:text-[16.47px];
+  }
+  .markLaptop {
+    @apply laptop:leading-[24.7px] laptop:text-[16.47px];
+  }
+  /* Container Card trends */
+  .containerDesktopTrendiesCard {
+    @apply desktop:w-[281.13px] desktop:h-[402.28px];
+  }
+  /* Container Card trends */
+
+  .containerLaptopTrendiesCard {
+    @apply laptop:w-[281.13px] laptop:h-[402.28px];
+  }
+
+  /* Image of card trends*/
+  .imgCardDesktop {
+    @apply desktop:w-[252.9px] desktop:h-[252.9px] desktop:rounded-[23.48px];
+  }
+  .imgCardLaptop {
+    @apply laptop:w-[256px] laptop:h-[256px] laptop:rounded-[23.48px];
+  }
   /* logoImg */
   .sizeDesktopImgLogo {
     @apply w-[53px] h-[53px];
@@ -170,6 +225,77 @@
 
   .stonesTablet {
     @apply laptop:w-[362px]  laptop:h-[418.5px];
+  }
+
+  /* arrow */
+  .arrowDesktop {
+    @apply desktop:w-[80%] desktop:h-[124.22px] desktop:pr-[3.25rem];
+  }
+
+  .arrowLaptop {
+    @apply laptop:w-[80px] laptop:h-[124.22px] laptop:pr-5;
+  }
+
+  .arrowTablet {
+    @apply tablet:h-[58.34px] tablet:w-[51.59px] tablet:pr-3;
+  }
+
+  .arrowMobile {
+    @apply mobile:h-[56.71px] mobile:w-[58.79px];
+  }
+
+  /* orangeCircle */
+  .orangeCircleDesktop {
+    @apply desktop:w-[280.48px] desktop:h-[343px];
+  }
+
+  .orangeCircleLaptop {
+    @apply laptop:w-[280.48px] laptop:h-[239px];
+  }
+
+  .orangeCircleTablet {
+    @apply tablet:w-[180.48px] tablet:h-[243px];
+  }
+
+  /* netting */
+  .nettingDesktop {
+    @apply desktop:w-[170px] desktop:h-[200px];
+  }
+
+  .nettingLaptop {
+    @apply laptop:w-[80px] laptop:h-[127.22px];
+  }
+
+  .nettingTablet {
+    @apply tablet:w-[86.04px] tablet:h-[100px];
+  }
+
+  .nettingMobile {
+    @apply mobile:w-[72.25px] mobile:h-[102.5px];
+  }
+
+  /* buttons */
+  .containerButtonsLaptop {
+    @apply laptop:w-[166px] laptop:h-[68.99px];
+  }
+
+  .containerButtonsTablet {
+    @apply tablet:w-[118.06px] tablet:h-[49.06px];
+  }
+
+  .containerButtonsMobile {
+    @apply mobile:w-[118.06px] mobile:h-[49.06px];
+  }
+  .stonesDesktop {
+    @apply desktop:w-full desktop:h-[418.5px];
+  }
+
+  .stonesLaptop {
+    @apply laptop:w-[362px] laptop:h-[418.5px];
+  }
+
+  .stonesTablet {
+    @apply tablet:w-[362px] tablet:h-[418.5px];
   }
 
   /* arrow */

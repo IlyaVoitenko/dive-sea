@@ -1,4 +1,4 @@
-import { number, bool, oneOfType, oneOf, func } from "prop-types";
+import { number, bool, string, oneOfType, oneOf, func } from "prop-types";
 
 export const windowWidth = oneOfType([number, oneOf([""])]);
 export const isShowMenu = bool.isRequired;
@@ -17,4 +17,13 @@ export const headerWithShowMenuFuncProps = {
   windowWidth,
   isShowMenu,
   setIsOpenMenu,
+};
+
+export const CardNftTrendProps = {
+  id: number,
+  img: string,
+  time: oneOfType([string, number]),
+  title: string,
+  subtitle: string,
+  rating: oneOfType([string, number]),
 };

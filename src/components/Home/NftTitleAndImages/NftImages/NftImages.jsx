@@ -5,30 +5,14 @@ import netting from "../../../../assets/netting.svg";
 
 import BtnsArrows from "./BtnsArrows";
 
-import {
-  stonesDesktop,
-  stonesLaptop,
-  stonesTablet,
-  arrowDesktop,
-  arrowLaptop,
-  arrowTablet,
-  arrowMobile,
-  orangeCircleLaptop,
-  orangeCircleTablet,
-  orangeCircleDesktop,
-  nettingDesktop,
-  nettingLaptop,
-  nettingTablet,
-  nettingMobile,
-} from "./style";
 const NftImages = () => {
   return (
-    <figure className=" flex laptop:h-[553.99px] desktop:justify-between w-full mobile:h-[400px] mobile:bg-[#FCFCFD] mobile:mt-[3rem]">
+    <figure className=" flex laptop:h-[553.99px] justify-between w-full mobile:h-[400px]  mobile:bg-[#FCFCFD] mobile:mt-[3rem] ">
       <div className=" flex flex-col laptop:justify-start laptop:items-center tablet:justify-evenly items-center desktop:w-[70%] ">
         <img
           src={stones}
           alt="stones"
-          className={`${stonesDesktop} ${stonesLaptop} ${stonesTablet}`}
+          className={`stonesDesktop stonesLaptop stonesTablet`}
         />
         <BtnsArrows />
       </div>
@@ -37,18 +21,18 @@ const NftImages = () => {
           <img
             src={arrow}
             alt="arrow"
-            className={`${arrowDesktop}  ${arrowLaptop} ${arrowTablet} ${arrowMobile}`}
+            className={`arrowDesktop  arrowLaptop arrowTablet arrowMobile`}
           />
           <img
             src={netting}
             alt="netting"
-            className={`${nettingDesktop} ${nettingLaptop} ${nettingTablet} ${nettingMobile}`}
+            className={`nettingDesktop nettingLaptop nettingTablet nettingMobile`}
           />
         </div>
         <img
           src={orangeCircle}
           alt="orange circle"
-          className={`${orangeCircleDesktop} ${orangeCircleLaptop} ${orangeCircleTablet} `}
+          className={`orangeCircleDesktop orangeCircleLaptop orangeCircleTablet `}
         />
       </div>
     </figure>

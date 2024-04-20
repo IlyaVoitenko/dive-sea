@@ -1,24 +1,22 @@
 import cardMark from "../../../../../../assets/cardMark.svg";
-import {
-  containerDesktop,
-  titleDesktop,
-  subtitleDesktop,
-  markDesktop,
-} from "./stylesAdaptive";
-const InfoCard = () => {
+import { CardNftTrendProps } from "../../../../../../props";
+
+const InfoCard = ({ title, subtitle, rating }) => {
   return (
-    <div className={`${containerDesktop} flex flex-col  justify-between`}>
+    <div
+      className={`containerDesktopInfoCard containerLaptopInfoCard flex flex-col justify-between pl-5 pr-5`}
+    >
       <span
-        className={`text-[#141416] font-poppins font-semibold ${titleDesktop}`}
+        className={`text-[#141416] font-poppins font-semibold titleDesktop titleLaptop`}
       >
-        Sun-Glass
+        {title}
       </span>
       <div className="flex  justify-between">
         <div className="flex  flex-col ">
           <span
-            className={`text-[#94A3B8] font-poppins font-normal ${subtitleDesktop}`}
+            className={`text-[#94A3B8] font-poppins font-normal subtitleDesktop subtitleLaptop`}
           >
-            Current bid
+            {subtitle}
           </span>
           <figure className="flex">
             <img
@@ -27,9 +25,9 @@ const InfoCard = () => {
               className="w-[21.17px] h-[21.17px]"
             />
             <span
-              className={`  w-[30px] h-[25px] font-poppins font-medium  text-[#141416] ${markDesktop} `}
+              className={`  w-[30px] h-[25px] font-poppins font-medium  text-[#141416] markDesktop markLaptop`}
             >
-              1.75
+              {rating}
             </span>
           </figure>
         </div>
@@ -42,5 +40,9 @@ const InfoCard = () => {
     </div>
   );
 };
-
+InfoCard.propTypes = {
+  title: CardNftTrendProps.title,
+  subtitle: CardNftTrendProps.subtitle,
+  rating: CardNftTrendProps.rating,
+};
 export default InfoCard;
