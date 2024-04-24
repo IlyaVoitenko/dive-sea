@@ -13,6 +13,9 @@
   .titleTabletWeekly {
     @apply tablet:text-[32px] tablet:mt-[3rem] tablet:leading-[19.14px];
   }
+  .titleMobileWeekly {
+    @apply mobile:text-[30px] mobile:mt-[3rem] mobile:leading-[26.92px];
+  }
   .overflow-style {
     overflow: auto;
     scrollbar-width: none;
@@ -28,6 +31,7 @@
     @apply tablet:h-[350.28px] tablet:mt-[4rem] tablet:mb-[4rem];
   }
   .containerMobileTrendiesList {
+    @apply mobile:h-[285px] mobile:mt-[4rem] mobile:mb-[4rem];
   }
   /* InfoCard */
   .containerDesktopInfoCard {
@@ -40,16 +44,23 @@
   .containerTabletInfoCard {
     @apply tablet:w-[213px] tablet:h-[68.24px];
   }
+  .containerMobileInfoCard {
+    @apply mobile:w-[216px] mobile:h-[67.75px];
+  }
+
   .titleDesktop {
     @apply desktop:text-[21.17px] desktop:leading-[29.64px];
   }
-
   .titleLaptop {
     @apply laptop:text-[21.17px] laptop:leading-[29.64px];
   }
   .titleTablet {
     @apply tablet:text-[15.06px] tablet:leading-[21.08px];
   }
+  .titleMobile {
+    @apply mobile:text-[14.95px] mobile:leading-[21.08px];
+  }
+
   .subtitleDesktop {
     @apply desktop:text-[14.12px] desktop:leading-[21.17px] desktop:tracking-[0.12px];
   }
@@ -59,6 +70,12 @@
   .subtitleTablet {
     @apply tablet:text-[10.04px] tablet:leading-[15.06px] tablet:tracking-[0.08px];
   }
+  .subtitleMobile {
+    @apply mobile:text-[9.97px] mobile:leading-[14.95px] mobile:tracking-[0.08px];
+  }
+  .subtitleMobile {
+    @apply mobile:text-[9.97px] mobile:leading-[14.95px] mobile:tracking-[0.08px];
+  }
   .markDesktop {
     @apply desktop:leading-[24.7px] desktop:text-[16.47px];
   }
@@ -67,6 +84,9 @@
   }
   .markTablet {
     @apply tablet:leading-[17.57px] tablet:text-[11.71px];
+  }
+  .markMobile {
+    @apply mobile:leading-[17.44px] mobile:text-[11.63px];
   }
   /* Container Card trends */
   .containerDesktopTrendiesCard {
@@ -81,7 +101,7 @@
     @apply tablet:w-[199.93px] tablet:h-[286.1px];
   }
   .containerMobileTrendiesCard {
-    @apply mobile:w-[281.13px] mobile:h-[402.28px];
+    @apply mobile:w-[198.49px] mobile:h-[284.04px];
   }
   /* Image of card trends*/
   .imgCardDesktop {
@@ -92,6 +112,9 @@
   }
   .imgCardTablet {
     @apply tablet:w-[179.86px] tablet:h-[179.86px] tablet:rounded-[16.7px];
+  }
+  .imgCardMobile {
+    @apply mobile:w-[178.56px] mobile:h-[178.56px] mobile:rounded-[16.7px];
   }
   /* logoImg */
   .sizeDesktopImgLogo {
@@ -473,11 +496,4 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
