@@ -6,10 +6,10 @@ const BtnsArrows = () => {
     <div
       className={` bg-[#FCFCFD] shadow-[rgba(15, 15, 15, 0.12)] flex justify-center items-center rounded-[17.25px] shadow-2xl containerButtonsLaptop containerButtonsTablet containerButtonsMobile`}
     >
-      <button className="bg-[#FCFCFD] flex justify-center items-center rounded-none border-none border-r-[2.16px] border-[#E6E8EC] laptop:h-[25.87px] ">
+      <button className="bg-[#FCFCFD] flex justify-center items-center rounded-none border-none border-r-[2.16px] border-[#E6E8EC] laptop:h-[25.87px] hover:border-none">
         <img alt="arrow left" src={arrowLeft} />
       </button>
-      <button className="bg-[#FCFCFD] flex justify-center items-center rounded-none laptop:h-[25.87px]">
+      <button className="bg-[#FCFCFD] flex justify-center items-center rounded-none laptop:h-[25.87px] hover:border-none">
         <img alt="arrow right" src={arrowRight} />
       </button>
     </div>
