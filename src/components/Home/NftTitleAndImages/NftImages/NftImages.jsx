@@ -2,7 +2,6 @@ import orangeCircle from "../../../../assets/orangeCircle.svg";
 import stones from "../../../../assets/stones.svg";
 import arrow from "../../../../assets/arrow.svg";
 import netting from "../../../../assets/netting.svg";
-
 import BtnsArrows from "./BtnsArrows";
 
 const NftImages = () => {
