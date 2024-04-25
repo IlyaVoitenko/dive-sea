@@ -3,10 +3,11 @@ import cardStonesImg from "../../../../assets/cardStonesImg.svg";
 import cardPinkImg from "../../../../assets/cardPinkImg.svg";
 import cardGreyImg from "../../../../assets/cardGreyImg.svg";
 import cardPlanetImg from "../../../../assets/cardPlanetImg.svg";
+import idUser from "generate-unique-id";
 
 export const TrendList = [
   {
-    id: 1,
+    id: idUser(),
     img: cardOrangeImg,
     time: "07h 09m 12s",
     title: "Sun-Glass",
@@ -14,7 +15,7 @@ export const TrendList = [
     rating: "1.75",
   },
   {
-    id: 2,
+    id: idUser(),
     img: cardStonesImg,
     time: "07h 09m 12s",
     title: "Sun-Glass",
@@ -22,7 +23,7 @@ export const TrendList = [
     rating: "1.75",
   },
   {
-    id: 3,
+    id: idUser(),
     img: cardPinkImg,
     time: "07h 09m 12s",
     title: "Sun-Glass",
@@ -30,7 +31,7 @@ export const TrendList = [
     rating: "1.75",
   },
   {
-    id: 4,
+    id: idUser(),
     img: cardGreyImg,
     time: "19H 09m 12s",
     title: "NuEvey",
@@ -38,7 +39,7 @@ export const TrendList = [
     rating: "1.25",
   },
   {
-    id: 5,
+    id: idUser(),
     img: cardPlanetImg,
     time: "19H 09m 12s",
     title: "NuEvey",
@@ -46,7 +47,7 @@ export const TrendList = [
     rating: "1.25",
   },
   {
-    id: 6,
+    id: idUser(),
     img: cardOrangeImg,
     time: "07h 09m 12s",
     title: "Sun-Glass",

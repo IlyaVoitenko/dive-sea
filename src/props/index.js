@@ -27,3 +27,12 @@ export const CardNftTrendProps = {
   subtitle: string,
   rating: oneOfType([string, number]),
 };
+
+export const topCollectionUsersProps = {
+  id: string.isRequired,
+  name: string.isRequired,
+  userName: string.isRequired,
+  avatarImg: string.isRequired,
+  volume: string.isRequired,
+  percentagePerDay: string.isRequired,
+};

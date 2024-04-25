@@ -4,14 +4,10 @@ export default {
   theme: {
     screens: {
       smallMobile: { max: "375px" },
-
       mobile: { max: "430px" },
-
-      tablet: "640px",
-
-      laptop: "1024px",
-
-      desktop: "1280px",
+      tablet: { min: "640px" },
+      laptop: { min: "1024px" },
+      desktop: { min: "1280px" },
     },
     extend: {
       fontFamily: {
