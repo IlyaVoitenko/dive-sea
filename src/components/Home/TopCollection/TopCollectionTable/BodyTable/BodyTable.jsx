@@ -27,17 +27,29 @@ const BodyTable = () => {
               </div>
             </div>
           </td>
-          <td className="flex justify-center items-center h-full ">
-            <img
-              src={cardMark}
-              alt="card mark"
-              className="laptop:w-[31.52px] laptop:h-[31.52px]"
-            />
-            <span className="font-poppins font-semibold text-[24.51px] text-[#141416] leading-[34.32px]">
-              {user.volume}
+          <td className="flex mobile:flex-col justify-center mobile:justify-evenly items-center h-full ">
+            <div className="flex justify-center items-center">
+              <img
+                src={cardMark}
+                alt="card mark"
+                className="laptop:w-[31.52px] laptop:h-[31.52px] mobile:w-[17.34px] mobile:h-[17.34px]"
+              />
+              <span className="font-poppins font-semibold text-[24.51px] mobile:text-[15.41px] text-[#141416] leading-[34.32px] mobile:leading-[21.58px]">
+                {user.volume}
+              </span>
+            </div>
+
+            <span
+              className={`  mobile:text-[13.49px] font-poppins font-normal tablet:hidden  mobile:leading-[20.23px]  ${
+                user.percentagePerDay[0] === "+"
+                  ? "text-[#10C352]"
+                  : "text-[#E23333]"
+              }`}
+            >
+              {user.percentagePerDay}
             </span>
           </td>
-          <td className="text-center">
+          <td className="text-center mobile:hidden">
             <span
               className={` text-[24.51px] font-poppins font-medium  leading-[31.87px] tracking-[1%] ${
                 user.percentagePerDay[0] === "+"
@@ -48,7 +60,7 @@ const BodyTable = () => {
               {user.percentagePerDay}
             </span>
           </td>
-          <td className="flex justify-center items-center  h-full ">
+          <td className="flex justify-center items-center  h-full mobile:hidden">
             <img
               src={cardMark}
               alt="card mark"
@@ -58,12 +70,12 @@ const BodyTable = () => {
               {user.floorPricw}
             </span>
           </td>
-          <td className="text-center">
+          <td className="text-center mobile:hidden">
             <span className="font-poppins font-medium text-[23.65px] text-[#141416] leading-[30.75px]">
               {user.owners}
             </span>
           </td>
-          <td className="text-center">
+          <td className="text-center mobile:hidden">
             <span className="font-poppins font-medium text-[23.65px] text-[#141416] leading-[30.75px]">
               {user.items}
             </span>

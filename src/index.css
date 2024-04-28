@@ -3,6 +3,13 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* table top collection */
+  .titleTopCollection {
+    @apply text-[#141416] text-[45.04px] mobile:text-[30px] font-poppins font-semibold leading-[44.75px];
+  }
+  .tableHeaderTr {
+    @apply mobile:text-[14px] mobile:leading-[18.2px]  laptop:tracking-[1%] laptop:leading-[28.6px] laptop:text-[22px];
+  }
   /* titleWeekly */
   .titleDesktopWeekly {
     @apply desktop:text-[45px] desktop:leading-[26.92px];
@@ -338,11 +345,11 @@
   }
 
   .containerButtonsTablet {
-    @apply tablet:w-[118.06px] tablet:h-[49.06px];
+    @apply tablet:w-[118.06px] tablet:h-[49.06px] tablet:mb-5;
   }
 
   .containerButtonsMobile {
-    @apply mobile:w-[118.06px] mobile:h-[49.06px];
+    @apply mobile:w-[118.06px] mobile:h-[49.06px] mobile:mb-5;
   }
   .stonesDesktop {
     @apply desktop:w-full desktop:h-[418.5px];
@@ -406,10 +413,6 @@
   /* buttons */
   .containerButtonsLaptop {
     @apply laptop:w-[166px] laptop:h-[68.99px];
-  }
-
-  .containerButtonsTablet {
-    @apply tablet:w-[118.06px] tablet:h-[49.06px];
   }
 
   .containerButtonsMobile {
