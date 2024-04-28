@@ -35,4 +35,7 @@ export const topCollectionUsersProps = {
   avatarImg: string.isRequired,
   volume: string.isRequired,
   percentagePerDay: string.isRequired,
+  floorPrice: string,
+  owners: string,
+  items: number,
 };
