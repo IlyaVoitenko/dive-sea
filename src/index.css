@@ -3,6 +3,19 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* ExploreMarketplace */
+  .titleExploreMarketplaceLaptop {
+    @apply laptop:leading-[26.92px] laptop:text-[45px];
+  }
+  .titleExploreMarketplaceTablet {
+    @apply tablet:leading-[26.92px] tablet:text-[45px];
+  }
+  .titleExploreMarketplaceMobile {
+    @apply mobile:text-[30px] mobile:text-center mobile:leading-[37.5px] mobile:w-[193px];
+  }
+  .filerBtns {
+    @apply bg-white border-[2.21px] border-solid rounded-lg border-[#141416] flex justify-center items-center;
+  }
   /* table top collection */
   .titleTopCollection {
     @apply text-[#141416] text-[45.04px] mobile:text-[30px] font-poppins font-semibold leading-[44.75px];

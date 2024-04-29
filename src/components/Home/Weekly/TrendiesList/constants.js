@@ -48,6 +48,22 @@ export const TrendList = [
   },
   {
     id: idUser(),
+    img: cardGreyImg,
+    time: "19H 09m 12s",
+    title: "NuEvey",
+    subtitle: "Current bid",
+    rating: "1.25",
+  },
+  {
+    id: idUser(),
+    img: cardStonesImg,
+    time: "07h 09m 12s",
+    title: "Sun-Glass",
+    subtitle: "Current bid",
+    rating: "1.75",
+  },
+  {
+    id: idUser(),
     img: cardOrangeImg,
     time: "07h 09m 12s",
     title: "Sun-Glass",
