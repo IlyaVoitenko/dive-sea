@@ -4,6 +4,22 @@
 @tailwind components;
 @layer components {
   /* Unleash */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .list-image-marker > li {
+      font-family: "Poppins", "sans-serif";
+      color: #12141d;
+      font-weight: 400;
+      margin-top: 5px;
+      line-height: 22.76px;
+      font-size: 11.38px;
+      list-style-type: none;
+      background-image: url("../src/assets/iconSuccess.svg");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 14.22px;
+      padding-left: 20px;
+    }
+  }
   @media (min-width: 1024px) and (max-width: 1279px) {
     .list-image-marker > li {
       font-family: "Poppins", "sans-serif";
@@ -38,6 +54,9 @@
     }
   }
   /* UnleashBtnContainer */
+  .unleashBtnContainerTablet {
+    @apply tablet:rounded-[8.53px] tablet:w-[130px] tablet:h-[41.96px];
+  }
   .unleashBtnContainerLaptop {
     @apply laptop:rounded-[8.53px] laptop:w-[130px] laptop:h-[41.96px];
   }
@@ -45,6 +64,9 @@
     @apply desktop:rounded-[11.99px] desktop:w-[164px] desktop:h-[59px];
   }
   /* Unleash btn text */
+  .unleashBtnTextTablet {
+    @apply tablet:leading-[13.12px] tablet:text-[10.5px];
+  }
   .unleashBtnTextLaptop {
     @apply laptop:leading-[13.12px] laptop:text-[10.5px];
   }
@@ -57,6 +79,9 @@
   }
   .unleashTitleLaptop {
     @apply laptop:text-[32px] laptop:leading-[38.69px] laptop:w-[327.86px] laptop:h-[78px];
+  }
+  .unleashTitleTablet {
+    @apply tablet:text-[28px] tablet:leading-[32.69px] tablet:w-[327.86px] tablet:h-[78px];
   }
   /* list */
   .unleashListItemLaptop {

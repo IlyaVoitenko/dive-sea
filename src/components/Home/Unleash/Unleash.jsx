@@ -3,25 +3,23 @@ const Unleash = () => {
   return (
     <div className="w-[90%]">
       <hr />
-      <div className="flex  desktop:mt-[4rem] laptop:mt-[4rem]">
+      <div className="flex  desktop:mt-[4rem] laptop:mt-[4rem] tablet:mt-[2rem]">
         <section>
-          <h2 className="font-poppins font-semibold unleashTitleDesktop unleashTitleLaptop ">
+          <h2 className="font-poppins font-semibold unleashTitleDesktop unleashTitleLaptop unleashTitleTablet ">
             <span className="text-[#ACADB9] block">Just Unleash -</span>
             <span className="text-[#141416]">Your Inner Collector</span>{" "}
           </h2>
-          <ul
-            className={` list-image-marker font-poppins font-normal   unleashListItemDesktop unleashListItemLaptop `}
-          >
+          <ul className="text-[#141416] list-image-marker font-poppins font-normal unleashListItemDesktop unleashListItemLaptop  mobile:hidden">
             <li>Best Seller All Around World</li>
-            <li>$2M+ Transections Every Day</li>
+            <li>$2M+ Transactions Every Day</li>
             <li>Secure Transactions</li>
             <li>Exclusive Collections From Sellers</li>
             <li>Easy Buying and Selling</li>
             <li>Join Our Community</li>
           </ul>
           <div className="flex mt-[2rem]">
-            <button className="flex justify-between items-center bg-black unleashBtnContainerLaptop unleashBtnContainerDesktop">
-              <span className=" text-white font-poppins font-medium  unleashBtnTextDesktop unleashBtnTextLaptop ">
+            <button className="flex justify-between items-center bg-black unleashBtnContainerLaptop unleashBtnContainerDesktop unleashBtnContainerTablet">
+              <span className=" text-white font-poppins font-medium  unleashBtnTextDesktop unleashBtnTextLaptop unleashBtnTextTablet ">
                 Explore More
               </span>
               <img

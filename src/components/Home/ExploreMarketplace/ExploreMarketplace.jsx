@@ -9,7 +9,7 @@ const ExploreMarketplace = () => {
         Explore Marketplace
       </h2>
       <FiltersBtns />
-      <div className="flex flex-wrap justify-evenly mobile:justify-center gap-[40px] desktop:w-[85%]">
+      <div className="flex flex-wrap justify-evenly mobile:justify-center gap-[40px] desktop:w-full">
         {TrendList.map((card) => (
           <TrendiesCard key={card.id} card={card} />
         ))}
