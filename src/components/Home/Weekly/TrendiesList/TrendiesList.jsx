@@ -20,11 +20,13 @@ const TrendiesList = () => {
           </div>
         </div>
       </div>
-      <BtnsArrows
-        scrollPosition={scrollPosition}
-        setScrollPosition={setScrollPosition}
-        containerTrendiesListRef={containerTrendiesListRef}
-      />
+      <div className="mt-[5rem]">
+        <BtnsArrows
+          scrollPosition={scrollPosition}
+          setScrollPosition={setScrollPosition}
+          containerTrendiesListRef={containerTrendiesListRef}
+        />
+      </div>
     </>
   );
 };

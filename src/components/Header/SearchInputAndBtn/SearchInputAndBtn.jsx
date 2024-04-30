@@ -7,11 +7,11 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
   const searchRef = useRef(null);
   return (
     <div
-      className={`flex  flex-row mobile:flex-col  tablet:justify-end items-center  mobile:justify-center xl:w-[46%] max-[1197px]:w-[53%] max-[1024px]:w-[58%] mobile:bg-white mobile:z-40 mobile:w-full  ${
+      className={`flex  flex-row mobile:flex-col laptop:w-[55%] laptop:justify-end tablet:justify-end items-center  mobile:justify-center xl:w-[46%] max-[1197px]:w-[53%] max-[1024px]:w-[58%] mobile:bg-white mobile:z-40 mobile:w-full   ${
         windowWidth < 768 && isShowMenu === false ? "hidden" : "block"
       } `}
     >
-      <div className="flex relative  mobile:w-[80%] tablet:w-[50%] laptop:w-[60%]  tablet:mr-4">
+      <div className="flex relative  mobile:w-[80%] tablet:w-[50%] laptop:w-[55%]  tablet:mr-4 laptop:mr-4 ">
         <img
           src={loupe}
           className={` z-20 absolute first-letter:absolute  sizeTabletLoupeImg sizeDesktopLoupeImg sizeMobileLoupeImg`}

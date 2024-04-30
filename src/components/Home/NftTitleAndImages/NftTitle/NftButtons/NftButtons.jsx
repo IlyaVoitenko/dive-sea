@@ -1,6 +1,6 @@
 const NftButtons = () => {
   return (
-    <div className="flex justify-between  mobile:w-full laptop:w-[260px] laptop:mt-[2rem] tablet:w-[241.8px] tablet:mt-[1.5rem] mobile:mt-[1rem]">
+    <div className="flex justify-between  mobile:w-full laptop:w-[350px] laptop:mt-[2rem] tablet:w-[241.8px] tablet:mt-[1.5rem] mobile:mt-[1rem]">
       <button
         className={`rounded-[12.41px] sizeLaptopExploreBtn sizeTabletExploreBtn font-poppins text-white font-medium sizeLaptopTextNftBtns sizeTabletTextNftBtns`}
       >

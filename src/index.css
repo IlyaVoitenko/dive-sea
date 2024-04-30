@@ -176,7 +176,7 @@
 
   /* search loupe */
   .sizeDesktopLoupeImg {
-    @apply left-9 w-[21.51px] h-[21.51px] top-4;
+    @apply left-[1.25rem] w-[21.51px] h-[21.51px] top-4;
   }
 
   .sizeTabletLoupeImg {
@@ -189,7 +189,7 @@
 
   /* search input */
   .sizeDesktopSearchInput {
-    @apply bg-[#EDEDED] left-11 leading-[18.46px]  pl-[4rem] w-[348.45px] h-[57px] rounded-lg   font-medium text-[15.71px];
+    @apply bg-[#EDEDED] left-11 leading-[18.46px]  pl-[3.5rem] w-[348.45px] h-[57px] rounded-lg   font-medium text-[15.71px];
   }
 
   .sizeTabletSearchInput {
@@ -328,11 +328,7 @@
   }
 
   .orangeCircleLaptop {
-    @apply laptop:w-[280.48px] laptop:h-[239px];
-  }
-
-  .orangeCircleTablet {
-    @apply tablet:w-[180.48px] tablet:h-[243px];
+    @apply laptop:w-[200.48px] laptop:h-[239px];
   }
 
   /* netting */
@@ -342,10 +338,6 @@
 
   .nettingLaptop {
     @apply laptop:w-[80px] laptop:h-[127.22px];
-  }
-
-  .nettingTablet {
-    @apply tablet:w-[86.04px] tablet:h-[100px];
   }
 
   .nettingMobile {
@@ -394,16 +386,9 @@
   }
 
   /* orangeCircle */
-  .orangeCircleDesktop {
-    @apply desktop:w-[280.48px] desktop:h-[343px];
-  }
-
-  .orangeCircleLaptop {
-    @apply laptop:w-[280.48px] laptop:h-[239px];
-  }
 
   .orangeCircleTablet {
-    @apply tablet:w-[180.48px] tablet:h-[243px];
+    @apply tablet:w-[180.48px] tablet:h-[250px];
   }
 
   /* netting */
@@ -416,7 +401,7 @@
   }
 
   .nettingTablet {
-    @apply tablet:w-[86.04px] tablet:h-[100px];
+    @apply tablet:w-[65.04px] tablet:h-[100px];
   }
 
   .nettingMobile {

@@ -16,7 +16,7 @@ const NftImages = () => {
         <BtnsArrows />
       </div>
       <div className=" flex flex-col  desktop:w-[40%] desktop:items-end laptop:justify-center ">
-        <div className=" flex relative  laptop:top-[5%] mobile:top-[3.6%] mobile:left-[1%] tablet:top-[12%] laptop:w-full tablet:w-[130px] justify-end items-end desktop:justify-between mobile:justify-between">
+        <div className=" flex relative   laptop:top-[4%] desktop:top-[4%] mobile:top-[3.6%] mobile:left-[1%] tablet:top-[12%] laptop:w-full smallTablet:w-[85px]  tablet:w-[130px] justify-end items-end desktop:justify-between mobile:justify-between">
           <img
             src={arrow}
             alt="arrow"
@@ -31,7 +31,7 @@ const NftImages = () => {
         <img
           src={orangeCircle}
           alt="orange circle"
-          className={`orangeCircleDesktop orangeCircleLaptop orangeCircleTablet `}
+          className={` orangeCircleDesktop orangeCircleLaptop orangeCircleTablet  `}
         />
       </div>
     </figure>

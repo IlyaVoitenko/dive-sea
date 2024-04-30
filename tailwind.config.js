@@ -5,7 +5,7 @@ export default {
     screens: {
       smallMobile: { max: "375px" },
       mobile: { max: "430px" },
-      tablet: { min: "640px" },
+      tablet: { min: "640px", max: "1023px" },
       laptop: { min: "1024px" },
       desktop: { min: "1280px" },
     },

@@ -17,7 +17,7 @@ const Volume = ({ volume, percentagePerDay }) => {
       </div>
 
       <span
-        className={`  mobile:text-[13.49px] font-poppins font-normal tablet:hidden  mobile:leading-[20.23px]  ${
+        className={`  mobile:text-[13.49px] font-poppins font-normal tablet:hidden laptop:hidden desktop:hidden   mobile:leading-[20.23px]  ${
           percentagePerDay[0] === "+" ? "text-[#10C352]" : "text-[#E23333]"
         }`}
       >
