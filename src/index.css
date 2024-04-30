@@ -3,6 +3,22 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* Unleash */
+  .list-image-marker > li {
+    margin-top: 5px;
+    list-style-type: none;
+    background-image: url("../src/assets/iconSuccess.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 14.22px;
+    padding-left: 20px;
+  }
+  .unleashListItemLaptop {
+    @apply laptop:text-[11.38px] laptop:text-[#12141D] laptop:leading-[22.76px]  laptop:mt-[2.25rem];
+  }
+  .unleashTitleLaptop {
+    @apply laptop:text-[32px] laptop:leading-[38.69px] laptop:w-[327.86px] laptop:h-[78px];
+  }
   /* ExploreMarketplace */
   .titleExploreMarketplaceLaptop {
     @apply laptop:leading-[26.92px] laptop:text-[45px];

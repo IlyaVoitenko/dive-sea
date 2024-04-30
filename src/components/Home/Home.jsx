@@ -3,6 +3,7 @@ import NftTitleAndImages from "./NftTitleAndImages";
 import Weekly from "./Weekly";
 import TopCollection from "./TopCollection";
 import ExploreMarketplace from "./ExploreMarketplace";
+import Unleash from "./Unleash";
 const Home = () => {
   return (
     <main className="h-full w-screen flex flex-col items-center bg-white">
@@ -11,6 +12,7 @@ const Home = () => {
       <Weekly />
       <TopCollection />
       <ExploreMarketplace />
+      <Unleash />
     </main>
   );
 };
