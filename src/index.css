@@ -4,20 +4,66 @@
 @tailwind components;
 @layer components {
   /* Unleash */
-  .list-image-marker > li {
-    margin-top: 5px;
-    list-style-type: none;
-    background-image: url("../src/assets/iconSuccess.svg");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 14.22px;
-    padding-left: 20px;
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    .list-image-marker > li {
+      font-family: "Poppins", "sans-serif";
+      color: #12141d;
+      font-weight: 400;
+      margin-top: 5px;
+      line-height: 22.76px;
+      font-size: 11.38px;
+      list-style-type: none;
+      background-image: url("../src/assets/iconSuccess.svg");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 14.22px;
+      padding-left: 20px;
+    }
   }
-  .unleashListItemLaptop {
-    @apply laptop:text-[11.38px] laptop:text-[#12141D] laptop:leading-[22.76px]  laptop:mt-[2.25rem];
+
+  @media (min-width: 1280px) {
+    .list-image-marker > li {
+      font-family: "Poppins", "sans-serif";
+      line-height: 32px;
+      color: #12141d;
+      font-weight: 400;
+      font-size: 16px;
+      margin-top: 5px;
+      list-style-type: none;
+      background-image: url("../src/assets/iconSuccess.svg");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      padding-left: 30px;
+    }
+  }
+  /* UnleashBtnContainer */
+  .unleashBtnContainerLaptop {
+    @apply laptop:rounded-[8.53px] laptop:w-[130px] laptop:h-[41.96px];
+  }
+  .unleashBtnContainerDesktop {
+    @apply desktop:rounded-[11.99px] desktop:w-[164px] desktop:h-[59px];
+  }
+  /* Unleash btn text */
+  .unleashBtnTextLaptop {
+    @apply laptop:leading-[13.12px] laptop:text-[10.5px];
+  }
+  .unleashBtnTextDesktop {
+    @apply desktop:leading-[18.45px] desktop:text-[14.76px];
+  }
+  /* title */
+  .unleashTitleDesktop {
+    @apply desktop:text-[45px]  desktop:leading-[54.4px]  desktop:mt-[2.25rem] desktop:w-[461px] desktop:h-[109px];
   }
   .unleashTitleLaptop {
     @apply laptop:text-[32px] laptop:leading-[38.69px] laptop:w-[327.86px] laptop:h-[78px];
+  }
+  /* list */
+  .unleashListItemLaptop {
+    @apply laptop:text-[11.38px]  laptop:leading-[22.76px]  laptop:mt-[2.25rem];
+  }
+  .unleashListItemDesktop {
+    @apply desktop:text-[16px]  desktop:leading-[32px]  desktop:mt-[2.25rem];
   }
   /* ExploreMarketplace */
   .titleExploreMarketplaceLaptop {

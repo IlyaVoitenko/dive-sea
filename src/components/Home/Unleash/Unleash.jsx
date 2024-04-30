@@ -5,12 +5,12 @@ const Unleash = () => {
       <hr />
       <div className="flex  desktop:mt-[4rem] laptop:mt-[4rem]">
         <section>
-          <h2 className="font-poppins font-semibold unleashTitleLaptop ">
+          <h2 className="font-poppins font-semibold unleashTitleDesktop unleashTitleLaptop ">
             <span className="text-[#ACADB9] block">Just Unleash -</span>
             <span className="text-[#141416]">Your Inner Collector</span>{" "}
           </h2>
           <ul
-            className={` list-image-marker font-poppins font-normal unleashListItemLaptop`}
+            className={` list-image-marker font-poppins font-normal   unleashListItemDesktop unleashListItemLaptop `}
           >
             <li>Best Seller All Around World</li>
             <li>$2M+ Transections Every Day</li>
@@ -20,11 +20,15 @@ const Unleash = () => {
             <li>Join Our Community</li>
           </ul>
           <div className="flex mt-[2rem]">
-            <button className="flex justify-between items-center bg-black laptop:rounded-[8.53px] laptop:w-[130px] laptop:h-[41.96px]">
-              <span className=" text-white laptop:text-[10.5px] laptop:leading-[13.12px] font-poppins font-medium">
+            <button className="flex justify-between items-center bg-black unleashBtnContainerLaptop unleashBtnContainerDesktop">
+              <span className=" text-white font-poppins font-medium  unleashBtnTextDesktop unleashBtnTextLaptop ">
                 Explore More
               </span>
-              <img src={whiteArrowRight} alt="explore more arrow" />
+              <img
+                src={whiteArrowRight}
+                alt="explore more arrow"
+                className="desktop:h-[22.14px] desktop:w-[22.14px] laptop:h-[15.75px] laptop:w-[15.75px]"
+              />
             </button>
           </div>
         </section>
