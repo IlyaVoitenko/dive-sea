@@ -10,7 +10,11 @@ const Weekly = () => {
         Weekly - Top NFT
       </h2>
       <TrendiesList />
-      {widthWindow >= 1024 && <RecentViewed />}
+      {widthWindow >= 1024 && (
+        <section className="absolute bg-white flex flex-col justify-start items-center rounded-[16px] top-[87%] left-[60%] w-[365px] h-[246px]">
+          <RecentViewed />
+        </section>
+      )}
     </div>
   );
 };
