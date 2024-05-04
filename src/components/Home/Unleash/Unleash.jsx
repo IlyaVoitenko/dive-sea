@@ -1,7 +1,7 @@
 import whiteArrowRight from "../../../assets/whiteArrowRight.svg";
 import Notification from "./Notification";
-
-import RecentViewed from "../Weekly/RecentViewed";
+import BestSellers from "./BestSellers";
+import UnleashRecentViewed from "./UnleashRecentViewed";
 const Unleash = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center">
@@ -34,11 +34,10 @@ const Unleash = () => {
               </button>
             </div>
           </section>
-          <section className="relative  w-full laptop:h-[436.02px] ">
+          <section className="relative w-full laptop:h-[436.02px]">
             <Notification />
-            <section className="absolute bg-[#FCFCFD] drop-shadow-2xl flex flex-col justify-start items-center rounded-[16px] top-[50%] left-[0%] w-[340px] h-[215px]">
-              <RecentViewed />
-            </section>
+            <BestSellers />
+            <UnleashRecentViewed />
           </section>
         </div>
       </div>

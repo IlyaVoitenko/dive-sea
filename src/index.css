@@ -36,7 +36,6 @@
       padding-left: 20px;
     }
   }
-
   @media (min-width: 1280px) {
     .list-image-marker > li {
       font-family: "Poppins", "sans-serif";
@@ -52,6 +51,20 @@
       background-size: 20px;
       padding-left: 30px;
     }
+  }
+  /* UnleashRecentViewed */
+  .titleUnleashRecentViewedDesktop {
+    @apply desktop:leading-[28.35px] desktop:tracking-[0.02px] desktop:text-[21px];
+  }
+  .titleUnleashRecentViewedLaptop {
+    @apply laptop:tracking-[0.13px] laptop:leading-[17.79px] laptop:text-[14.93px];
+  }
+  /* span with index for img  */
+  .indexUnleashRecentViewedLaptop {
+    @apply laptop:w-[13.26px] laptop:h-[13.26px] laptop:text-[7.23px] laptop:leading-[10.85px] laptop:tracking-[0.6px];
+  }
+  .indexUnleashRecentViewedDesktop {
+    @apply desktop:tracking-[0.1px] desktop:leading-[17.28px] desktop:text-[11.52px] desktop:w-[21.13px] desktop:h-[21.13px];
   }
   /* UnleashBtnContainer */
   .unleashBtnContainerTablet {
