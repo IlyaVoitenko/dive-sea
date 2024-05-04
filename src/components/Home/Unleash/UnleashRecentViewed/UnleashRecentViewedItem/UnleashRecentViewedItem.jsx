@@ -42,8 +42,7 @@ const UnleashRecentViewedItem = ({ user, index }) => {
         <span
           className={`font-poppins font-[400] laptop:text-[8.44px] laptop:leading-[12.66px] ${
             percentagePerDay[0] === "+" ? "text-[#10C352]" : "text-[#E23333]"
-          }
-`}
+          }`}
         >
           {percentagePerDay}
         </span>

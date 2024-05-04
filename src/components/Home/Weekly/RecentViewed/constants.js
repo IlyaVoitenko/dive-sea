@@ -1,5 +1,5 @@
 import idUser from "generate-unique-id";
-import imageOrangeUserAvatar from "../../../../assets/imageOrangeUserAvatar.svg";
+import imageOrangeUserAvatar from "../../../../assets/orangAvatarBestSeller.svg";
 import cardPlanetImg from "../../../../assets/cardPlanetImg.svg";
 export const users = [
   {

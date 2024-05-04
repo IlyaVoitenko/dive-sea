@@ -52,6 +52,12 @@
       padding-left: 30px;
     }
   }
+  .BestSellersFollowBtnLaptop {
+    @apply laptop:text-[8.68px] laptop:leading-[9.92px] laptop:w-[46.84px] laptop:h-[19.92px] laptop:rounded-[4.96px] laptop:border-[1.24px];
+  }
+  .BestSellersUnfollowBtnLaptop {
+    @apply laptop:text-[8.68px] laptop:leading-[9.92px]  laptop:h-[19.92px] laptop:w-[55.84px] laptop:rounded-[4.96px] laptop:border-[1.24px];
+  }
   /* UnleashRecentViewed */
   .titleUnleashRecentViewedDesktop {
     @apply desktop:leading-[28.35px] desktop:tracking-[0.02px] desktop:text-[21px];

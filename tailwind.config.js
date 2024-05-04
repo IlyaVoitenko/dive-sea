@@ -11,6 +11,7 @@ export default {
     },
     extend: {
       fontFamily: {
+        dm: ["DM Sans", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         public: ["Public Sans", "sans-serif"],

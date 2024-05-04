@@ -1,5 +1,5 @@
 import idUser from "generate-unique-id";
-import imageOrangeUserAvatar from "../../../../assets/imageOrangeUserAvatar.svg";
+import imageOrangeUserAvatar from "../../../../assets/orangAvatarBestSeller.svg";
 import cardPlanetImg from "../../../../assets/cardPlanetImg.svg";
 import stonesDefault from "../../../../assets/stonesDefault.svg";
 
@@ -22,7 +22,7 @@ export const users = [
     id: idUser(),
     name: "Juliya S.",
     userName: "JuliyaS",
-    isFollowing: false,
+    isFollowing: true,
     avatarImg: stonesDefault,
   },
   {
