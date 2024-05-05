@@ -1,20 +1,22 @@
-import whiteArrowRight from "../../../assets/whiteArrowRight.svg";
 import Notification from "./Notification";
 import BestSellers from "./BestSellers";
+import ExploreMoreBtn from "./ExploreMoreBtn";
 import UnleashRecentViewed from "./UnleashRecentViewed";
 import horizontalNetting from "../../../assets/horizontalNetting.svg";
 const Unleash = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
-      <hr className="w-[90%]" />
-      <div className="flex w-full  justify-end desktop:mt-[4rem] laptop:mt-[4rem] tablet:mt-[2rem]">
-        <div className="flex w-[95%] justify-end ">
-          <section>
-            <h2 className="font-poppins font-semibold unleashTitleDesktop unleashTitleLaptop unleashTitleTablet ">
-              <span className="text-[#ACADB9] block">Just Unleash -</span>
+    <div className="w-full mobile:h-full flex flex-col justify-center items-center mobile:mt-5">
+      <hr className="w-[90%] mobile:hidden" />
+      <div className="flex w-full justify-end desktop:mt-[4rem] laptop:mt-[4rem] tablet:mt-[2rem]">
+        <div className="flex mobile:flex-col w-[95%] mobile:w-full justify-end mobile:justify-center ">
+          <section className="mobile:flex mobile:flex-col mobile:justify-center mobile:items-center">
+            <h2 className="font-poppins font-semibold unleashTitleDesktop unleashTitleLaptop unleashTitleTablet  unleashTitleMobile ">
+              <span className="text-[#ACADB9] block  mobile:w-full">
+                Just Unleash -
+              </span>
               <span className="text-[#141416]">Your Inner Collector</span>{" "}
             </h2>
-            <ul className="text-[#141416] list-image-marker font-poppins font-normal unleashListItemDesktop unleashListItemLaptop  mobile:hidden">
+            <ul className="text-[#141416] list-image-marker font-poppins font-normal unleashListItemDesktop unleashListItemLaptop  mobile:hidden ">
               <li>Best Seller All Around World</li>
               <li>$2M+ Transactions Every Day</li>
               <li>Secure Transactions</li>
@@ -22,20 +24,9 @@ const Unleash = () => {
               <li>Easy Buying and Selling</li>
               <li>Join Our Community</li>
             </ul>
-            <div className="flex mt-[2rem]">
-              <button className="flex justify-between items-center bg-black unleashBtnContainerLaptop unleashBtnContainerDesktop unleashBtnContainerTablet">
-                <span className=" text-white font-poppins font-medium  unleashBtnTextDesktop unleashBtnTextLaptop unleashBtnTextTablet ">
-                  Explore More
-                </span>
-                <img
-                  src={whiteArrowRight}
-                  alt="explore more arrow"
-                  className="desktop:h-[22.14px] desktop:w-[22.14px] laptop:h-[15.75px] laptop:w-[15.75px]"
-                />
-              </button>
-            </div>
+            <ExploreMoreBtn isMobileHidden={true} />
           </section>
-          <section className="relative w-full laptop:h-[436.02px] desktop:h-[613.08px]">
+          <section className="relative w-full laptop:h-[436.02px] desktop:h-[613.08px] mobile:h-[370px]">
             <Notification />
             <BestSellers />
             <UnleashRecentViewed />
@@ -47,6 +38,9 @@ const Unleash = () => {
               />
             </figcaption>
           </section>
+          <div className=" flex justify-center items-center laptop:hidden desktop:hidden tablet:hidden">
+            <ExploreMoreBtn isMobileHidden={false} />
+          </div>
         </div>
       </div>
     </div>

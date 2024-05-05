@@ -52,6 +52,11 @@
       padding-left: 30px;
     }
   }
+  /* Unleash follow btn*/
+
+  .BestSellersFollowBtnMobile {
+    @apply mobile:text-[5.83px] mobile:leading-[6.66px]  mobile:h-[13.66px] mobile:w-[38.31px] mobile:rounded-[3.33px] mobile:border-[0.83px];
+  }
   .BestSellersFollowBtnLaptop {
     @apply laptop:text-[8.68px] laptop:leading-[9.92px] laptop:w-[46.84px] laptop:h-[19.92px] laptop:rounded-[4.96px] laptop:border-[1.24px];
   }
@@ -59,6 +64,9 @@
     @apply desktop:text-[12.19px] desktop:leading-[13.93px] desktop:w-[65.86px] desktop:h-[27.93px] desktop:rounded-[6.97px] desktop:border-[1.74px];
   }
   /* Unleash unfollow btn*/
+  .BestSellersUnfollowBtnMobile {
+    @apply mobile:text-[5.83px] mobile:leading-[6.66px]  mobile:h-[13.66px] mobile:w-[38.31px] mobile:rounded-[3.33px] mobile:border-[0.83px];
+  }
   .BestSellersUnfollowBtnLaptop {
     @apply laptop:text-[8.68px] laptop:leading-[9.92px]  laptop:h-[19.92px] laptop:w-[55.84px] laptop:rounded-[4.96px] laptop:border-[1.24px];
   }
@@ -72,7 +80,13 @@
   .titleUnleashRecentViewedLaptop {
     @apply laptop:tracking-[0.13px] laptop:leading-[17.79px] laptop:text-[14.93px];
   }
+  .titleUnleashRecentViewedMobile {
+    @apply mobile:tracking-[0.08px] mobile:leading-[11.96px] mobile:text-[8.86px];
+  }
   /* span with index for img  */
+  .indexUnleashRecentViewedMobile {
+    @apply mobile:w-[13.26px] mobile:h-[13.26px] mobile:text-[4.86px] mobile:leading-[7.29px] mobile:tracking-[0.04px];
+  }
   .indexUnleashRecentViewedLaptop {
     @apply laptop:w-[13.26px] laptop:h-[13.26px] laptop:text-[7.23px] laptop:leading-[10.85px] laptop:tracking-[0.6px];
   }
@@ -108,6 +122,9 @@
   }
   .unleashTitleTablet {
     @apply tablet:text-[28px] tablet:leading-[32.69px] tablet:w-[327.86px] tablet:h-[78px];
+  }
+  .unleashTitleMobile {
+    @apply mobile:text-[28px] mobile:leading-[32.69px] mobile:w-[327.86px] mobile:h-[78px] mobile:text-center;
   }
   /* list */
   .unleashListItemLaptop {
