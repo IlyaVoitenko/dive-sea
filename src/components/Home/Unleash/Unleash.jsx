@@ -35,15 +35,15 @@ const Unleash = () => {
               </button>
             </div>
           </section>
-          <section className="relative w-full laptop:h-[436.02px]">
+          <section className="relative w-full laptop:h-[436.02px] desktop:h-[613.08px]">
             <Notification />
             <BestSellers />
             <UnleashRecentViewed />
-            <figcaption className="absolute z-[0] left-[50%] top-[50%]">
+            <figcaption className="absolute z-[0] left-[50%] top-[50%] desktop:left-[55%]">
               <img
                 src={horizontalNetting}
                 alt="horizontal netting"
-                className=" laptop:h-[198px] laptop:w-[400px]"
+                className=" laptop:h-[198px] laptop:w-[400px] desktop:w-[400px]  desktop:h-[198px]"
               />
             </figcaption>
           </section>

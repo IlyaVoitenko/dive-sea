@@ -3,8 +3,8 @@ import stonesDefault from "../../../../assets/stonesDefault.svg";
 import darkPoint from "../../../../assets/darkPoint.svg";
 const Notification = () => {
   return (
-    <section className="flex absolute left-[45%] justify-evenly rounded-[9.45px] z-10 items-center drop-shadow-2xl bg-[#FCFCFD] laptop:w-[231.59px] laptop:h-[60.2px]">
-      <div className="relative flex justify-center items-start mt-[1rem]  w-[20%]  h-full">
+    <section className="flex absolute left-[45%] desktop:left-[52%] justify-evenly rounded-[9.45px] z-10 items-center drop-shadow-2xl bg-[#FCFCFD] laptop:w-[231.59px] laptop:h-[60.2px] desktop:w-[230px] desktop:h-[60px]">
+      <div className="relative flex justify-center items-start mt-[1rem]  w-[20%] h-full">
         <figure className="flex justify-between  w-full">
           <img src={darkPoint} alt="point" />
           <img

@@ -55,8 +55,15 @@
   .BestSellersFollowBtnLaptop {
     @apply laptop:text-[8.68px] laptop:leading-[9.92px] laptop:w-[46.84px] laptop:h-[19.92px] laptop:rounded-[4.96px] laptop:border-[1.24px];
   }
+  .BestSellersFollowBtnDesktop {
+    @apply desktop:text-[12.19px] desktop:leading-[13.93px] desktop:w-[65.86px] desktop:h-[27.93px] desktop:rounded-[6.97px] desktop:border-[1.74px];
+  }
+  /* Unleash unfollow btn*/
   .BestSellersUnfollowBtnLaptop {
     @apply laptop:text-[8.68px] laptop:leading-[9.92px]  laptop:h-[19.92px] laptop:w-[55.84px] laptop:rounded-[4.96px] laptop:border-[1.24px];
+  }
+  .BestSellersUnfollowBtnDesktop {
+    @apply desktop:text-[12.19px] desktop:leading-[13.93px]  desktop:h-[27.93px] desktop:w-[78.86px] desktop:rounded-[6.97px] desktop:border-[1.74px];
   }
   /* UnleashRecentViewed */
   .titleUnleashRecentViewedDesktop {

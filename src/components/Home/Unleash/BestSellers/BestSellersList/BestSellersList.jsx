@@ -9,10 +9,10 @@ const BestSellersListItem = ({ user, index }) => {
             <img
               src={avatarImg}
               alt="avatar user"
-              className="border-[1.92px] rounded-full w-[46.09px] h-[46.09px]"
+              className="border-[1.92px] rounded-full w-[46.09px] h-[46.09px] desktop:w-[55.72px] desktop:h-[55.72px]"
             />
           </figure>
-          <span className="flex justify-center items-center text-white w-[21.13px] h-[21.13px] bg-[#141416] rounded-full  top-[0%] left-[60%] absolute font-poppins text-[11.52px] font-semibold leading-[17.28px] tracking-[0.1px]  ">
+          <span className="flex justify-center items-center text-white w-[21.13px] h-[21.13px]  bg-[#141416] rounded-full  top-[0%] left-[60%] absolute font-poppins text-[11.52px] font-semibold leading-[17.28px] tracking-[0.1px]  ">
             {index}
           </span>
         </div>
@@ -27,11 +27,11 @@ const BestSellersListItem = ({ user, index }) => {
       </div>
 
       {isFollowing ? (
-        <button className="bg-[#E6E8EC] flex justify-center items-center   BestSellersUnfollowBtnLaptop">
+        <button className="bg-[#E6E8EC] flex justify-center items-center BestSellersUnfollowBtnDesktop  BestSellersUnfollowBtnLaptop">
           <span className="text-[#23262F] font-[700] font-dm">Unfollow</span>
         </button>
       ) : (
-        <button className="bg-white  border-[#E6E8EC] flex justify-center items-center   BestSellersFollowBtnLaptop ">
+        <button className="bg-white  border-[#E6E8EC] flex justify-center items-center BestSellersFollowBtnDesktop  BestSellersFollowBtnLaptop ">
           <span className="text-[#23262F] font-[700] font-dm ">Follow</span>
         </button>
       )}
