@@ -2,6 +2,7 @@ import whiteArrowRight from "../../../assets/whiteArrowRight.svg";
 import Notification from "./Notification";
 import BestSellers from "./BestSellers";
 import UnleashRecentViewed from "./UnleashRecentViewed";
+import horizontalNetting from "../../../assets/horizontalNetting.svg";
 const Unleash = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center">
@@ -38,6 +39,13 @@ const Unleash = () => {
             <Notification />
             <BestSellers />
             <UnleashRecentViewed />
+            <figcaption className="absolute z-[0] left-[50%] top-[50%]">
+              <img
+                src={horizontalNetting}
+                alt="horizontal netting"
+                className=" laptop:h-[198px] laptop:w-[400px]"
+              />
+            </figcaption>
           </section>
         </div>
       </div>
