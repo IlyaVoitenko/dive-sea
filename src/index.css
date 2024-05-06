@@ -167,6 +167,9 @@
     @apply desktop:text-[16px]  desktop:leading-[32px]  desktop:mt-[2.25rem];
   }
   /* ExploreMarketplace */
+  .titleExploreMarketplaceDesktop {
+    @apply desktop:leading-[26.92px] desktop:text-[45px];
+  }
   .titleExploreMarketplaceLaptop {
     @apply laptop:leading-[26.92px] laptop:text-[45px];
   }
@@ -188,7 +191,7 @@
   }
   /* titleWeekly */
   .titleDesktopWeekly {
-    @apply desktop:text-[45px] desktop:leading-[26.92px];
+    @apply desktop:text-[45px] desktop:leading-[26.92px] mt-[4rem];
   }
   .titleLaptopWeekly {
     @apply laptop:leading-[26.92px] laptop:mt-[5rem] laptop:text-[45px];
@@ -402,6 +405,9 @@
   }
 
   /* NFT Subtitle */
+  .sizeDesktopSubtitleNft {
+    @apply desktop:w-[499px]  desktop:leading-[28px] desktop:text-[18px];
+  }
   .sizeLaptopSubtitleNft {
     @apply laptop:w-[499px]  laptop:leading-[28px] laptop:text-[18px];
   }
@@ -422,7 +428,9 @@
   .sizeTabletNftBtn {
     @apply tablet:w-[98.14px] tablet:h-[42.67px] tablet:rounded-[8.83px];
   }
-
+  .sizeDesktopExploreBtn {
+    @apply desktop:w-[165px] desktop:h-[60px];
+  }
   .sizeLaptopExploreBtn {
     @apply laptop:w-[179px] laptop:h-[60px];
   }
@@ -431,7 +439,14 @@
     @apply tablet:w-[127.3px] tablet:h-[42.67px];
   }
 
+  /* NFT Btns */
+  .nftButtonsPositions {
+    @apply mobile:w-full mobile:mt-[1rem] tablet:w-[241.8px] tablet:mt-[1.5rem]  laptop:w-[350px] laptop:mt-[2rem]  desktop:w-[320px] desktop:mt-[2rem];
+  }
   /* NFT Btns text */
+  .sizeDesktopTextNftBtns {
+    @apply desktop:text-[16.27px] desktop:leading-[24.41px];
+  }
   .sizeLaptopTextNftBtns {
     @apply laptop:text-[16.27px] laptop:leading-[24.41px];
   }
@@ -441,6 +456,9 @@
   }
 
   /* Title of statistic NFT */
+  .sizeDesktopItemTitle {
+    @apply desktop:leading-[45.96px] desktop:text-[36.77px];
+  }
   .sizeLaptopItemTitle {
     @apply laptop:leading-[45.96px] laptop:text-[36.77px];
   }
@@ -449,6 +467,9 @@
     @apply tablet:text-[26.15px] tablet:text-center tablet:leading-[32.69px];
   }
 
+  .sizeDesktopItemSubtitle {
+    @apply desktop:leading-[18.39px] desktop:text-[12.26px];
+  }
   .sizeLaptopItemSubtitle {
     @apply laptop:leading-[18.39px] laptop:text-[12.26px];
   }
@@ -508,12 +529,15 @@
   }
 
   /* buttons */
+  .containerButtonsDesktop {
+    @apply desktop:w-[166px] desktop:h-[68.99px];
+  }
   .containerButtonsLaptop {
     @apply laptop:w-[166px] laptop:h-[68.99px];
   }
 
   .containerButtonsTablet {
-    @apply tablet:w-[118.06px] tablet:h-[49.06px] tablet:mb-5;
+    @apply tablet:w-[400px] tablet:h-[49.06px] tablet:mb-5;
   }
 
   .containerButtonsMobile {
@@ -569,15 +593,6 @@
 
   .nettingMobile {
     @apply mobile:w-[72.25px] mobile:h-[102.5px];
-  }
-
-  /* buttons */
-  .containerButtonsLaptop {
-    @apply laptop:w-[166px] laptop:h-[68.99px];
-  }
-
-  .containerButtonsMobile {
-    @apply mobile:w-[118.06px] mobile:h-[49.06px];
   }
 }
 

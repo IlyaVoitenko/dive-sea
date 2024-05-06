@@ -5,18 +5,18 @@ import { starts, featuresList } from "../../constants";
 
 const NftStatistic = ({ widthWindow }) => {
   return (
-    <div className="flex flow-row justify-between mobile:justify-center  laptop:mt-[3.75rem]  laptop:w-[452.96px] tablet:w-[322.29px] tablet:mt-[3rem]">
+    <div className="flex flow-row justify-between mobile:justify-center desktop:mt-[3.75rem]  desktop:w-[452.96px] laptop:mt-[3.75rem]  laptop:w-[452.96px] tablet:w-[322.29px] tablet:mt-[3rem]">
       {widthWindow > 426 ? (
         featuresList.map((item, index) => (
           <div key={index}>
             <span
-              className={`text-[#141416] font-public font-semibold sizeLaptopItemTitle sizeTabletItemTitle`}
+              className={`text-[#141416] font-public font-semibold sizeDesktopItemTitle sizeLaptopItemTitle sizeTabletItemTitle`}
             >
               {item.title}
             </span>
             <br></br>
             <span
-              className={`text-[#848586] font-inter font-medium sizeLaptopItemSubtitle sizeTabletItemSubtitle`}
+              className={`text-[#848586] font-inter font-medium sizeDesktopItemSubtitle sizeLaptopItemSubtitle sizeTabletItemSubtitle`}
             >
               {item.subtitle}
             </span>

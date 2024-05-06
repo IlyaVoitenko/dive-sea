@@ -5,7 +5,7 @@ import ExploneBtn from "../../ExploreBtn";
 const ExploreMarketplace = () => {
   return (
     <div className="flex flex-col justify-evenly items-center h-full w-[90%] mobile:w-full bg-white">
-      <h2 className="text-[#141416] font-poppins font-semibold titleExploreMarketplaceLaptop titleExploreMarketplaceTablet titleExploreMarketplaceMobile">
+      <h2 className="text-[#141416] font-poppins font-semibold titleExploreMarketplaceDesktop titleExploreMarketplaceLaptop titleExploreMarketplaceTablet titleExploreMarketplaceMobile">
         Explore Marketplace
       </h2>
       <FiltersBtns />

@@ -7,7 +7,7 @@ const TitleAndSubtitle = () => {
         Discover And Create NFTs
       </h1>
       <p
-        className={`sizeLaptopSubtitleNft sizeTabletSubtitleNft sizeMobileSubtitleNft mt-3 font-inter text-gray-400 text-justify font-normal`}
+        className={`sizeDesktopSubtitleNft sizeLaptopSubtitleNft sizeTabletSubtitleNft sizeMobileSubtitleNft mt-3 font-inter text-gray-400 text-justify font-normal`}
       >
         Discover, Create and Sell NFTs On Our NFT Marketplace With Over
         Thousands Of NFTs And Get a{" "}
