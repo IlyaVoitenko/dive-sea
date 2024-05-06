@@ -52,10 +52,30 @@
       padding-left: 30px;
     }
   }
+  /* Notification */
+  .notificationSize {
+    @apply mobile:w-[200px] mobile:h-[56px] tablet:w-[170px] tablet:h-[53px] laptop:w-[231.59px] laptop:h-[60.2px] desktop:w-[230px] desktop:h-[60px];
+  }
+  .notificationPositions {
+    @apply mobile:left-[52%] mobile:top-[2%] tablet:left-[53%] tablet:top-[8%] desktop:left-[52%] left-[45%];
+  }
+  /* horizontal netting */
+  .horizontalNettingPositions {
+    @apply tablet:top-[65%] desktop:left-[55%] left-[50%] top-[50%];
+  }
+  /* BestSellers */
+  .bestSellersSizes {
+    @apply mobile:w-[153.99px] mobile:h-[243.86px]  tablet:h-[290px] tablet:w-[200px] laptop:h-[362.75px] laptop:w-[229.07px]  desktop:w-[322.1px] desktop:h-[475.06px];
+  }
+  .bestSellersPositions {
+    @apply mobile:top-[10%] tablet:top-[13%] tablet:left-[23%] desktop:top-[2%] left-[30%] top-[6%];
+  }
   /* Unleash follow btn*/
-
   .BestSellersFollowBtnMobile {
     @apply mobile:text-[5.83px] mobile:leading-[6.66px]  mobile:h-[13.66px] mobile:w-[38.31px] mobile:rounded-[3.33px] mobile:border-[0.83px];
+  }
+  .BestSellersFollowBtnTablet {
+    @apply tablet:text-[8.68px] tablet:leading-[9.92px] tablet:w-[46.84px] tablet:h-[19.92px] tablet:rounded-[4.96px] tablet:border-[1.24px];
   }
   .BestSellersFollowBtnLaptop {
     @apply laptop:text-[8.68px] laptop:leading-[9.92px] laptop:w-[46.84px] laptop:h-[19.92px] laptop:rounded-[4.96px] laptop:border-[1.24px];
@@ -70,6 +90,9 @@
   .BestSellersUnfollowBtnLaptop {
     @apply laptop:text-[8.68px] laptop:leading-[9.92px]  laptop:h-[19.92px] laptop:w-[55.84px] laptop:rounded-[4.96px] laptop:border-[1.24px];
   }
+  .BestSellersUnfollowBtnTablet {
+    @apply tablet:text-[8.68px] tablet:leading-[9.92px]  tablet:h-[19.92px] tablet:w-[55.84px] tablet:rounded-[4.96px] tablet:border-[1.24px];
+  }
   .BestSellersUnfollowBtnDesktop {
     @apply desktop:text-[12.19px] desktop:leading-[13.93px]  desktop:h-[27.93px] desktop:w-[78.86px] desktop:rounded-[6.97px] desktop:border-[1.74px];
   }
@@ -83,13 +106,23 @@
   .titleUnleashRecentViewedMobile {
     @apply mobile:tracking-[0.08px] mobile:leading-[11.96px] mobile:text-[8.86px];
   }
+  .unleashRecentViewedPositions {
+    @apply top-[61%] desktop:top-[51%] mobile:top-[53%]  mobile:left-[12%] left-[16%] desktop:left-[11%] tablet:left-[7%] tablet:top-[63%];
+  }
+  .unleashRecentViewedSizes {
+    @apply w-[340px] h-[215px] laptop:w-[229.07px] laptop:h-[154.39px] tablet:w-[170.07px] tablet:h-[134.39px] mobile:h-[103.79px] mobile:w-[153.99px];
+  }
   /* span with index for img  */
   .indexUnleashRecentViewedMobile {
     @apply mobile:w-[13.26px] mobile:h-[13.26px] mobile:text-[4.86px] mobile:leading-[7.29px] mobile:tracking-[0.04px];
   }
+  .indexUnleashRecentViewedTablet {
+    @apply tablet:w-[13.26px] tablet:h-[13.26px] tablet:text-[7.23px] tablet:leading-[10.85px] tablet:tracking-[0.6px];
+  }
   .indexUnleashRecentViewedLaptop {
     @apply laptop:w-[13.26px] laptop:h-[13.26px] laptop:text-[7.23px] laptop:leading-[10.85px] laptop:tracking-[0.6px];
   }
+
   .indexUnleashRecentViewedDesktop {
     @apply desktop:tracking-[0.1px] desktop:leading-[17.28px] desktop:text-[11.52px] desktop:w-[21.13px] desktop:h-[21.13px];
   }

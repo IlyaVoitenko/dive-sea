@@ -3,7 +3,7 @@ import stonesDefault from "../../../../assets/stonesDefault.svg";
 import darkPoint from "../../../../assets/darkPoint.svg";
 const Notification = () => {
   return (
-    <section className="flex absolute left-[45%] desktop:left-[52%] mobile:left-[52%] mobile:top-[2%] justify-evenly rounded-[9.45px] z-10 items-center drop-shadow-2xl bg-[#FCFCFD] mobile:w-[200px] mobile:h-[56px] laptop:w-[231.59px] laptop:h-[60.2px] desktop:w-[230px] desktop:h-[60px]">
+    <section className="flex absolute notificationPositions justify-evenly rounded-[9.45px] z-10 items-center drop-shadow-2xl bg-[#FCFCFD] notificationSize">
       <div className="relative flex justify-center items-start mt-[1rem]  w-[20%] h-full">
         <figure className="flex justify-between  w-full">
           <img src={darkPoint} alt="point" />
@@ -20,13 +20,13 @@ const Notification = () => {
         />
       </div>
       <div className="font-poppins flex flex-col">
-        <span className="text-[#949494] text-[9.45px] font-medium leading-[16.2px]">
+        <span className="text-[#949494] text-[9.45px] tablet:text-[7px] font-medium leading-[16.2px]">
           New bid <span className="text-[#141416] font-[550]">Rotation</span>
         </span>
-        <span className="text-[#141416] font-semibold leading-[13.5px] text-[8.1px]">
+        <span className="text-[#141416] font-semibold leading-[13.5px] text-[8.1px] tablet:text-[7px] ">
           0.002 ETH{" "}
         </span>
-        <span className="text-[#949494] font-normal leading-[13.5px] text-[8.1px]">
+        <span className="text-[#949494] font-normal leading-[13.5px] text-[8.1px] tablet:text-[7px] ">
           6 Oct 2022, 11:44 PM
         </span>
       </div>

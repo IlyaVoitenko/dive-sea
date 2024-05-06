@@ -26,11 +26,11 @@ const Unleash = () => {
             </ul>
             <ExploreMoreBtn isMobileHidden={true} />
           </section>
-          <section className="relative w-full laptop:h-[436.02px] desktop:h-[613.08px] mobile:h-[370px]">
+          <section className="relative w-full laptop:h-[436.02px] tablet:h-[400px] desktop:h-[613.08px] mobile:h-[370px]">
             <Notification />
             <BestSellers />
             <UnleashRecentViewed />
-            <figcaption className="absolute z-[0] left-[50%] top-[50%] desktop:left-[55%]">
+            <figcaption className="absolute z-[0] horizontalNettingPositions">
               <img
                 src={horizontalNetting}
                 alt="horizontal netting"
