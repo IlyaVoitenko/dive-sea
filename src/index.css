@@ -52,9 +52,23 @@
       padding-left: 30px;
     }
   }
+  /* Banner  */
+  /* Banner container */
+  .bannerContainerSize {
+    @apply mobile:h-[450px] tablet:h-[350px] laptop:h-[411px] desktop:h-[511px] w-full;
+  }
+  .bannerSize {
+    @apply mobile:w-[80%] mobile:h-[211px] tablet:h-[180px] tablet:w-[90%] laptop:w-[885.42px] laptop:h-[221.18px] desktop:w-[1245px] desktop:h-[311px];
+  }
+  .bannerNftTitle {
+    @apply font-poppins font-semibold text-white mobile:text-center mobile:text-[22.3px] mobile:leading-[28.99px] tablet:text-[27px] tablet:leading-[41.6px] tablet:tracking-[1%]  laptop:text-[32px] laptop:leading-[41.6px] laptop:tracking-[1%] desktop:text-[45px] desktop:leading-[58.5px] desktop:tracking-[1%];
+  }
+  .bannerNftSubtitle {
+    @apply font-poppins text-left text-[#D4D4D4] mobile:text-center mobile:text-[10.04px] mobile:leading-[13.05px] font-medium laptop:text-[14.41px] laptop:leading-[18.74px] laptop:tracking-[1%] desktop:text-[20.27px] desktop:leading-[26.35px] desktop:tracking-[1%];
+  }
   /* Notification */
   .notificationSize {
-    @apply mobile:w-[200px] mobile:h-[56px] tablet:w-[170px] tablet:h-[53px] laptop:w-[231.59px] laptop:h-[60.2px] desktop:w-[230px] desktop:h-[60px];
+    @apply mobile:w-[149px] mobile:h-[56px] tablet:w-[170px] tablet:h-[53px] laptop:w-[231.59px] laptop:h-[60.2px] desktop:w-[230px] desktop:h-[60px];
   }
   .notificationPositions {
     @apply mobile:left-[52%] mobile:top-[2%] tablet:left-[53%] tablet:top-[8%] desktop:left-[52%] left-[45%];

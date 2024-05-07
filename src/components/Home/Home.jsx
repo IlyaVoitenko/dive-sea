@@ -4,6 +4,7 @@ import Weekly from "./Weekly";
 import TopCollection from "./TopCollection";
 import ExploreMarketplace from "./ExploreMarketplace";
 import Unleash from "./Unleash";
+import BannerNft from "./BannerNft";
 const Home = () => {
   return (
     <main className="h-full w-screen flex flex-col items-center bg-white">
@@ -13,6 +14,7 @@ const Home = () => {
       <TopCollection />
       <ExploreMarketplace />
       <Unleash />
+      <BannerNft />
     </main>
   );
 };
