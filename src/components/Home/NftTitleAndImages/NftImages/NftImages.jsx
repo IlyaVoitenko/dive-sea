@@ -6,7 +6,7 @@ import BtnsArrows from "./BtnsArrows";
 
 const NftImages = () => {
   return (
-    <figure className=" flex laptop:h-[553.99px] justify-between w-full mobile:h-[400px]  mobile:bg-[#FCFCFD] mobile:mt-[3rem] ">
+    <figure className="flex laptop:h-[553.99px] justify-between w-full mobile:h-[400px]  mobile:bg-[#FCFCFD] mobile:mt-[3rem] ">
       <div className=" flex flex-col laptop:justify-start laptop:items-center tablet:justify-evenly items-center desktop:w-[70%] ">
         <img
           src={stones}

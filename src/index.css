@@ -551,7 +551,7 @@
   }
 
   .containerButtonsTablet {
-    @apply tablet:w-[400px] tablet:h-[49.06px] tablet:mb-5;
+    @apply tablet:w-[130px] tablet:h-[49.06px] tablet:mb-5;
   }
 
   .containerButtonsMobile {
