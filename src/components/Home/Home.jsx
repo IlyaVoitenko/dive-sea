@@ -1,14 +1,14 @@
-import Header from "../Header";
+import Header from "../Common/Header";
 import NftTitleAndImages from "./NftTitleAndImages";
 import Weekly from "./Weekly";
 import TopCollection from "./TopCollection";
 import ExploreMarketplace from "./ExploreMarketplace";
 import Unleash from "./Unleash";
 import BannerNft from "./BannerNft";
-import Footer from "../Footer";
+import Footer from "../Common/Footer";
 const Home = () => {
   return (
-    <main className="h-full w-screen flex flex-col items-center bg-white">
+    <main className="containerPage">
       <Header />
       <NftTitleAndImages />
       <Weekly />

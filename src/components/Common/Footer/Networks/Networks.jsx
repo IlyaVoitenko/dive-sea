@@ -1,7 +1,7 @@
-import facebookIcon from "../../../assets/facebookIcon.svg";
-import instagramIcon from "../../../assets/instagramIcon.svg";
-import linkedInIcon from "../../../assets/linkedInIcon.svg";
-import twitterIcon from "../../../assets/twitterIcon.svg";
+import facebookIcon from "../../../../assets/facebookIcon.svg";
+import instagramIcon from "../../../../assets/instagramIcon.svg";
+import linkedInIcon from "../../../../assets/linkedInIcon.svg";
+import twitterIcon from "../../../../assets/twitterIcon.svg";
 const Networks = () => {
   return (
     <nav className="flex justify-between items-center w-[20%] mobile:w-[115.21px]">

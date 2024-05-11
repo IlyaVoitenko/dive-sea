@@ -1,4 +1,4 @@
-import logoWhite from "../../../assets/logoWhite.svg";
+import logoWhite from "../../../../assets/logoWhite.svg";
 
 const LogoAndTitle = () => {
   return (

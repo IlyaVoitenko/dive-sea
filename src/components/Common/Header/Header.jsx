@@ -2,7 +2,7 @@ import { useState } from "react";
 import SearchInputAndBtn from "./SearchInputAndBtn";
 import LogoAndShowMenuBtn from "./LogoAndShowMenuBtn";
 import NavBar from "./NavBar";
-import useWindowDimensions from "../../hooks/useWindowDimensions.js";
+import useWindowDimensions from "../../../hooks/useWindowDimensions.js";
 const Header = () => {
   const windowWidth = useWindowDimensions();
   const [isShowMenu, setIsOpenMenu] = useState(false);

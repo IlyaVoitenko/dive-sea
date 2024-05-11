@@ -1,4 +1,4 @@
-import exploreRightArrow from "../../assets/ExploreRightArrow.svg";
+import exploreRightArrow from "../../../assets/ExploreRightArrow.svg";
 const ExploreBtn = () => {
   return (
     <div className="flex  justify-end mobile:justify-center w-[90%] mobile:w-full ">

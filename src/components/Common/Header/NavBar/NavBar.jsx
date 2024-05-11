@@ -1,5 +1,5 @@
-import { widthAndIsShowMenuProps } from "../../../props";
-import { Link } from "react-router-dom";
+import { widthAndIsShowMenuProps } from "../../../../props";
+import { NavLink } from "react-router-dom";
 import { linkNav } from "../constants";
 const NavBar = ({ windowWidth, isShowMenu }) => {
   return (
@@ -9,13 +9,17 @@ const NavBar = ({ windowWidth, isShowMenu }) => {
       }`}
     >
       {linkNav.map((item) => (
-        <Link
+        <NavLink
           key={item.id}
           to={item.src}
-          className={`font-inter text-[#606060] hover:text-black sizeDesktopNavItem sizeTabletNavItem sizeMobileNavItem`}
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#141416] font-inter  hover:text-black sizeDesktopNavItem sizeTabletNavItem sizeMobileNavItem"
+              : "text-[#606060] font-inter  hover:text-black sizeDesktopNavItem sizeTabletNavItem sizeMobileNavItem"
+          }
         >
           {item.text.toUpperCase()}
-        </Link>
+        </NavLink>
       ))}
     </nav>
   );
