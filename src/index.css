@@ -3,6 +3,10 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* Discover */
+  .discoverTitle {
+    @apply font-poppins font-[600] text-[#141416] desktop:text-[45px] desktop:leading-[30px] desktop:mt-[5rem] laptop:text-[32px] laptop:leading-[21.34px] laptop:mt-[2rem] tablet:text-[32px] tablet:leading-[21.34px] tablet:mt-[0rem] mobile:text-[30px]  mobile:leading-[37.5px];
+  }
   /* loader */
   .loader {
     position: relative;
@@ -229,8 +233,11 @@
   .titleExploreMarketplaceMobile {
     @apply mobile:text-[30px] mobile:text-center mobile:leading-[37.5px] mobile:w-[193px];
   }
+  .filterImgs {
+    @apply mobile:h-[16.15px] mobile:w-[16.15px] tablet:w-[19.03px] tablet:h-[19.03px] laptop:w-[19.03px] laptop:h-[19.03px];
+  }
   .filerBtns {
-    @apply bg-white border-[2.21px] border-solid rounded-lg border-[#141416] flex justify-center items-center;
+    @apply bg-white font-[600] font-manrope border-[2.21px] border-solid rounded-lg border-[#141416] flex justify-center mobile:justify-between items-center mobile:text-[9.92px] mobile:leading-[14.88px] mobile:tracking-[0.14px] tablet:text-[11.69px] tablet:leading-[17.53px] tablet:tracking-[0.17px]   laptop:text-[11.69px] laptop:leading-[17.53px] laptop:tracking-[0.17px];
   }
   /* table top collection */
   .titleTopCollection {

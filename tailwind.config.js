@@ -10,6 +10,7 @@ export default {
     },
     extend: {
       fontFamily: {
+        manrope: ["Manrope", "sans-serif"],
         dm: ["DM Sans", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
         inter: ["Inter", "sans-serif"],

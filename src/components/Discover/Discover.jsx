@@ -26,14 +26,11 @@ const Discover = () => {
   return (
     <main className="containerPage">
       <Header />
-      <section className="flex flex-col justify-evenly items-center  h-[50%]">
-        <section className=" flex flex-col justify-between items-center ">
-          <h2 className="font-poppins font-[600] text-[#141416] desktop:text-[45px] desktop:leading-[30px] desktop:mt-[5rem] laptop:mt-[1rem] ">
-            Discover NFTs
-          </h2>
+      <section className="flex flex-col justify-evenly items-center mt-[4rem]  h-[50%]">
+        <section className=" flex flex-col justify-between items-center mobile:w-[70%] w-[70%]">
+          <h2 className="discoverTitle">Discover NFTs</h2>
           <FiltersBtns />
         </section>
-
         <InfiniteScroll
           dataLength={postData.length}
           next={() => fetchLoadingItems(discoverList, postData)}
