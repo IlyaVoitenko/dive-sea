@@ -12,7 +12,17 @@ export const discoverList = [
     time: "07h 09m 12s",
     title: "Sun-Glass",
     subtitle: "Current bid",
-    rating: "1.75",
+    price: 1.75,
+    amountLikes: 200,
+  },
+  {
+    id: idUser(),
+    img: cardOrangeImg,
+    time: "07h 09m 12s",
+    title: "Sun-Glass",
+    subtitle: "Current bid",
+    price: 1.75,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -20,7 +30,8 @@ export const discoverList = [
     time: "07h 09m 12s",
     title: "Sun-Glass",
     subtitle: "Current bid",
-    rating: "1.75",
+    price: 1.75,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -28,7 +39,8 @@ export const discoverList = [
     time: "07h 09m 12s",
     title: "Sun-Glass",
     subtitle: "Current bid",
-    rating: "1.75",
+    price: 1.75,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -36,7 +48,8 @@ export const discoverList = [
     time: "19H 09m 12s",
     title: "NuEvey",
     subtitle: "Current bid",
-    rating: "1.25",
+    price: 1.25,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -44,7 +57,8 @@ export const discoverList = [
     time: "19H 09m 12s",
     title: "NuEvey",
     subtitle: "Current bid",
-    rating: "1.25",
+    price: 1.25,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -52,7 +66,8 @@ export const discoverList = [
     time: "19H 09m 12s",
     title: "NuEvey",
     subtitle: "Current bid",
-    rating: "1.25",
+    price: 1.25,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -60,7 +75,8 @@ export const discoverList = [
     time: "07h 09m 12s",
     title: "Sun-Glass",
     subtitle: "Current bid",
-    rating: "1.75",
+    price: 1.75,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -68,7 +84,8 @@ export const discoverList = [
     time: "07h 09m 12s",
     title: "Sun-Glass",
     subtitle: "Current bid",
-    rating: "1.75",
+    price: 1.75,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -76,7 +93,8 @@ export const discoverList = [
     time: "07h 09m 12s",
     title: "Sun-Glass",
     subtitle: "Current bid",
-    rating: "1.75",
+    price: 1.75,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -84,7 +102,8 @@ export const discoverList = [
     time: "07h 09m 12s",
     title: "Sun-Glass",
     subtitle: "Current bid",
-    rating: "1.75",
+    price: 1.75,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -92,7 +111,8 @@ export const discoverList = [
     time: "07h 09m 12s",
     title: "Sun-Glass",
     subtitle: "Current bid",
-    rating: "1.75",
+    price: 1.75,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -100,7 +120,8 @@ export const discoverList = [
     time: "19H 09m 12s",
     title: "NuEvey",
     subtitle: "Current bid",
-    rating: "1.25",
+    price: 1.25,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -108,7 +129,8 @@ export const discoverList = [
     time: "19H 09m 12s",
     title: "NuEvey",
     subtitle: "Current bid",
-    rating: "1.25",
+    price: 1.25,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -116,7 +138,8 @@ export const discoverList = [
     time: "19H 09m 12s",
     title: "NuEvey",
     subtitle: "Current bid",
-    rating: "1.25",
+    price: 1.25,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -124,7 +147,8 @@ export const discoverList = [
     time: "07h 09m 12s",
     title: "Sun-Glass",
     subtitle: "Current bid",
-    rating: "1.75",
+    price: 1.75,
+    amountLikes: 200,
   },
   {
     id: idUser(),
@@ -132,6 +156,7 @@ export const discoverList = [
     time: "07h 09m 12s",
     title: "Sun-Glass",
     subtitle: "Current bid",
-    rating: "1.75",
+    price: 1.75,
+    amountLikes: 200,
   },
 ];

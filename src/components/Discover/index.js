@@ -1,2 +1,2 @@
-import DiscoverPage from "./Discover";
-export default DiscoverPage;
+import Discover from "./Discover";
+export default Discover;

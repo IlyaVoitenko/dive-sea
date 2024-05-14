@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import TrendiesCard from "./TrendiesCard";
-import { TrendList } from "./constants";
+import { discoverList } from "../../../Discover/constants";
 import BtnsArrows from "../../NftTitleAndImages/NftImages/BtnsArrows";
 
 const TrendiesList = () => {
@@ -14,7 +14,7 @@ const TrendiesList = () => {
           className="w-full scroll-smooth overflow-style "
         >
           <div className="flex w-full items-center h-[600px] gap-[40px] ">
-            {TrendList.map((card) => (
+            {discoverList.map((card) => (
               <TrendiesCard key={card.id} card={card} />
             ))}
           </div>

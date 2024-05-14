@@ -1,8 +1,11 @@
 import FiltersBtns from "../../Common/FiltersBtns";
-import { TrendList } from "../Weekly/TrendiesList/constants";
 import CardsList from "../../Common/CardsList";
 import ExploneBtn from "../../Common/ExploreBtn";
+import { useSelector } from "react-redux";
+import { arrayCardsSelector } from "../../../store/selectors";
 const ExploreMarketplace = () => {
+  const cardsList = useSelector(arrayCardsSelector);
+
   return (
     <div className="flex flex-col justify-evenly items-center h-full w-[90%] mobile:w-full bg-white">
       <div className=" flex flex-col justify-between items-center w-full h-[120px]">
@@ -11,7 +14,7 @@ const ExploreMarketplace = () => {
         </h2>
         <FiltersBtns isShowAllBtn={true} />
       </div>
-      <CardsList list={TrendList} />
+      <CardsList list={cardsList} />
       <div className="mt-[4rem] flex justify-end  w-full  ">
         <ExploneBtn />
       </div>

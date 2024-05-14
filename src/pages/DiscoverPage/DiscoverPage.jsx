@@ -1,4 +1,4 @@
-import Discover from "../../components/Discover/Discover";
+import Discover from "../../components/Discover";
 const DiscoverPage = () => {
   return <Discover />;
 };

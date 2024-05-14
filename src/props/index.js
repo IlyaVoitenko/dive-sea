@@ -25,7 +25,7 @@ export const CardNftTrendProps = {
   time: oneOfType([string, number]),
   title: string,
   subtitle: string,
-  rating: oneOfType([string, number]),
+  price: oneOfType([string, number]),
 };
 
 export const topCollectionUsersProps = {
