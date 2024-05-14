@@ -4,7 +4,7 @@ import { lazy } from "react";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const DiscoverPage = lazy(() => import("./pages/DiscoverPage"));
-
+const ProductDetailsPage = lazy(() => import("./pages/ProductDetailsPage"));
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +12,10 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="/discover" element={<DiscoverPage />} />
+          <Route
+            path="/discover/product-details"
+            element={<ProductDetailsPage />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
