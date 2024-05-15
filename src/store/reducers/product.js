@@ -5,6 +5,7 @@ import { sortString } from "../../helper";
 const initialState = {
   arrayCards: [...discoverList],
   productDetails: null,
+  arrayCardsFilteredByTitle: null,
 };
 
 const ProductsSlice = createSlice({
@@ -13,6 +14,9 @@ const ProductsSlice = createSlice({
   reducers: {
     setProductDetails: (state, action) => {
       state.productDetails = action.payload;
+      state.arrayCardsFilteredByTitle = state.arrayCards
+        .filter((item) => item.title === action.payload.title)
+        .slice(0, 5);
     },
 
     setFilterByPrice: (state) => {

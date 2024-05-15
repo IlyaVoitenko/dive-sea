@@ -3,6 +3,40 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* ProductDetailsPage */
+  .detailInfoSubtitlesPrice {
+    @apply text-[#8C8C8C] font-poppins font-[400]  desktop:text-[17.86px] desktop:leading-[21.98px];
+  }
+  .detailInfoTime {
+    @apply text-[#000000] font-poppins font-[400] desktop:text-[19.23px] desktop:leading-[30.23px];
+  }
+  .detailInfoPrice {
+    @apply text-[#292B39] font-poppins font-[600] desktop:text-[32.99px] desktop:leading-[49.48px];
+  }
+  .detailInfoPersonSubtitle {
+    @apply text-[#000000] font-poppins font-[500] desktop:text-[25.57px] desktop:leading-[39.2px];
+  }
+  .detailInfoPersonTitle {
+    @apply text-[#8D8D8D] font-poppins font-[400] desktop:text-[17.68px] desktop:leading-[26.52px];
+  }
+  .detailInfoSubtitle {
+    @apply text-[#888888B2] font-poppins font-[400] desktop:text-[19px] desktop:leading-[29.14px];
+  }
+  .detailInfoTitle {
+    @apply text-[#292B39] font-poppins font-[600] desktop:text-[51.04px] desktop:leading-[31.82px];
+  }
+  .detailInfoBtnText {
+    @apply text-[#FFFFFF] font-poppins font-[700] desktop:text-[18.39px] desktop:leading-[28.21px];
+  }
+  .detailInfoBtn {
+    @apply bg-[#141416] w-full flex justify-center items-center desktop:h-[78.97px] desktop:rounded-[19.62px] gap-[16.28px];
+  }
+  .blockDetailInfo {
+    @apply bg-white flex justify-around items-center desktop:w-[1248px] desktop:h-[636.21px] desktop:rounded-[24.42px] customBoxContainerDetailProduct;
+  }
+  .customBoxContainerDetailProduct {
+    @apply shadow-custom-shadow;
+  }
   /* Discover */
   .discoverTitle {
     @apply font-poppins font-[600] text-[#141416] desktop:text-[45px] desktop:leading-[30px] desktop:mt-[5rem] laptop:text-[32px] laptop:leading-[21.34px] laptop:mt-[2rem] tablet:text-[32px] tablet:leading-[21.34px] tablet:mt-[0rem] mobile:text-[30px]  mobile:leading-[37.5px];

@@ -1,16 +1,6 @@
-import Header from "../../components/Common/Header";
-import Footer from "../../components/Common/Footer";
+import ProductDetail from "../../components/ProductDetails";
 const ProductDetailsPage = () => {
-  return (
-    <div className="containerPage">
-      <Header />
-      <div>
-        <section></section>
-        <section></section>
-      </div>
-      <Footer />
-    </div>
-  );
+  return <ProductDetail />;
 };
 
 export default ProductDetailsPage;

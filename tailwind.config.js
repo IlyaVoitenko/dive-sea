@@ -2,6 +2,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    boxShadow: {
+      "custom-shadow": "17.56px 17.56px 61.06px 0px rgba(0, 0, 0, 0.12)",
+    },
     screens: {
       mobile: { max: "430px" },
       tablet: { min: "640px", max: "1023px" },
