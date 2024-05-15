@@ -26,6 +26,8 @@ export const CardNftTrendProps = {
   title: string,
   subtitle: string,
   price: oneOfType([string, number]),
+  name: string,
+  userName: string,
 };
 
 export const topCollectionUsersProps = {

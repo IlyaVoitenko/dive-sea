@@ -13,6 +13,8 @@ export const discoverList = [
     title: "Sun-Glass",
     subtitle: "Current bid",
     price: 1.75,
+    name: "Alex Ca.",
+    userName: "Alexy",
     amountLikes: 200,
   },
   {
@@ -23,6 +25,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.75,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -32,6 +36,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.75,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -41,6 +47,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.75,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -50,6 +58,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.25,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -59,6 +69,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.25,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -68,6 +80,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.25,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -77,6 +91,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.75,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -86,6 +102,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.75,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -95,6 +113,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.75,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -104,6 +124,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.75,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -113,6 +135,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.75,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -122,6 +146,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.25,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -131,6 +157,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.25,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -140,6 +168,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.25,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -149,6 +179,8 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.75,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
   {
     id: idUser(),
@@ -158,5 +190,7 @@ export const discoverList = [
     subtitle: "Current bid",
     price: 1.75,
     amountLikes: 200,
+    name: "Alex Ca.",
+    userName: "Alexy",
   },
 ];

@@ -2,7 +2,7 @@ import btnBack from "../../../assets/btnBack.svg";
 
 const BtnBack = () => {
   return (
-    <div className="flex justify-start items-center w-full">
+    <div className="flex justify-start items-center w-full mobile:hidden">
       <figure>
         <img
           src={btnBack}

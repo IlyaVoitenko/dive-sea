@@ -5,14 +5,15 @@ import TitleAndSubtitle from "./TitleAndSubtitle";
 import AuthorAndPayment from "./AuthorAndPayment";
 
 const DetailInfo = ({ productDetails }) => {
-  const { img, title, price } = productDetails || {};
+  const { img, title, price, name } = productDetails || {};
+  console.log(productDetails);
   return (
-    <section className="flex flex-col justify-between w-full desktop:h-[728.25px]">
+    <section className="flex flex-col justify-between mobile:items-center   w-full  desktop:h-[728.25px] laptop:h-[517.92px] tablet:h-[430.92px] mobile:w-[90%]">
       <BtnBack />
-      <div className="blockDetailInfo">
+      <div className="blockDetailInfo ">
         <ImgProduct img={img} />
-        <section className="flex flex-col justify-between desktop:w-[473.8px] desktop:h-[550.09px]">
-          <TitleAndSubtitle title={title} />
+        <section className="detailInfoContainerDetailData">
+          <TitleAndSubtitle title={title} name={name} />
           <AuthorAndPayment price={price} />
         </section>
       </div>

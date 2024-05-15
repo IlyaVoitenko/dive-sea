@@ -11,8 +11,8 @@ const ProductDetails = () => {
   const arrayCardsFiltered = useSelector(arrayCardsFilteredByTitleSelector);
   return (
     <div className="containerPage bg-[#FAFAFA]">
-      <Header />
-      <div className="flex flex-col justify-center items-center bg-[#FAFAFA] w-[90%] desktop:h-[900px]">
+      <Header isChangeBgColor={true} />
+      <div className="flex flex-col justify-center items-center bg-[#FAFAFA] w-[90%] desktop:h-[900px] laptop:h-[800px] tablet:h-[700px] mobile:h-[900px]">
         <DetailInfo productDetails={productDetails} />
         <section></section>
       </div>

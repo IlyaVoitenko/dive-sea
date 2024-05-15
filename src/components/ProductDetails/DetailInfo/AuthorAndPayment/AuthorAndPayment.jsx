@@ -7,54 +7,54 @@ const AuthorAndPayment = ({ price }) => {
   return (
     <>
       <div className="flex justify-between items-center ">
-        <div className="flex justify-between items-center w-[45%]">
+        <div className="flex justify-between items-center w-[45%] tablet:w-[36%]">
           <figure>
             <img
               src={creatorAvatar}
               alt="avatar of creator"
-              className="desktop:w-[65.65px] desktop:h-[65.65px]"
+              className="detailInfoAvatarsImg"
             />
           </figure>
           <div className="flex flex-col">
-            <span className="detailInfoPersonTitle">Created by</span>
-            <span className="detailInfoPersonSubtitle">Perperzon</span>
+            <span className="detailInfoPersonSubtitle">Created by</span>
+            <span className=" detailInfoPersonTitle">Perperzon</span>
           </div>
         </div>
-        <div className="flex justify-between items-center w-[36%]">
+        <div className="flex justify-between items-center w-[36%] tablet:w-[30%]">
           <figure>
             <img
               src={ownerProductAvatar}
               alt="avatar of owner"
-              className="desktop:w-[65.65px] desktop:h-[65.65px]"
+              className="detailInfoAvatarsImg"
             />
           </figure>
           <div className="flex flex-col">
-            <span className="detailInfoPersonTitle">Owned by</span>
-            <span className="detailInfoPersonSubtitle">Videz</span>
+            <span className=" detailInfoPersonSubtitle">Owned by</span>
+            <span className="detailInfoPersonTitle">Videz</span>
           </div>
         </div>
       </div>
       <div className="flex justify-between items-center ">
-        <div className="flex flex-col justify-between items-start desktop:h-[77.49px]">
+        <div className="detailInfoSubtitlesPriceContainer items-start ">
           <span className="detailInfoSubtitlesPrice">Current Bid</span>
           <div className="flex  items-center ">
             <figure>
               <img
                 src={bigMarkCard}
                 alt="card mark"
-                className="desktop:w-[22.35px] desktop:h-[35.6px]"
+                className="bigMarkCardImg"
               />
             </figure>
             <span className="detailInfoPrice">{price}</span>
           </div>
         </div>
-        <div className="flex flex-col justify-between items-end desktop:h-[77.49px]">
+        <div className="detailInfoSubtitlesPriceContainer items-end ">
           <span className="detailInfoSubtitlesPrice">End in</span>
           <span className="detailInfoTime">Jun 17, 2023 at 05:08</span>
         </div>
       </div>
       <button className="detailInfoBtn">
-        <img src={wallet} alt="wallet" />
+        <img src={wallet} alt="wallet" className="detailInfoWalletImg" />
         <span className="detailInfoBtnText">Place Bid</span>
       </button>
     </>

@@ -4,35 +4,50 @@
 @tailwind components;
 @layer components {
   /* ProductDetailsPage */
+  .bigMarkCardImg {
+    @apply desktop:w-[22.35px] desktop:h-[35.6px] laptop:w-[15.89px] laptop:h-[25.32px] tablet:w-[20px] tablet:h-[20px] mobile:w-[13.2px] mobile:h-[21.02px];
+  }
+  .detailInfoContainerDetailData {
+    @apply flex flex-col justify-between tablet:justify-evenly desktop:w-[473.8px] desktop:h-[550.09px] laptop:w-[336.96px] laptop:h-[391.22px] tablet:w-[300px] tablet:h-[350px] mobile:h-[55%] mobile:w-[90%];
+  }
+  .detailInfoWalletImg {
+    @apply desktop:w-[22.07px] desktop:h-[22.07px] laptop:w-[15.7px] laptop:h-[15.7px] tablet:w-[15.7px] tablet:h-[15.7px] mobile:w-[12.85px] mobile:h-[12.85px];
+  }
+  .detailInfoAvatarsImg {
+    @apply desktop:w-[65.65px] desktop:h-[65.65px] laptop:w-[46.69px] laptop:h-[46.69px] tablet:w-[30px] tablet:h-[30px] mobile:w-[33.46px] mobile:h-[33.46px];
+  }
+  .detailInfoSubtitlesPriceContainer {
+    @apply flex flex-col justify-between desktop:h-[77.49px] laptop:h-[55.26px] tablet:h-[45px] mobile:h-[45.83px];
+  }
   .detailInfoSubtitlesPrice {
-    @apply text-[#8C8C8C] font-poppins font-[400]  desktop:text-[17.86px] desktop:leading-[21.98px];
+    @apply text-[#8C8C8C] font-poppins font-[400]  desktop:text-[17.86px] desktop:leading-[21.98px] laptop:text-[12.7px] laptop:leading-[15.63px]  tablet:text-[10px] tablet:leading-[13px] mobile:text-[10.55px] mobile:leading-[12.98px];
   }
   .detailInfoTime {
-    @apply text-[#000000] font-poppins font-[400] desktop:text-[19.23px] desktop:leading-[30.23px];
+    @apply text-[#000000] font-poppins font-[400] desktop:text-[19.23px] desktop:leading-[30.23px] laptop:text-[13.68px] laptop:leading-[21.5px]  tablet:text-[11px] tablet:leading-[18px] mobile:text-[11.36px] mobile:leading-[17.85px];
   }
   .detailInfoPrice {
-    @apply text-[#292B39] font-poppins font-[600] desktop:text-[32.99px] desktop:leading-[49.48px];
-  }
-  .detailInfoPersonSubtitle {
-    @apply text-[#000000] font-poppins font-[500] desktop:text-[25.57px] desktop:leading-[39.2px];
+    @apply text-[#292B39] font-poppins font-[600] desktop:text-[32.99px] desktop:leading-[49.48px] laptop:text-[23.46px] laptop:leading-[35.19px] tablet:text-[20px] tablet:leading-[30.19px] ml-1;
   }
   .detailInfoPersonTitle {
-    @apply text-[#8D8D8D] font-poppins font-[400] desktop:text-[17.68px] desktop:leading-[26.52px];
+    @apply text-[#000000] font-poppins font-[500] desktop:text-[25.57px] desktop:leading-[39.2px] laptop:text-[18.18px] laptop:leading-[27.88px] tablet:text-[14.18px] tablet:leading-[23.88px] mobile:text-[13.03px] mobile:leading-[19.98px];
+  }
+  .detailInfoPersonSubtitle {
+    @apply text-[#8D8D8D] font-poppins font-[400] desktop:text-[17.68px] desktop:leading-[26.52px] laptop:text-[12.57px] laptop:leading-[18.86px] tablet:text-[10px] tablet:leading-[14.86px] mobile:text-[9.01px] mobile:leading-[13.52px];
   }
   .detailInfoSubtitle {
-    @apply text-[#888888B2] font-poppins font-[400] desktop:text-[19px] desktop:leading-[29.14px];
+    @apply text-[#888888B2] font-poppins font-[400] desktop:text-[19px] desktop:leading-[29.14px] laptop:text-[13.51px] laptop:leading-[20.72px] tablet:text-[10px] tablet:leading-[15px] mobile:text-[13.03px] mobile:leading-[19.98px];
   }
   .detailInfoTitle {
-    @apply text-[#292B39] font-poppins font-[600] desktop:text-[51.04px] desktop:leading-[31.82px];
+    @apply text-[#292B39] font-poppins font-[600] desktop:text-[51.04px] desktop:leading-[31.82px] laptop:text-[36.3px] laptop:leading-[22.63px] tablet:text-[25px] tablet:leading-[20px] mobile:text-[15.64px] mobile:leading-[22.59px];
   }
   .detailInfoBtnText {
-    @apply text-[#FFFFFF] font-poppins font-[700] desktop:text-[18.39px] desktop:leading-[28.21px];
+    @apply text-[#FFFFFF] font-poppins font-[700] desktop:text-[18.39px] desktop:leading-[28.21px] laptop:text-[13.08px] laptop:leading-[20.06px] tablet:text-[13.08px] tablet:leading-[20.06px] mobile:text-[10.71px] mobile:leading-[16.42px];
   }
   .detailInfoBtn {
-    @apply bg-[#141416] w-full flex justify-center items-center desktop:h-[78.97px] desktop:rounded-[19.62px] gap-[16.28px];
+    @apply bg-[#141416] w-full flex justify-center items-center desktop:h-[78.97px] desktop:rounded-[19.62px] desktop:gap-[16.28px] laptop:h-[56.16px] laptop:rounded-[13.95px] laptop:gap-[11.57px] tablet:h-[45px] tablet:rounded-[13.95px] tablet:gap-[11.57px] mobile:h-[45px] mobile:rounded-[11.42px] mobile:gap-[9.47px];
   }
   .blockDetailInfo {
-    @apply bg-white flex justify-around items-center desktop:w-[1248px] desktop:h-[636.21px] desktop:rounded-[24.42px] customBoxContainerDetailProduct;
+    @apply bg-white flex mobile:flex-col justify-around items-center desktop:w-[1248px] desktop:h-[636.21px] desktop:rounded-[24.42px]  laptop:h-[452.46px] laptop:w-[887.56px] laptop:rounded-[17.37px] mobile:h-[703px] mobile:w-[310px] mobile:rounded-[14px]  customBoxContainerDetailProduct;
   }
   .customBoxContainerDetailProduct {
     @apply shadow-custom-shadow;
