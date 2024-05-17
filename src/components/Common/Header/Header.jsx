@@ -5,7 +5,6 @@ import LogoAndShowMenuBtn from "./LogoAndShowMenuBtn";
 import NavBar from "./NavBar";
 import useWindowDimensions from "../../../hooks/useWindowDimensions.js";
 const Header = ({ isChangeBgColor = false }) => {
-  console.log(isChangeBgColor);
   const windowWidth = useWindowDimensions();
   const [isShowMenu, setIsOpenMenu] = useState(false);
   return (

@@ -47,7 +47,7 @@
     @apply bg-[#141416] w-full flex justify-center items-center desktop:h-[78.97px] desktop:rounded-[19.62px] desktop:gap-[16.28px] laptop:h-[56.16px] laptop:rounded-[13.95px] laptop:gap-[11.57px] tablet:h-[45px] tablet:rounded-[13.95px] tablet:gap-[11.57px] mobile:h-[45px] mobile:rounded-[11.42px] mobile:gap-[9.47px];
   }
   .blockDetailInfo {
-    @apply bg-white flex mobile:flex-col justify-around items-center desktop:w-[1248px] desktop:h-[636.21px] desktop:rounded-[24.42px]  laptop:h-[452.46px] laptop:w-[887.56px] laptop:rounded-[17.37px] mobile:h-[703px] mobile:w-[310px] mobile:rounded-[14px]  customBoxContainerDetailProduct;
+    @apply bg-white flex mobile:flex-col justify-around items-center desktop:w-[1248px] desktop:h-[636.21px] desktop:rounded-[24.42px]  laptop:h-[452.46px] laptop:w-[887.56px] laptop:rounded-[17.37px] tablet:rounded-[17.37px] mobile:h-[703px] mobile:w-[310px] mobile:rounded-[14px]  customBoxContainerDetailProduct;
   }
   .customBoxContainerDetailProduct {
     @apply shadow-custom-shadow;
@@ -326,10 +326,15 @@
     @apply mobile:h-[285px] mobile:mt-[4rem] mobile:mb-[4rem];
   }
   /* InfoCard */
+  .containerInfoCardForCreatorList {
+    @apply desktop:w-[180px] desktop:h-[30%] laptop:w-[130px] laptop:h-[30%] tablet:w-[90px] tablet:h-[30%];
+  }
+  .containerDefaultInfoCard {
+    @apply containerDesktopInfoCard containerLaptopInfoCard containerTabletInfoCard containerMobileInfoCard;
+  }
   .containerDesktopInfoCard {
     @apply desktop:w-[281.13px] desktop:h-[95.95px];
   }
-
   .containerLaptopInfoCard {
     @apply laptop:w-[281.13px] laptop:h-[95.95px];
   }
@@ -337,9 +342,14 @@
     @apply tablet:w-[213px] tablet:h-[68.24px];
   }
   .containerMobileInfoCard {
-    @apply mobile:w-[216px] mobile:h-[67.75px];
+    @apply mobile:w-[245.51px] mobile:h-[96.74px];
   }
-
+  .titleForCreatorList {
+    @apply desktop:text-[17.39px] desktop:leading-[27.32px] laptop:text-[12.37px] laptop:leading-[19.43px] tablet:text-[10px] tablet:leading-[19.43px];
+  }
+  .titleDefault {
+    @apply titleDesktop titleLaptop titleTablet titleMobile;
+  }
   .titleDesktop {
     @apply desktop:text-[21.17px] desktop:leading-[29.64px];
   }
@@ -350,7 +360,7 @@
     @apply tablet:text-[15.06px] tablet:leading-[21.08px];
   }
   .titleMobile {
-    @apply mobile:text-[14.95px] mobile:leading-[21.08px];
+    @apply mobile:text-[21.35px] mobile:leading-[29.89px];
   }
 
   .subtitleDesktop {
@@ -362,11 +372,21 @@
   .subtitleTablet {
     @apply tablet:text-[10.04px] tablet:leading-[15.06px] tablet:tracking-[0.08px];
   }
+
   .subtitleMobile {
-    @apply mobile:text-[9.97px] mobile:leading-[14.95px] mobile:tracking-[0.08px];
+    @apply mobile:text-[14.23px] mobile:leading-[21.35px] mobile:tracking-[0.12px];
   }
-  .subtitleMobile {
-    @apply mobile:text-[9.97px] mobile:leading-[14.95px] mobile:tracking-[0.08px];
+  .markImgForCreatorList {
+    @apply desktop:w-[13.16px] desktop:h-[18.22px] laptop:w-[15px] laptop:h-[20px] tablet:w-[15px] tablet:h-[20px];
+  }
+  .markImgDefault {
+    @apply w-[21.17px] h-[21.17px] tablet:h-[15.06px] tablet:w-[15.06px] mobile:w-[21.35px] mobile:h-[21.35px];
+  }
+  .markForCreatorList {
+    @apply desktop:text-[18.22px] desktop:leading-[26.32px] laptop:text-[12.96px] laptop:leading-[18.72px] tablet:text-[11px] tablet:leading-[18.72px];
+  }
+  .markDefault {
+    @apply markDesktop markLaptop markTablet markMobile;
   }
   .markDesktop {
     @apply desktop:leading-[24.7px] desktop:text-[16.47px];
@@ -378,14 +398,18 @@
     @apply tablet:leading-[17.57px] tablet:text-[11.71px];
   }
   .markMobile {
-    @apply mobile:leading-[17.44px] mobile:text-[11.63px];
+    @apply mobile:leading-[24.91px] mobile:text-[16.6px];
   }
   /* Container Card trends */
+  .containerTrendiesCardForCreatorList {
+    @apply desktop:h-[297.48px] desktop:w-[215.91px] desktop:rounded-[17.45px] laptop:w-[153.55px] laptop:h-[211.56px] laptop:rounded-[12.41px] tablet:w-[153.55px] tablet:h-[175px] tablet:rounded-[12.41px] mobile:w-[283.46px] mobile:h-[405.62px] mobile:rounded-[23.67px];
+  }
+  .containerDefaultTrendiesCard {
+    @apply rounded-[23.48px] containerDesktopTrendiesCard  containerLaptopTrendiesCard containerTabletTrendiesCard containerMobileTrendiesCard;
+  }
   .containerDesktopTrendiesCard {
     @apply desktop:w-[281.13px] desktop:h-[402.28px];
   }
-  /* Container Card trends */
-
   .containerLaptopTrendiesCard {
     @apply laptop:w-[281.13px] laptop:h-[402.28px];
   }
@@ -393,9 +417,15 @@
     @apply tablet:w-[199.93px] tablet:h-[286.1px];
   }
   .containerMobileTrendiesCard {
-    @apply mobile:w-[198.49px] mobile:h-[284.04px];
+    @apply mobile:w-[283.46px] mobile:h-[405.62px];
   }
   /* Image of card trends*/
+  .imgCardSizeForCreatorList {
+    @apply desktop:h-[164.37px] desktop:w-[187.99px] desktop:rounded-[11.63px] laptop:h-[116.9px] laptop:w-[133.7px] laptop:rounded-[8.27px]  tablet:h-[100px] tablet:w-[93px] tablet:rounded-[8.27px] mobile:w-[254.99px] mobile:h-[254.99px] mobile:rounded-[23.67px];
+  }
+  .imgCardSizeByDefault {
+    @apply imgCardDesktop imgCardLaptop imgCardTablet imgCardMobile;
+  }
   .imgCardDesktop {
     @apply desktop:w-[252.9px] desktop:h-[252.9px] desktop:rounded-[23.48px];
   }
@@ -406,7 +436,7 @@
     @apply tablet:w-[179.86px] tablet:h-[179.86px] tablet:rounded-[16.7px];
   }
   .imgCardMobile {
-    @apply mobile:w-[178.56px] mobile:h-[178.56px] mobile:rounded-[16.7px];
+    @apply mobile:w-[254.99px] mobile:h-[254.99px] mobile:rounded-[23.67px];
   }
   /* logoImg */
   .sizeDesktopImgLogo {

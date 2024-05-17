@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import TrendiesCard from "./TrendiesCard";
+import CardItem from "../../../Common/CardItem";
 import { discoverList } from "../../../Discover/constants";
 import BtnsArrows from "../../NftTitleAndImages/NftImages/BtnsArrows";
 
@@ -14,9 +14,10 @@ const TrendiesList = () => {
           className="w-full scroll-smooth overflow-style "
         >
           <div className="flex w-full items-center h-[600px] gap-[40px] ">
-            {discoverList.map((card) => (
-              <TrendiesCard key={card.id} card={card} />
-            ))}
+            {discoverList &&
+              discoverList.map((card) => (
+                <CardItem key={card.id} card={card} />
+              ))}
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { arrayCardsSelector } from "../../../store/selectors";
 const ExploreMarketplace = () => {
   const cardsList = useSelector(arrayCardsSelector);
-
+  const cardsListCropped = cardsList.slice(0, 7);
   return (
     <div className="flex flex-col justify-evenly items-center h-full w-[90%] mobile:w-full bg-white">
       <div className=" flex flex-col justify-between items-center w-full h-[120px]">
@@ -14,7 +14,7 @@ const ExploreMarketplace = () => {
         </h2>
         <FiltersBtns isShowAllBtn={true} />
       </div>
-      <CardsList list={cardsList} />
+      <CardsList list={cardsListCropped} />
       <div className="mt-[4rem] flex justify-end  w-full  ">
         <ExploneBtn />
       </div>

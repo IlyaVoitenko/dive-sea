@@ -6,7 +6,6 @@ import AuthorAndPayment from "./AuthorAndPayment";
 
 const DetailInfo = ({ productDetails }) => {
   const { img, title, price, name } = productDetails || {};
-  console.log(productDetails);
   return (
     <section className="flex flex-col justify-between mobile:items-center   w-full  desktop:h-[728.25px] laptop:h-[517.92px] tablet:h-[430.92px] mobile:w-[90%]">
       <BtnBack />

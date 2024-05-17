@@ -20,7 +20,7 @@ export const headerWithShowMenuFuncProps = {
 };
 
 export const CardNftTrendProps = {
-  id: number,
+  id: oneOfType([string, number]),
   img: string,
   time: oneOfType([string, number]),
   title: string,
