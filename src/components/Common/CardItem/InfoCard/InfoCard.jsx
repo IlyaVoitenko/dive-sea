@@ -15,7 +15,7 @@ const InfoCard = ({ card, isCreatorCard }) => {
       className={` flex flex-col justify-around  ${
         isCreatorCard
           ? "containerInfoCardForCreatorList"
-          : "containerDefaultInfoCard pl-[5%] pr-[5%]"
+          : "containerDefaultInfoCard pl-[5%] pr-[5%] tablet:pl-[8%] tablet:pr-[8%] mobile:pl-[0%] mobile:pr-[0%]"
       }  `}
     >
       {isCreatorCard && (

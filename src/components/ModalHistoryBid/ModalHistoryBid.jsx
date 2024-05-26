@@ -1,5 +1,4 @@
-import HistoryBid from "./HistoryBid";
-import BidInputAndSubmitBtn from "./BidInputAndSubmitBtn";
+import BidModal from "./BidModal";
 const ModalHistoryBid = () => {
   return (
     <div className="absolute w-screen h-full  z-40 min-h-full  transition flex items-center">
@@ -8,10 +7,7 @@ const ModalHistoryBid = () => {
         className="w-full h-full flex justify-center items-center backdrop-blur-sm bg-[#EFEFEF/40] "
       >
         <div className="relative  w-full  transition my-auto flex justify-center items-center p-4 ">
-          <section className="border-solid flex flex-col justify-evenly border-black rounded-[30px] border-[2.12px] desktop:w-[438.9px] desktop:h-[732.56px] bg-[#FAFAFA] pl-[2%] pr-[2%]">
-            <HistoryBid />
-            <BidInputAndSubmitBtn />
-          </section>
+          <BidModal />
         </div>
       </div>
     </div>
