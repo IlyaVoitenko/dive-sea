@@ -9,10 +9,10 @@
     @apply relative;
   }
   .selectBid {
-    @apply text-[#FFFFFF] font-poppins font-[600] uppercase appearance-none pl-[25%] desktop:w-[157.55px] desktop:h-[70.9px] desktop:text-[20.26px] desktop:leading-[30.39px] desktop:gap-[23.63px] desktop:rounded-l-[18.01px] laptop:w-[112.05px] laptop:h-[50.42px] laptop:text-[14.41px] laptop:leading-[21.61px] laptop:gap-[16.81px]  laptop:rounded-l-[12.81px] tablet:w-[112.05px] tablet:h-[50.42px] tablet:text-[14.41px] tablet:leading-[21.61px] tablet:gap-[16.81px] tablet:rounded-l-[12.81px];
+    @apply text-[#FFFFFF] font-poppins font-[600] uppercase appearance-none pl-[25%] desktop:w-[157.55px] desktop:h-[70.9px] desktop:text-[20.26px] desktop:leading-[30.39px] desktop:gap-[23.63px] desktop:rounded-l-[18.01px] laptop:w-[112.05px] laptop:h-[50.42px] laptop:text-[14.41px] laptop:leading-[21.61px] laptop:gap-[16.81px]  laptop:rounded-l-[12.81px] tablet:w-[112.05px] tablet:h-[50.42px] tablet:text-[14.41px] tablet:leading-[21.61px] tablet:gap-[16.81px] tablet:rounded-l-[12.81px] mobile:w-[111.41px] mobile:h-[50.13px] mobile:text-[14.32px] mobile:leading-[21.49px] mobile:gap-[16.71px] mobile:rounded-l-[12.73px];
   }
   .selectBidContainer::after {
-    @apply absolute top-1/2 right-[40%] tablet:right-[36%] tablet:top-[48%] desktop:w-[7.88px] desktop:h-[15.76px]  laptop:w-[7px] laptop:h-[19px]  transform -translate-y-1/2 pointer-events-none text-[12px];
+    @apply absolute top-1/2 right-[40%] tablet:right-[36%] mobile:right-[33%] tablet:top-[48%] mobile:top-[48%] desktop:w-[7.88px] desktop:h-[15.76px]  laptop:w-[7px] laptop:h-[19px]  transform -translate-y-1/2 pointer-events-none text-[12px];
   }
   @media screen and (min-width: 1280px) {
     .selectBidContainer::after {
@@ -20,6 +20,11 @@
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .selectBidContainer::after {
+      content: url("./assets/VectorBidModalLaptop.svg");
+    }
+  }
+  @media screen and (max-width: 767px) {
     .selectBidContainer::after {
       content: url("./assets/VectorBidModalLaptop.svg");
     }
