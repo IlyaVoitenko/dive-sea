@@ -5,7 +5,7 @@ import TitleAndSubtitle from "./TitleAndSubtitle";
 import AuthorAndPayment from "./AuthorAndPayment";
 
 const DetailInfo = ({ productDetails }) => {
-  const { img, title, price, name } = productDetails || {};
+  const { img, title, name } = productDetails || {};
   return (
     <section className="flex flex-col justify-between mobile:items-center   w-full  desktop:h-[728.25px] laptop:h-[517.92px] tablet:h-[430.92px] mobile:w-[90%]">
       <BtnBack />
@@ -13,7 +13,7 @@ const DetailInfo = ({ productDetails }) => {
         <ImgProduct img={img} />
         <section className="detailInfoContainerDetailData">
           <TitleAndSubtitle title={title} name={name} />
-          <AuthorAndPayment price={price} />
+          <AuthorAndPayment product={productDetails} />
         </section>
       </div>
     </section>

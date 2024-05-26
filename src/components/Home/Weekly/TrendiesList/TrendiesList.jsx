@@ -21,8 +21,9 @@ const TrendiesList = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[5rem]">
+      <div className="mt-[4rem] ">
         <BtnsArrows
+          isWeekly={true}
           scrollPosition={scrollPosition}
           setScrollPosition={setScrollPosition}
           containerTrendiesListRef={containerTrendiesListRef}

@@ -3,6 +3,17 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /*ModalHistoryBid */
+
+  .custom-select {
+    @apply relative;
+  }
+
+  .custom-select::after {
+    content: url("./assets/VectorBidModal.svg");
+    @apply absolute top-1/2 right-[40%]  desktop:w-[7.88px] desktop:h-[15.76px]  transform -translate-y-1/2 pointer-events-none text-[12px];
+  }
+
   /* ProductDetailsPage */
   .bigMarkCardImg {
     @apply desktop:w-[22.35px] desktop:h-[35.6px] laptop:w-[15.89px] laptop:h-[25.32px] tablet:w-[20px] tablet:h-[20px] mobile:w-[13.2px] mobile:h-[21.02px];
@@ -377,7 +388,7 @@
     @apply mobile:text-[14.23px] mobile:leading-[21.35px] mobile:tracking-[0.12px];
   }
   .markImgForCreatorList {
-    @apply desktop:w-[13.16px] desktop:h-[18.22px] laptop:w-[15px] laptop:h-[20px] tablet:w-[15px] tablet:h-[20px];
+    @apply desktop:w-[20px] desktop:h-[25px] laptop:w-[15px] laptop:h-[20px] tablet:w-[15px] tablet:h-[20px];
   }
   .markImgDefault {
     @apply w-[21.17px] h-[21.17px] tablet:h-[15.06px] tablet:w-[15.06px] mobile:w-[21.35px] mobile:h-[21.35px];

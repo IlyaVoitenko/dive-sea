@@ -4,6 +4,9 @@ export default {
   theme: {
     boxShadow: {
       "custom-shadow": "17.56px 17.56px 61.06px 0px rgba(0, 0, 0, 0.12)",
+      btnsArrowsShadow: "0px 42px 24.53px -18.4px #0F0F0F1F ",
+      itemBid: "  -5.85px 11.7px 20.26px 0px #10101026",
+      itemUnhoverBid: "0px 4.5px 54.02px 0px #C5C5C540",
     },
     screens: {
       mobile: { max: "430px" },

@@ -19,17 +19,6 @@ export const headerWithShowMenuFuncProps = {
   setIsOpenMenu,
 };
 
-export const CardNftTrendProps = {
-  id: oneOfType([string, number]),
-  img: string,
-  time: oneOfType([string, number]),
-  title: string,
-  subtitle: string,
-  price: oneOfType([string, number]),
-  name: string,
-  userName: string,
-};
-
 export const topCollectionUsersProps = {
   id: string.isRequired,
   name: string.isRequired,
@@ -40,4 +29,15 @@ export const topCollectionUsersProps = {
   floorPrice: string,
   owners: string,
   items: number,
+};
+export const CardNftTrendProps = {
+  amountLikes: number,
+  id: oneOfType([string, number]),
+  img: string,
+  name: string,
+  price: oneOfType([string, number]),
+  subtitle: string,
+  time: oneOfType([string, number]),
+  title: string,
+  userName: string,
 };

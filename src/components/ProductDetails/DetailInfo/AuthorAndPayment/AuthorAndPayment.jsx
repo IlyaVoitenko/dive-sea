@@ -1,9 +1,18 @@
-import { number } from "prop-types";
+import { useDispatch } from "react-redux";
+import { shape } from "prop-types";
+import { CardNftTrendProps } from "../../../../props";
+import {
+  setIsShowModalHistoryBid,
+  setBidProductsList,
+} from "../../../../store/reducers/product";
 import creatorAvatar from "../../../../assets/creatorAvatar.svg";
 import ownerProductAvatar from "../../../../assets/ownerProductAvatar.svg";
 import bigMarkCard from "../../../../assets/bigMarkCard.svg";
 import wallet from "../../../../assets/wallet.svg";
-const AuthorAndPayment = ({ price }) => {
+const AuthorAndPayment = ({ product }) => {
+  console.log(product);
+  const dispatch = useDispatch();
+  const { price } = product || {};
   return (
     <>
       <div className="flex justify-between items-center ">
@@ -53,7 +62,14 @@ const AuthorAndPayment = ({ price }) => {
           <span className="detailInfoTime">Jun 17, 2023 at 05:08</span>
         </div>
       </div>
-      <button className="detailInfoBtn">
+      <button
+        className="detailInfoBtn"
+        onClick={() => {
+          if (!product) return;
+          dispatch(setIsShowModalHistoryBid());
+          dispatch(setBidProductsList(product));
+        }}
+      >
         <img src={wallet} alt="wallet" className="detailInfoWalletImg" />
         <span className="detailInfoBtnText">Place Bid</span>
       </button>
@@ -61,6 +77,6 @@ const AuthorAndPayment = ({ price }) => {
   );
 };
 
-AuthorAndPayment.propTypes = { price: number };
+AuthorAndPayment.propTypes = { product: shape(CardNftTrendProps) };
 
 export default AuthorAndPayment;

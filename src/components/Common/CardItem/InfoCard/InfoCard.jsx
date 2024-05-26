@@ -12,10 +12,10 @@ const InfoCard = ({ card, isCreatorCard }) => {
   const dispatch = useDispatch();
   return (
     <div
-      className={` flex flex-col justify-between ${
+      className={` flex flex-col justify-around  ${
         isCreatorCard
           ? "containerInfoCardForCreatorList"
-          : "containerDefaultInfoCard "
+          : "containerDefaultInfoCard pl-[5%] pr-[5%]"
       }  `}
     >
       {isCreatorCard && (
