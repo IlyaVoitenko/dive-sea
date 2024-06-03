@@ -4,6 +4,7 @@ import { lazy } from "react";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const DiscoverPage = lazy(() => import("./pages/DiscoverPage"));
+const CreatorsPage = lazy(() => import("./pages/CreatorsPage"));
 const ProductDetailsPage = lazy(() => import("./pages/ProductDetailsPage"));
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             path="/discover/product-details"
             element={<ProductDetailsPage />}
           />
+          <Route path="/creators" element={<CreatorsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

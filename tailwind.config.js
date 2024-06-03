@@ -3,10 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     boxShadow: {
-      "custom-shadow": "17.56px 17.56px 61.06px 0px rgba(0, 0, 0, 0.12)",
+      boxContainerDetailProduct:
+        "17.56px 17.56px 61.06px 0px rgba(0, 0, 0, 0.12)",
       btnsArrowsShadow: "0px 42px 24.53px -18.4px #0F0F0F1F ",
       itemBid: "  -5.85px 11.7px 20.26px 0px #10101026",
       itemUnhoverBid: "0px 4.5px 54.02px 0px #C5C5C540",
+      backgroundCreator: "15.26px 15.26px 53.07px 0px #0000001F",
+      creatorCard: "28.22px 8.55px 42.75px 0px #C7C7C799",
     },
     screens: {
       mobile: { max: "430px" },

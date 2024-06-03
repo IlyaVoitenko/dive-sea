@@ -8,24 +8,13 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { useSelector } from "react-redux";
 import { arrayCardsSelector } from "../../store/selectors";
 import { useEffect } from "react";
+import { fetchLoadingItems, LIMIT_ITEMS } from "../../helper";
 
-const LIMIT_ITEMS = 12;
 const Discover = () => {
   const cardsList = useSelector(arrayCardsSelector);
   const [postData, setPostData] = useState(cardsList.slice(0, LIMIT_ITEMS));
   const [visible, setVisible] = useState(LIMIT_ITEMS);
   const [hasMore, setHasMore] = useState(true);
-
-  const fetchLoadingItems = (arr) => {
-    const newLimit = visible + LIMIT_ITEMS;
-    const dataToAdd = arr.slice(visible, newLimit);
-    if (arr.length > postData.length) {
-      setTimeout(() => {
-        setPostData([...postData].concat(dataToAdd));
-      }, 2000);
-      setVisible(newLimit);
-    } else setHasMore(false);
-  };
 
   useEffect(() => {
     setPostData(cardsList.slice(0, LIMIT_ITEMS), [cardsList]);
@@ -41,7 +30,16 @@ const Discover = () => {
         </section>
         <InfiniteScroll
           dataLength={postData.length}
-          next={() => fetchLoadingItems(cardsList, postData)}
+          next={() =>
+            fetchLoadingItems(
+              cardsList,
+              postData,
+              setHasMore,
+              setVisible,
+              visible,
+              setPostData
+            )
+          }
           hasMore={hasMore}
           loader={<SpinnerLoader />}
         >

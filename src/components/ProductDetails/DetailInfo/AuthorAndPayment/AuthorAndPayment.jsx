@@ -10,7 +10,6 @@ import ownerProductAvatar from "../../../../assets/ownerProductAvatar.svg";
 import bigMarkCard from "../../../../assets/bigMarkCard.svg";
 import wallet from "../../../../assets/wallet.svg";
 const AuthorAndPayment = ({ product }) => {
-  console.log(product);
   const dispatch = useDispatch();
   const { price } = product || {};
   return (

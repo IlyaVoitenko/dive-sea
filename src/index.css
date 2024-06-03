@@ -3,6 +3,40 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* CreatorPage */
+  .btnsFiltersCreatorPage {
+    @apply flex justify-center w-full bg-white font-poppins font-[700] desktop:text-[16.25px] desktop:leading-[24.91px] border-b-4 border-t-0 border-l-0 border-r-0;
+  }
+  .btnsFiltersCreatorPageActive {
+    @apply border-[#000000] rounded-none;
+  }
+  .btnsFiltersCreatorPageNotActive {
+    @apply border-none text-[#D2D2D2];
+  }
+  .btnSpanCardForCreatorPage {
+    @apply text-[10.26px] tablet:text-[10.04px] mobile:text-[14.23px] leading-[15.39px] tablet:leading-[21px] mobile:leading-[21.35px] tracking-[0.09px] tablet:tracking-[0.08px] text-white;
+  }
+  .btnCardForCreatorPage {
+    @apply rounded-[8.55px] w-[93.5px] h-[37.62px] tablet:w-[92px] tablet:h-[36.81px] mobile:w-[122.75px] mobile:h-[52.18px] mobile:rounded-[11.86px];
+  }
+  .markImgCardForCreatorPage {
+    @apply desktop:w-[20px] desktop:h-[25px] laptop:w-[15px] laptop:h-[20px] tablet:w-[15px] tablet:h-[20px];
+  }
+  .subtitleCardForCreatorPage {
+    @apply desktop:text-[10.26px] desktop:leading-[15.39px] desktop:tracking-[0.09px];
+  }
+  .titleCardForCreatorPage {
+    @apply desktop:text-[15.39px] desktop:leading-[21.55px] laptop:text-[12.37px] laptop:leading-[19.43px] tablet:text-[10px] tablet:leading-[19.43px];
+  }
+  .containerInfoCardForCreatorPage {
+    @apply desktop:h-[69.75px] desktop:w-[177px] desktop:rounded-[17.45px] laptop:w-[153.55px] laptop:h-[211.56px] laptop:rounded-[12.41px] tablet:w-[153.55px] tablet:h-[175px] tablet:rounded-[12.41px] mobile:w-[283.46px] mobile:h-[405.62px] mobile:rounded-[23.67px]  tablet:pl-[8%] tablet:pr-[8%] mobile:pl-[0%] mobile:pr-[0%];
+  }
+  .imgCardForCreatorPage {
+    @apply desktop:h-[183.84px] desktop:w-[183.84px] desktop:rounded-[17.07px] laptop:w-[153.55px] laptop:h-[211.56px] laptop:rounded-[12.41px] tablet:w-[153.55px] tablet:h-[175px] tablet:rounded-[12.41px] mobile:w-[283.46px] mobile:h-[405.62px] mobile:rounded-[23.67px];
+  }
+  .cardForCreatorPage {
+    @apply desktop:h-[292.43px] desktop:w-[204.36px] desktop:rounded-[17.45px] laptop:w-[153.55px] laptop:h-[211.56px] laptop:rounded-[12.41px] tablet:w-[153.55px] tablet:h-[175px] tablet:rounded-[12.41px] mobile:w-[283.46px] mobile:h-[405.62px] mobile:rounded-[23.67px];
+  }
   /*ModalHistoryBid */
 
   .selectBidContainer {
@@ -77,7 +111,7 @@
     @apply bg-white flex mobile:flex-col justify-around items-center desktop:w-[1248px] desktop:h-[636.21px] desktop:rounded-[24.42px]  laptop:h-[452.46px] laptop:w-[887.56px] laptop:rounded-[17.37px] tablet:rounded-[17.37px] mobile:h-[703px] mobile:w-[310px] mobile:rounded-[14px]  customBoxContainerDetailProduct;
   }
   .customBoxContainerDetailProduct {
-    @apply shadow-custom-shadow;
+    @apply shadow-boxContainerDetailProduct;
   }
   /* Discover */
   .discoverTitle {
@@ -415,6 +449,12 @@
   .markDefault {
     @apply markDesktop markLaptop markTablet markMobile;
   }
+  .btnDefault {
+    @apply rounded-[11.76px] w-[121.74px] h-[51.76px] tablet:w-[92px] tablet:h-[36.81px] mobile:w-[122.75px] mobile:h-[52.18px] mobile:rounded-[11.86px];
+  }
+  .btnSpanDefault {
+    @apply text-[14.12px] tablet:text-[10.04px] mobile:text-[14.23px] leading-[21.17px] tablet:leading-[21px] mobile:leading-[21.35px] tracking-[0.12px] tablet:tracking-[0.08px] text-white w-[72px] h-[21px];
+  }
   .markDesktop {
     @apply desktop:leading-[24.7px] desktop:text-[16.47px];
   }
@@ -428,6 +468,15 @@
     @apply mobile:leading-[24.91px] mobile:text-[16.6px];
   }
   /* Container Card trends */
+  .containerTimeStyleDefault {
+    @apply w-[116.58px] tablet:w-[82.91px] h-[37.64px] tablet:h-[26.77px] mobile:h-[37.95px] mobile:w-[117.55px] rounded-[9.41px] border-[1.18px] backdrop-opacity-10 bg-[#1C1D2059] border-[#1C1D2014]  absolute top-[3%] left-[50%];
+  }
+  .timeSpanStyleCreatorPage {
+    @apply text-white font-poppins font-medium desktop:text-[10.26px] desktop:tracking-[0.09px] desktop:leading-[15.39px]   tablet:leading-[15.06px] tablet:tracking-[0.08px] tablet:text-[10.04px] mobile:text-[14.23px] mobile:leading-[21.35px] mobile:tracking-[0.12px];
+  }
+  .timeSpanStyleDefault {
+    @apply text-white font-poppins font-medium text-[14.12px] tracking-[0.12px] leading-[21.17px]    mobile:text-[14.23px] mobile:leading-[21.35px] mobile:tracking-[0.12px] tablet:leading-[15.06px] tablet:tracking-[0.08px] tablet:text-[10.04px];
+  }
   .containerTrendiesCardForCreatorList {
     @apply desktop:h-[297.48px] desktop:w-[215.91px] desktop:rounded-[17.45px] laptop:w-[153.55px] laptop:h-[211.56px] laptop:rounded-[12.41px] tablet:w-[153.55px] tablet:h-[175px] tablet:rounded-[12.41px] mobile:w-[283.46px] mobile:h-[405.62px] mobile:rounded-[23.67px];
   }
