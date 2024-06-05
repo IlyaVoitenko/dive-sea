@@ -1,12 +1,10 @@
-import { useState } from "react";
+import { bool, func } from "prop-types";
 import boxWithStar from "../../../assets/boxWithStar.svg";
 import boxWithStarUnactive from "../../../assets/boxWithStarUnactive.svg";
 import compassActive from "../../../assets/compassActive.svg";
 import compassUnactive from "../../../assets/compassUnactive.svg";
 
-const BtnsFilter = () => {
-  const [isFilterActive, setIsFilterActive] = useState(false);
-
+const BtnsFilter = ({ isFilterActive, setIsFilterActive }) => {
   return (
     <div className="text-[#000000] flex desktop:w-[663px] desktop:h-[43.33px] mt-[4rem]">
       <button
@@ -42,5 +40,5 @@ const BtnsFilter = () => {
     </div>
   );
 };
-
+BtnsFilter.propTypes = { isFilterActive: bool, setIsFilterActive: func };
 export default BtnsFilter;

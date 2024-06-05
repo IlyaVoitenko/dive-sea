@@ -6,7 +6,7 @@ const CardsList = ({ list, isCreatorPage = false }) => {
     <div
       className={`flex pt-[2.6rem] pb-[2.6rem] flex-wrap ${
         isCreatorPage
-          ? " desktop:gap-[27px]  justify-start"
+          ? "desktop:gap-[27px] justify-start"
           : "desktop:w-full justify-evenly mobile:justify-center gap-[40px]"
       }`}
     >

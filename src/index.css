@@ -4,6 +4,10 @@
 @tailwind components;
 @layer components {
   /* CreatorPage */
+
+  .btnsActivityCreatorPage {
+    @apply bg-[#FFFFFF] text-[#000000] font-poppins font-[400] desktop:text-[16.28px] desktop:leading-[20.03px] flex justify-center items-center shadow-activityBtnShadow desktop:w-[320.42px] desktop:h-[50.37px] desktop:rounded-[10.02px] desktop:text-[];
+  }
   .btnsFiltersCreatorPage {
     @apply flex justify-center w-full bg-white font-poppins font-[700] desktop:text-[16.25px] desktop:leading-[24.91px] border-b-4 border-t-0 border-l-0 border-r-0;
   }

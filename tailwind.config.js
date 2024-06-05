@@ -10,6 +10,8 @@ export default {
       itemUnhoverBid: "0px 4.5px 54.02px 0px #C5C5C540",
       backgroundCreator: "15.26px 15.26px 53.07px 0px #0000001F",
       creatorCard: "28.22px 8.55px 42.75px 0px #C7C7C799",
+      activityBtnShadow: "19.38px 12.92px 66.19px 0px #61616140",
+      activityCardItem: "18.78px 12.52px 64.15px 0px #61616140",
     },
     screens: {
       mobile: { max: "430px" },

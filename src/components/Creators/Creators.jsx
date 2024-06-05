@@ -1,24 +1,16 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
-import { arrayCardsSelector } from "../../store/selectors";
-import { LIMIT_ITEMS, fetchLoadingItems } from "../../helper";
-
-import InfiniteScroll from "react-infinite-scroll-component";
 import Footer from "../Common/Footer";
 import Header from "../Common/Header";
 import FollowAndStatistics from "./FollowAndStatistics";
 import BioAndNetworks from "./BioAndNetworks";
-import CardsList from "../Common/CardsList";
-import SpinnerLoader from "../Common/SpinnerLoader";
+import Collection from "./Collection";
+import Activity from "./Activity";
 import BtnsFilter from "./BtnsFilter";
 
 import BackgroundCreator from "../../assets/testBack.svg";
 import creatorAvatar from "../../assets/creatorImg.svg";
 const Creators = () => {
-  const cardsList = useSelector(arrayCardsSelector);
-  const [postData, setPostData] = useState(cardsList.slice(0, LIMIT_ITEMS));
-  const [visible, setVisible] = useState(LIMIT_ITEMS);
-  const [hasMore, setHasMore] = useState(true);
+  const [isFilterActive, setIsFilterActive] = useState(false);
 
   return (
     <div className="containerPage">
@@ -45,26 +37,13 @@ const Creators = () => {
             <FollowAndStatistics />
             <BioAndNetworks />
           </div>
-          <div className=" flex flex-col justify-between items-end w-[64%]    ">
-            <div className=" flex  flex-col justify-center items-start w-[80%]   ">
-              <BtnsFilter />
-              <InfiniteScroll
-                dataLength={postData.length}
-                next={() =>
-                  fetchLoadingItems(
-                    cardsList,
-                    postData,
-                    setHasMore,
-                    setVisible,
-                    visible,
-                    setPostData
-                  )
-                }
-                hasMore={hasMore}
-                loader={<SpinnerLoader />}
-              >
-                <CardsList list={postData} isCreatorPage={true} />
-              </InfiniteScroll>
+          <div className=" flex flex-col justify-between items-end w-[64%]">
+            <div className=" flex  flex-col justify-center items-start w-[80%]">
+              <BtnsFilter
+                isFilterActive={isFilterActive}
+                setIsFilterActive={setIsFilterActive}
+              />
+              {isFilterActive ? <Collection /> : <Activity />}
             </div>
           </div>
         </div>
