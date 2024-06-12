@@ -37,8 +37,8 @@ const Creators = () => {
             <FollowAndStatistics />
             <BioAndNetworks />
           </div>
-          <div className=" flex flex-col justify-between items-end w-[64%] ">
-            <div className=" flex  flex-col justify-center items-center w-[90%] ">
+          <div className=" flex flex-col justify-between items-end w-[64%]">
+            <div className=" flex flex-col justify-center items-center w-[90%]">
               <BtnsFilter
                 isFilterActive={isFilterActive}
                 setIsFilterActive={setIsFilterActive}
