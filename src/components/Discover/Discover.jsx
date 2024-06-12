@@ -8,8 +8,9 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { useSelector } from "react-redux";
 import { arrayCardsSelector } from "../../store/selectors";
 import { useEffect } from "react";
-import { fetchLoadingItems, LIMIT_ITEMS } from "../../helper";
+import { fetchLoadingItems } from "../../helper";
 
+const LIMIT_ITEMS = 12;
 const Discover = () => {
   const cardsList = useSelector(arrayCardsSelector);
   const [postData, setPostData] = useState(cardsList.slice(0, LIMIT_ITEMS));
@@ -37,7 +38,8 @@ const Discover = () => {
               setHasMore,
               setVisible,
               visible,
-              setPostData
+              setPostData,
+              LIMIT_ITEMS
             )
           }
           hasMore={hasMore}

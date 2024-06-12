@@ -2,10 +2,11 @@ import { useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useSelector } from "react-redux";
 import { arrayCardsSelector } from "../../../store/selectors";
-import { LIMIT_ITEMS, fetchLoadingItems } from "../../../helper";
+import { fetchLoadingItems } from "../../../helper";
 
 import CardsList from "../../Common/CardsList";
 import SpinnerLoader from "../../Common/SpinnerLoader";
+const LIMIT_ITEMS = 12;
 const Collection = () => {
   const cardsList = useSelector(arrayCardsSelector);
 
@@ -22,7 +23,8 @@ const Collection = () => {
           setHasMore,
           setVisible,
           visible,
-          setPostData
+          setPostData,
+          LIMIT_ITEMS
         )
       }
       hasMore={hasMore}

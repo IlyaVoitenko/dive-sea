@@ -32,13 +32,13 @@ const Creators = () => {
             />
           </figure>
         </div>
-        <div className="flex mobile:flex-col justify-end   w-full">
-          <div className="flex flex-col justify-between  desktop:w-[367.21px] desktop:h-[700px]">
+        <div className="flex mobile:flex-col justify-end   w-full ">
+          <div className="flex flex-col justify-between  desktop:w-[367.21px] desktop:h-[700px] ">
             <FollowAndStatistics />
             <BioAndNetworks />
           </div>
-          <div className=" flex flex-col justify-between items-end w-[64%]">
-            <div className=" flex  flex-col justify-center items-start w-[80%]">
+          <div className=" flex flex-col justify-between items-end w-[64%] ">
+            <div className=" flex  flex-col justify-center items-center w-[90%] ">
               <BtnsFilter
                 isFilterActive={isFilterActive}
                 setIsFilterActive={setIsFilterActive}

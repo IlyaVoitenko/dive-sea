@@ -25,7 +25,7 @@ export const sortString = (a, b) => {
 
   return 0;
 };
-export const LIMIT_ITEMS = 12;
+// export const LIMIT_ITEMS = 12;
 
 export const fetchLoadingItems = (
   arr,
@@ -33,9 +33,10 @@ export const fetchLoadingItems = (
   setHasMore,
   setVisible,
   visible,
-  setPostData
+  setPostData,
+  limit
 ) => {
-  const newLimit = visible + LIMIT_ITEMS;
+  const newLimit = visible + limit;
   const dataToAdd = arr.slice(visible, newLimit);
   if (arr.length > postData.length) {
     setTimeout(() => {

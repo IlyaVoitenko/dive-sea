@@ -9,6 +9,8 @@ import vectorDark from "../../../assets/VectorDark.svg";
 
 import InfiniteScroll from "react-infinite-scroll-component";
 import SpinnerLoader from "../../Common/SpinnerLoader";
+import ActivityCard from "./ActivityCard";
+
 const LIMIT_ITEMS = 2;
 const Activity = () => {
   const cardsList = useSelector(arrayCardsSelector);
@@ -17,8 +19,8 @@ const Activity = () => {
   const [visible, setVisible] = useState(LIMIT_ITEMS);
   const [hasMore, setHasMore] = useState(true);
   return (
-    <div>
-      <div className="flex justify-between w-[90%] mt-[5rem]">
+    <>
+      <div className="flex justify-between w-[663px] mt-[5rem] ">
         <button className="btnsActivityCreatorPage">
           <img
             className="desktop:w-[21.28px] desktop:h-[21.28px]"
@@ -55,32 +57,19 @@ const Activity = () => {
             setHasMore,
             setVisible,
             visible,
-            setPostData
+            setPostData,
+            LIMIT_ITEMS
           )
         }
         hasMore={hasMore}
         loader={<SpinnerLoader />}
       >
-        <div className={`flex  flex-wrap  "desktop:gap-[27px] justify-start`}>
-          {cardsList &&
-            cardsList.map((card) => (
-              <div key={card.id}>
-                <div className="bg-[#FFFFFF] ml-[1%] shadow-activityCardItem mt-[5rem] desktop:rounded-[12.13px] desktop:w-[674.06px] desktop:h-[175.53px]"></div>
-              </div>
-            ))}
+        <div className={`flex  flex-wrap  "desktop:gap-[27px] justify-center `}>
+          {postData && postData.map((card) => <ActivityCard key={card.id} />)}
         </div>
       </InfiniteScroll>
-    </div>
+    </>
   );
 };
 
 export default Activity;
-
-// <div>
-{
-  /* 
-}
-
-{
-  /* </div> */
-}
