@@ -25,7 +25,7 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
         />
       </div>
       <button
-        className={`sizeDesktopBtnWallet sizeTabletBtnWallet sizeMobileBtnWallet`}
+        className={`flex justify-center items-center sizeDesktopBtnWallet sizeTabletBtnWallet sizeMobileBtnWallet`}
       >
         <span
           className={`uppercase sizeDesktopBtnSpanWallet sizeTabletBtnSpanWallet sizeMobileBtnSpanWallet`}

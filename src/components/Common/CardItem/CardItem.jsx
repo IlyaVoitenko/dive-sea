@@ -7,13 +7,16 @@ import ImageCard from "./ImageCard";
 
 const CardItem = ({
   card,
-  isCreatorCard = false,
+  isCreatorCardProductDetail = false,
   isCreatorPage = false,
   index,
 }) => {
   const widthScreen = useWindowDimensions();
-  const styleCard = checkStyleForCardItem(isCreatorCard, isCreatorPage);
-  if (widthScreen < 430) isCreatorCard = false;
+  const styleCard = checkStyleForCardItem(
+    isCreatorCardProductDetail,
+    isCreatorPage
+  );
+  if (widthScreen < 430) isCreatorCardProductDetail = false;
   if (widthScreen < 430 && index > 2) return;
   const { img, time } = card;
   return (
@@ -25,12 +28,12 @@ const CardItem = ({
       <ImageCard
         image={img}
         time={time}
-        isCreatorCard={isCreatorCard}
+        isCreatorCardProductDetail={isCreatorCardProductDetail}
         isCreatorPage={isCreatorPage}
       />
       <InfoCard
         card={card}
-        isCreatorCard={isCreatorCard}
+        isCreatorCardProductDetail={isCreatorCardProductDetail}
         isCreatorPage={isCreatorPage}
       />
     </section>
@@ -38,7 +41,7 @@ const CardItem = ({
 };
 CardItem.propTypes = {
   card: shape(CardNftTrendProps),
-  isCreatorCard: bool,
+  isCreatorCardProductDetail: bool,
   isCreatorPage: bool,
   index: number,
 };

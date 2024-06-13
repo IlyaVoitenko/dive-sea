@@ -29,7 +29,7 @@ const ProductDetails = () => {
                 <CardItem
                   key={card.id}
                   card={card}
-                  isCreatorCard={true}
+                  isCreatorCardProductDetail={true}
                   index={index}
                 />
               ))}

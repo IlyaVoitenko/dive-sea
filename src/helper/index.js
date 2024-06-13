@@ -46,35 +46,59 @@ export const fetchLoadingItems = (
   } else setHasMore(false);
 };
 
-export const checkStyleForCardItem = (isCreatorCard, isCreatorPage) => {
-  if (isCreatorCard === true) return "containerTrendiesCardForCreatorList";
+export const checkStyleForCardItem = (
+  isCreatorCardProductDetail,
+  isCreatorPage
+) => {
+  if (isCreatorCardProductDetail === true)
+    return "containerTrendiesCardForCreatorList";
 
   if (isCreatorPage === true) return "cardForCreatorPage";
   else return "containerDefaultTrendiesCard";
 };
-export const checkStyleForCardItemForImage = (isCreatorCard, isCreatorPage) => {
-  if (isCreatorCard === true) return "imgCardSizeForCreatorList";
+export const checkStyleForCardItemForImage = (
+  isCreatorCardProductDetail,
+  isCreatorPage
+) => {
+  if (isCreatorCardProductDetail === true) return "imgCardSizeForCreatorList";
 
   if (isCreatorPage === true) return "imgCardForCreatorPage";
   else return "imgCardSizeByDefault";
 };
-export const checkStyleForCardItemForTitle = (isCreatorCard, isCreatorPage) => {
-  if (isCreatorCard === true) return "titleForCreatorList";
+export const checkStyleForCardItemForTitle = (
+  isCreatorCardProductDetail,
+  isCreatorPage
+) => {
+  if (isCreatorCardProductDetail === true) return "titleForCreatorList";
 
   if (isCreatorPage === true) return "titleCardForCreatorPage";
   else return "titleDefault";
 };
 export const checkStyleForCardItemForMarkImg = (
-  isCreatorCard,
+  isCreatorCardProductDetail,
   isCreatorPage
 ) => {
-  if (isCreatorCard === true) return "markImgForCreatorList";
+  if (isCreatorCardProductDetail === true) return "markImgForCreatorList";
 
   if (isCreatorPage === true) return "markImgCardForCreatorPage";
   else return "markImgDefault";
 };
-export const checkStyleForInfoCardItem = (isCreatorCard, isCreatorPage) => {
-  if (isCreatorCard === true) return "containerInfoCardForCreatorList";
+export const checkStyleForCardItemForPrice = (
+  isCreatorCardProductDetail,
+  isCreatorPage
+) => {
+  if (isCreatorCardProductDetail === true) return "markForCreatorList";
+
+  if (isCreatorPage === true)
+    return "laptop:text-[8.51px] laptop:leading-[12.77px] tablet:text-[8.51px] tablet:leading-[12.77px] mobile:text-[8.59px] mobile:leading-[12.88px]";
+  else return "markDefault";
+};
+export const checkStyleForInfoCardItem = (
+  isCreatorCardProductDetail,
+  isCreatorPage
+) => {
+  if (isCreatorCardProductDetail === true)
+    return "containerInfoCardForCreatorList";
 
   if (isCreatorPage === true) return "containerInfoCardForCreatorPage";
   else

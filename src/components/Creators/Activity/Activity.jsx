@@ -17,36 +17,32 @@ const Activity = () => {
 
   const [postData, setPostData] = useState(cardsList.slice(0, LIMIT_ITEMS));
   const [visible, setVisible] = useState(LIMIT_ITEMS);
-  const [hasMore, setHasMore] = useState(true);
+  const [hasMore, setHasMore] = useState(false);
   return (
     <>
-      <div className="flex justify-between w-[663px] mt-[5rem] ">
+      <div className="flex justify-between desktop:w-[663px] laptop:w-[479.27px] tablet:w-[360px] mobile:w-[309.07px] mt-[5rem] ">
         <button className="btnsActivityCreatorPage">
+          <img className="imgActivityBtnCreatorPage" src={shop} alt="shop" />
+          &nbsp;&nbsp; Sales&nbsp;&nbsp;
           <img
-            className="desktop:w-[21.28px] desktop:h-[21.28px]"
-            src={shop}
-            alt="shop"
-          />{" "}
-          &nbsp; Sales&nbsp;{" "}
-          <img
-            className="desktop:w-[15px] desktop:h-[15px]"
+            className="imgVectorCreatorPage"
             src={vectorDark}
             alt="vector dark"
           />
         </button>
         <button className="btnsActivityCreatorPage">
           <img
-            className="desktop:w-[21.28px] desktop:h-[21.28px]"
+            className="imgActivityBtnCreatorPage"
             src={chains}
             alt="chains"
-          />{" "}
-          &nbsp; All Chains&nbsp;{" "}
+          />
+          &nbsp;&nbsp; All Chains&nbsp; &nbsp;
           <img
-            className="desktop:w-[15px] desktop:h-[15px]"
+            className="imgVectorCreatorPage"
             src={vectorDark}
             alt="vector dark"
           />
-        </button>{" "}
+        </button>
       </div>
       <InfiniteScroll
         dataLength={postData.length}

@@ -9,28 +9,33 @@ import { useDispatch } from "react-redux";
 import {
   checkStyleForCardItemForTitle,
   checkStyleForCardItemForMarkImg,
+  checkStyleForCardItemForPrice,
   checkStyleForInfoCardItem,
 } from "../../../../helper";
 
-const InfoCard = ({ card, isCreatorCard, isCreatorPage }) => {
+const InfoCard = ({ card, isCreatorCardProductDetail, isCreatorPage }) => {
   const { title, subtitle, price, amountLikes } = card;
   const styleForInfoCardItem = checkStyleForInfoCardItem(
-    isCreatorCard,
+    isCreatorCardProductDetail,
     isCreatorPage
   );
   const styleForCardItemForTitle = checkStyleForCardItemForTitle(
-    isCreatorCard,
+    isCreatorCardProductDetail,
     isCreatorPage
   );
   const styleForCardItemForMarkImg = checkStyleForCardItemForMarkImg(
-    isCreatorCard,
+    isCreatorCardProductDetail,
+    isCreatorPage
+  );
+  const styleForCardItemForPrice = checkStyleForCardItemForPrice(
+    isCreatorCardProductDetail,
     isCreatorPage
   );
   const dispatch = useDispatch();
   return (
     <div className={` flex flex-col justify-around ${styleForInfoCardItem}`}>
-      {isCreatorCard && (
-        <div className="flex justify-between items-center desktop:w-[94.13px] laptop:w-[67.03px] tablet:w-[66px] ">
+      {isCreatorCardProductDetail && (
+        <div className="flex justify-between items-center desktop:w-[94.13px] laptop:w-[67.03px] tablet:w-[66px]  ">
           <span className="text-[#141416] font-poppins font-[700] desktop:text-[14px] desktop:leading-[22px] laptop:text-[9.96px] laptop:leading-[15.65px] tablet:text-[9.96px] tablet:leading-[15.65px]">
             Perperzon
           </span>
@@ -51,7 +56,7 @@ const InfoCard = ({ card, isCreatorCard, isCreatorPage }) => {
       </span>
       <div className="flex justify-between">
         <div className="flex flex-col  justify-between">
-          {!isCreatorCard && (
+          {!isCreatorCardProductDetail && (
             <span
               className={`text-[#94A3B8] font-poppins font-normal ${
                 isCreatorPage
@@ -62,7 +67,6 @@ const InfoCard = ({ card, isCreatorCard, isCreatorPage }) => {
               {subtitle}
             </span>
           )}
-
           <figure className="flex">
             <img
               src={cardMark}
@@ -70,15 +74,13 @@ const InfoCard = ({ card, isCreatorCard, isCreatorPage }) => {
               className={styleForCardItemForMarkImg}
             />
             <span
-              className={`  w-[30px] h-[25px] font-poppins font-medium  text-[#141416] ${
-                isCreatorCard ? "markForCreatorList" : "markDefault"
-              } `}
+              className={`font-poppins font-medium  text-[#141416] ${styleForCardItemForPrice} `}
             >
               {price}
             </span>
           </figure>
         </div>
-        {isCreatorCard ? (
+        {isCreatorCardProductDetail ? (
           <div className="flex justify-between items-center">
             <img
               src={heart}
@@ -115,7 +117,7 @@ const InfoCard = ({ card, isCreatorCard, isCreatorPage }) => {
 };
 InfoCard.propTypes = {
   card: shape(CardNftTrendProps),
-  isCreatorCard: bool,
+  isCreatorCardProductDetail: bool,
   isCreatorPage: bool,
 };
 

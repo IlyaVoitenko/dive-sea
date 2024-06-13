@@ -4,42 +4,59 @@
 @tailwind components;
 @layer components {
   /* CreatorPage */
-
+  .imgMarkPriceCreatorPage {
+    @apply laptop:w-[12px] laptop:h-[12.62px] tablet:w-[12px] tablet:h-[12.62px] mobile:w-[12px] mobile:h-[12.62px];
+  }
+  .priceActivityCartCreatorPage {
+    @apply text-[#000000] font-[500] font-poppins desktop:text-[15.74px] desktop:leading-[22.74px] laptop:text-[11.19px] laptop:leading-[16.17px] tablet:text-[11.19px] tablet:leading-[16.17px] mobile:text-[12.62px] mobile:leading-[18.24px];
+  }
+  .priceTitleActivityCartCreatorPage {
+    @apply text-[#828282] font-[400] font-poppins desktop:text-[11.37px] desktop:leading-[13.99px] laptop:text-[8.09px] laptop:leading-[9.95px] tablet:text-[8.09px] tablet:leading-[9.95px] mobile:text-[9.12px] mobile:leading-[11.22px];
+  }
+  .imgActivityBtnCreatorPage {
+    @apply desktop:w-[21.28px] desktop:h-[21.28px] laptop:w-[15.72px] laptop:h-[15.72px]  tablet:w-[15.72px] tablet:h-[15.72px] mobile:w-[16.37px] mobile:h-[16.37px];
+  }
+  .imgVectorCreatorPage {
+    @apply desktop:w-[15px] desktop:h-[15px] laptop:w-[7px] laptop:h-[7px] tablet:w-[7px] tablet:h-[7px] mobile:w-[8.3px] mobile:h-[8.6px];
+  }
+  .containerTimeStyleCreatorPage {
+    @apply desktop:w-[84.75px] desktop:h-[27.36px] laptop:w-[46px] laptop:h-[11px] bg-red-700;
+  }
   .btnsActivityCreatorPage {
-    @apply bg-[#FFFFFF] text-[#000000] font-poppins font-[400] desktop:text-[16.28px] desktop:leading-[20.03px] flex justify-center items-center shadow-activityBtnShadow desktop:w-[320.42px] desktop:h-[50.37px] desktop:rounded-[10.02px] desktop:text-[];
+    @apply flex justify-center items-center shadow-activityBtnShadow  bg-[#FFFFFF] text-[#000000] font-poppins font-[400] desktop:text-[16.28px] desktop:leading-[20.03px] desktop:w-[320.42px] desktop:h-[50.37px] desktop:rounded-[10.02px] laptop:h-[35.82px] laptop:w-[227.88px] laptop:rounded-[7.12px] laptop:text-[11.58px] laptop:leading-[14.25px] tablet:h-[35.82px] tablet:w-[170px] tablet:rounded-[7.12px] tablet:text-[11.58px] tablet:leading-[14.25px] mobile:h-[38.53px] mobile:w-[151.19px] mobile:rounded-[7.71px] mobile:text-[11px] mobile:leading-[15.41px];
   }
   .btnsFiltersCreatorPage {
-    @apply flex justify-center w-full bg-white font-poppins font-[700] desktop:text-[16.25px] desktop:leading-[24.91px] border-b-4 border-t-0 border-l-0 border-r-0;
+    @apply flex justify-center items-start w-full bg-white font-poppins font-[700] desktop:text-[16.25px] desktop:leading-[24.91px] laptop:text-[11.55px] laptop:leading-[17.72px] tablet:text-[11.55px] tablet:leading-[17.72px] mobile:text-[12.81px] mobile:leading-[19.64px] desktop:border-b-4 laptop:border-b-[2.31px] tablet:border-b-[2.31px] mobile:border-b-[2.13px]  border-t-0 border-l-0 border-r-0;
   }
   .btnsFiltersCreatorPageActive {
-    @apply border-[#000000] rounded-none;
+    @apply border-[#000000]  rounded-none;
   }
   .btnsFiltersCreatorPageNotActive {
     @apply border-none text-[#D2D2D2];
   }
   .btnSpanCardForCreatorPage {
-    @apply text-[10.26px] tablet:text-[10.04px] mobile:text-[14.23px] leading-[15.39px] tablet:leading-[21px] mobile:leading-[21.35px] tracking-[0.09px] tablet:tracking-[0.08px] text-white;
+    @apply font-poppins font-[600]     text-[10.26px] laptop:text-[7.3px] tablet:text-[7.3px] mobile:text-[7.36px] leading-[15.39px] laptop:leading-[10.95px] tablet:leading-[21px] mobile:leading-[11.04px] tracking-[0.09px] laptop:tracking-[0.06px] tablet:tracking-[0.06px]   text-white;
   }
   .btnCardForCreatorPage {
-    @apply rounded-[8.55px] w-[93.5px] h-[37.62px] tablet:w-[92px] tablet:h-[36.81px] mobile:w-[122.75px] mobile:h-[52.18px] mobile:rounded-[11.86px];
+    @apply rounded-[8.55px] w-[93.5px] h-[37.62px] laptop:w-[62.94px] laptop:h-[26.76px] laptop:rounded-[6.08px] tablet:w-[62.94px] tablet:h-[26.76px] tablet:rounded-[6.08px] mobile:w-[63.49px] mobile:h-[26.99px] mobile:rounded-[6.13px];
   }
   .markImgCardForCreatorPage {
-    @apply desktop:w-[20px] desktop:h-[25px] laptop:w-[15px] laptop:h-[20px] tablet:w-[15px] tablet:h-[20px];
+    @apply desktop:w-[20px] desktop:h-[25px] laptop:w-[10.95px] laptop:h-[10.95px] tablet:w-[10.95px] tablet:h-[10.95px] mobile:w-[11.04px] mobile:h-[11.04px];
   }
   .subtitleCardForCreatorPage {
-    @apply desktop:text-[10.26px] desktop:leading-[15.39px] desktop:tracking-[0.09px];
+    @apply desktop:text-[10.26px] desktop:leading-[15.39px] desktop:tracking-[0.09px]  laptop:text-[7.3px] laptop:leading-[10.95px] laptop:tracking-[0.06px] tablet:text-[7.3px] tablet:leading-[10.95px] tablet:tracking-[0.06px] mobile:text-[7.36px] mobile:leading-[11.04px] mobile:tracking-[0.06px];
   }
   .titleCardForCreatorPage {
-    @apply desktop:text-[15.39px] desktop:leading-[21.55px] laptop:text-[12.37px] laptop:leading-[19.43px] tablet:text-[10px] tablet:leading-[19.43px];
+    @apply desktop:text-[15.39px] desktop:leading-[21.55px] laptop:text-[10.95px] laptop:leading-[15.32px] tablet:text-[10px] tablet:leading-[15.32px] mobile:text-[11.04px] mobile:leading-[15.46px];
   }
   .containerInfoCardForCreatorPage {
-    @apply desktop:h-[69.75px] desktop:w-[177px] desktop:rounded-[17.45px] laptop:w-[153.55px] laptop:h-[211.56px] laptop:rounded-[12.41px] tablet:w-[153.55px] tablet:h-[175px] tablet:rounded-[12.41px] mobile:w-[283.46px] mobile:h-[405.62px] mobile:rounded-[23.67px]  tablet:pl-[8%] tablet:pr-[8%] mobile:pl-[0%] mobile:pr-[0%];
+    @apply desktop:h-[69.75px] desktop:w-[177px] desktop:rounded-[17.45px] laptop:w-[125.88px] laptop:h-[49.6px] laptop:rounded-[12.41px] tablet:w-[150px] tablet:h-[49.6px] tablet:rounded-[12.41px] mobile:w-[126.98px] mobile:h-[50.04px] mobile:rounded-[23.67px]  tablet:pl-[8%] tablet:pr-[8%] mobile:pl-[0%] mobile:pr-[0%];
   }
   .imgCardForCreatorPage {
-    @apply desktop:h-[183.84px] desktop:w-[183.84px] desktop:rounded-[17.07px] laptop:w-[153.55px] laptop:h-[211.56px] laptop:rounded-[12.41px] tablet:w-[153.55px] tablet:h-[175px] tablet:rounded-[12.41px] mobile:w-[283.46px] mobile:h-[405.62px] mobile:rounded-[23.67px];
+    @apply desktop:h-[183.84px] desktop:w-[183.84px] desktop:rounded-[17.07px] laptop:w-[130.74px] laptop:h-[130.74px] laptop:rounded-[12.14px] tablet:w-[130.74px] tablet:h-[130.74px] tablet:rounded-[12.14px] mobile:w-[131.89px] mobile:h-[131.89px] mobile:rounded-[12.24px];
   }
   .cardForCreatorPage {
-    @apply desktop:h-[292.43px] desktop:w-[204.36px] desktop:rounded-[17.45px] laptop:w-[153.55px] laptop:h-[211.56px] laptop:rounded-[12.41px] tablet:w-[153.55px] tablet:h-[175px] tablet:rounded-[12.41px] mobile:w-[283.46px] mobile:h-[405.62px] mobile:rounded-[23.67px];
+    @apply desktop:h-[292.43px] desktop:w-[204.36px] desktop:rounded-[17.45px] laptop:w-[153.55px] laptop:h-[211.56px] laptop:rounded-[12.41px] tablet:w-[153.55px] tablet:h-[211.56px] tablet:rounded-[12.41px] mobile:w-[146.61px] mobile:h-[209.79px] mobile:rounded-[12.24px];
   }
   /*ModalHistoryBid */
 
@@ -448,7 +465,7 @@
     @apply w-[21.17px] h-[21.17px] tablet:h-[15.06px] tablet:w-[15.06px] mobile:w-[21.35px] mobile:h-[21.35px];
   }
   .markForCreatorList {
-    @apply desktop:text-[18.22px] desktop:leading-[26.32px] laptop:text-[12.96px] laptop:leading-[18.72px] tablet:text-[11px] tablet:leading-[18.72px];
+    @apply desktop:text-[18.22px] desktop:leading-[26.32px] laptop:text-[8.51px] laptop:leading-[18.72px] tablet:text-[11px] tablet:leading-[18.72px];
   }
   .markDefault {
     @apply markDesktop markLaptop markTablet markMobile;
@@ -476,13 +493,13 @@
     @apply w-[116.58px] tablet:w-[82.91px] h-[37.64px] tablet:h-[26.77px] mobile:h-[37.95px] mobile:w-[117.55px] rounded-[9.41px] border-[1.18px] backdrop-opacity-10 bg-[#1C1D2059] border-[#1C1D2014]  absolute top-[3%] left-[50%];
   }
   .timeSpanStyleCreatorPage {
-    @apply text-white font-poppins font-medium desktop:text-[10.26px] desktop:tracking-[0.09px] desktop:leading-[15.39px]   tablet:leading-[15.06px] tablet:tracking-[0.08px] tablet:text-[10.04px] mobile:text-[14.23px] mobile:leading-[21.35px] mobile:tracking-[0.12px];
+    @apply text-white font-poppins font-medium desktop:text-[10.26px] desktop:tracking-[0.09px] desktop:leading-[15.39px] laptop:text-[7.3px] laptop:tracking-[0.06px] laptop:leading-[10.95px]   tablet:leading-[10.95px] tablet:tracking-[0.06px] tablet:text-[7.3px] mobile:text-[7.36px] mobile:leading-[11.04px] mobile:tracking-[0.06px];
   }
   .timeSpanStyleDefault {
     @apply text-white font-poppins font-medium text-[14.12px] tracking-[0.12px] leading-[21.17px]    mobile:text-[14.23px] mobile:leading-[21.35px] mobile:tracking-[0.12px] tablet:leading-[15.06px] tablet:tracking-[0.08px] tablet:text-[10.04px];
   }
   .containerTrendiesCardForCreatorList {
-    @apply desktop:h-[297.48px] desktop:w-[215.91px] desktop:rounded-[17.45px] laptop:w-[153.55px] laptop:h-[211.56px] laptop:rounded-[12.41px] tablet:w-[153.55px] tablet:h-[175px] tablet:rounded-[12.41px] mobile:w-[283.46px] mobile:h-[405.62px] mobile:rounded-[23.67px];
+    @apply desktop:h-[297.48px] desktop:w-[215.91px] desktop:rounded-[17.45px] laptop:w-[145.34px] laptop:h-[207.97px] laptop:rounded-[12.14px] tablet:w-[153.55px] tablet:h-[175px] tablet:rounded-[12.41px] mobile:w-[283.46px] mobile:h-[405.62px] mobile:rounded-[23.67px];
   }
   .containerDefaultTrendiesCard {
     @apply rounded-[23.48px] containerDesktopTrendiesCard  containerLaptopTrendiesCard containerTabletTrendiesCard containerMobileTrendiesCard;
@@ -501,7 +518,7 @@
   }
   /* Image of card trends*/
   .imgCardSizeForCreatorList {
-    @apply desktop:h-[164.37px] desktop:w-[187.99px] desktop:rounded-[11.63px] laptop:h-[116.9px] laptop:w-[133.7px] laptop:rounded-[8.27px]  tablet:h-[100px] tablet:w-[93px] tablet:rounded-[8.27px] mobile:w-[254.99px] mobile:h-[254.99px] mobile:rounded-[23.67px];
+    @apply desktop:h-[164.37px] desktop:w-[187.99px] desktop:rounded-[11.63px] laptop:h-[130.74px] laptop:w-[130.74px] laptop:rounded-[12.14px]  tablet:h-[100px] tablet:w-[93px] tablet:rounded-[8.27px] mobile:w-[254.99px] mobile:h-[254.99px] mobile:rounded-[23.67px];
   }
   .imgCardSizeByDefault {
     @apply imgCardDesktop imgCardLaptop imgCardTablet imgCardMobile;
@@ -884,7 +901,7 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  /* padding: 0.6em 1.2em; */
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;

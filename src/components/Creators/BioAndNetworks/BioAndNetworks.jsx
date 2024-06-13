@@ -7,10 +7,10 @@ const BioAndNetworks = () => {
   return (
     <div className="flex flex-col justify-between h-[35%]">
       <div>
-        <span className="text-[#C5C5C5] font-public font-[700] desktop:text-[25px] desktop:leading-[40.19px]">
+        <span className="text-[#C5C5C5] font-public font-[700] desktop:text-[25px] desktop:leading-[40.19px] laptop:text-[17.78px] laptop:leading-[28.58px] tablet:text-[17.78px] tablet:leading-[28.58px] mobile:text-[18.97px] mobile:leading-[30.5px]">
           Bio
         </span>
-        <p className="text-[#949494] font-poppins font-[400] desktop:text-[14px] desktop:leading-[24.78px]">
+        <p className="text-[#949494] font-poppins font-[400] desktop:text-[14px] desktop:leading-[24.78px] laptop:text-[9.96px] laptop:leading-[17.62px]  tablet:text-[9.96px] tablet:leading-[17.62px]  mobile:text-[10.62px] mobile:leading-[18.8px]">
           the artist who transforms the intangible into priceless assets with
           their incredible NFT creations. From stunning visuals to mind-bending
           concepts,
@@ -18,7 +18,7 @@ const BioAndNetworks = () => {
       </div>
       <div className="flex flex-col justify-between  h-[50px]">
         <hr className="text-[#D0D0D0] desktop:w-[363px]  rounded:1.06px border-[#D0D0D0]" />
-        <nav className="flex justify-between items-center w-[70%] mobile:w-[115.21px]">
+        <nav className="flex justify-between items-center w-[70%] mobile:w-[215.21px]">
           <a href="https://www.instagram.com/">
             <img
               src={instaBlack}

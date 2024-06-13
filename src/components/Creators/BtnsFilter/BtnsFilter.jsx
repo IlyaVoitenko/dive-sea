@@ -6,7 +6,7 @@ import compassUnactive from "../../../assets/compassUnactive.svg";
 
 const BtnsFilter = ({ isFilterActive, setIsFilterActive }) => {
   return (
-    <div className="text-[#000000] flex desktop:w-[663px] desktop:h-[43.33px] mt-[4rem]">
+    <div className="text-[#000000] flex desktop:w-[663px] desktop:h-[43.33px] laptop:w-[478.36px] laptop:h-[30.81px] tablet:w-[365px] tablet:h-[30.81px] mobile:w-[314px] mobile:h-[33.94px] mt-[4rem]">
       <button
         onClick={() => setIsFilterActive(!isFilterActive)}
         className={` btnsFiltersCreatorPage ${
@@ -17,7 +17,7 @@ const BtnsFilter = ({ isFilterActive, setIsFilterActive }) => {
       >
         <img
           src={isFilterActive ? boxWithStar : boxWithStarUnactive}
-          className="desktop:w-[24.91px] desktop:h-[23.83px]"
+          className="desktop:w-[24.91px] desktop:h-[23.83px] laptop:w-[17.73px] laptop:h-[16.96px] tablet:w-[17.73px] tablet:h-[16.96px] mobile:w-[19.64px] mobile:h-[18.79px]"
           alt="box with star"
         />
         &nbsp; Collection
@@ -32,7 +32,7 @@ const BtnsFilter = ({ isFilterActive, setIsFilterActive }) => {
       >
         <img
           src={!isFilterActive ? compassActive : compassUnactive}
-          className="desktop:w-[24.91px] desktop:h-[23.83px]"
+          className="desktop:w-[24.91px] desktop:h-[23.83px] laptop:w-[17.73px] laptop:h-[16.96px] tablet:w-[17.73px] tablet:h-[16.96px] mobile:w-[19.64px] mobile:h-[18.79px]"
           alt="box with star"
         />
         &nbsp; Activity
