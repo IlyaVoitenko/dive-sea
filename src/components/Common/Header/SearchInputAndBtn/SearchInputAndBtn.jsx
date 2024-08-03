@@ -21,7 +21,7 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
           ref={searchRef}
           onChange={() => handleSearchInput(searchRef)}
           placeholder="Search Art Work / Creator"
-          className={` z-10  top-[1%]   text-black border-none font-poppins sizeDesktopSearchInput sizeTabletSearchInput sizeMobileSearchInput`}
+          className={` z-10  top-[1%] focus:outline-none   text-black border-none font-poppins sizeDesktopSearchInput sizeTabletSearchInput sizeMobileSearchInput`}
         />
       </div>
       <button
