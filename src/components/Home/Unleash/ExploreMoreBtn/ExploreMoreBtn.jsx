@@ -6,7 +6,7 @@ const ExploreMoreBtn = ({ isMobileHidden }) => {
     <div
       className={`flex mt-[2rem] mobile:${isMobileHidden ? "hidden" : "block"}`}
     >
-      <button className="flex justify-between items-center bg-black unleashBtnContainerLaptop unleashBtnContainerDesktop unleashBtnContainerTablet">
+      <button className="flex justify-evenly items-center bg-black unleashBtnContainerLaptop unleashBtnContainerDesktop unleashBtnContainerTablet unleashBtnContainerMobile">
         <span className=" text-white font-poppins font-medium  unleashBtnTextDesktop unleashBtnTextLaptop unleashBtnTextTablet ">
           Explore More
         </span>

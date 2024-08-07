@@ -12,12 +12,12 @@ const BannerNft = () => {
           </div>
 
           <div className="flex justify-between w-[70%]  mobile:w-[70%] mobile:mt-[1rem] tablet:w-[90%] desktop:w-[70%]">
-            <button className="flex justify-center items-center  bg-white mobile:h-[33.65px] laptop:rounded-[8.69px] desktop:h-[67.66px] desktop:rounded-[12.2px] mobile:rounded-[6.05px]">
+            <button className="flex justify-center items-center  bg-white mobile:h-[33.65px] laptop:rounded-[8.69px] desktop:h-[67.66px] desktop:rounded-[12.2px] mobile:rounded-[6.05px] mobile:p-1">
               <span className="text-[#141416] font-outfit font-semibold mobile:text-[10.58px] mobile:leading-[13.76px] mobile:tracking-[1%] tablet:text-[15.2px] tablet:leading-[19.77px] tablet:tracking-[1%] laptop:text-[15.2px] laptop:leading-[19.77px] laptop:tracking-[1%] desktop:text-[21.36px] desktop:leading-[27.76px] desktop:tracking-[1%] ">
                 Explore More
               </span>
             </button>
-            <button className="flex justify-center items-center  laptop:rounded-[8.69px] bg-[#141416] mobile:h-[33.65px]  desktop:h-[67.66px] desktop:rounded-[12.2px] border-white mobile:rounded-[6.05px]">
+            <button className="flex justify-center items-center  laptop:rounded-[8.69px] bg-[#141416] mobile:h-[33.65px]  desktop:h-[67.66px] desktop:rounded-[12.2px] border-white mobile:rounded-[6.05px] mobile:p-1">
               <span className="text-white font-outfit font-semibold mobile:text-[10.58px] mobile:leading-[13.76px] mobile:tracking-[1%] tablet:text-[15.2px] tablet:leading-[19.77px] tablet:tracking-[1%]  laptop:text-[15.2px] laptop:leading-[19.77px] laptop:tracking-[1%] desktop:text-[21.36px] desktop:leading-[27.76px] desktop:tracking-[1%]">
                 Sell Artwork
               </span>

@@ -3,11 +3,13 @@ import Footer from "../Common/Footer";
 import CreateNFTForm from "./CreateNFTForm";
 const CreateNFT = () => {
   return (
-    <div className="containerPage">
+    <div className="containerPage desktop:h-[1200px]">
       <Header />
-      <section className="h-full desktop:mt-[5rem] laptop:mt-[4rem] tablet:mt-[1rem] mobile:mt-[3rem]">
-        <h3>Create Your NFT</h3>
-        <CreateNFTForm />
+      <section className="flex flex-col h-full desktop:mt-[5rem] laptop:mt-[4rem] tablet:mt-[1rem] mobile:mt-[3rem]">
+        <h3 className="titleCreateNFTPage">Create Your NFT</h3>
+        <div className="h-full">
+          <CreateNFTForm />
+        </div>
       </section>
       <Footer />
     </div>

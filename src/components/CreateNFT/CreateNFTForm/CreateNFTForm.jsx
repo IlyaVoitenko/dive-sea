@@ -1,3 +1,5 @@
+import iconEdit from "../../../assets/edit.svg";
+
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 const CreateNFTForm = () => {
@@ -5,38 +7,46 @@ const CreateNFTForm = () => {
     const value = e.value.replace(/\D/g, "");
     let newValue = value;
     if (newValue.length <= 3) {
-      setFieldValue("part1", newValue);
-      if (value.length === 3) document.getElementById("part2").focus();
+      setFieldValue("sizeOne", newValue);
+      if (value.length === 3) document.getElementById("sizeTwo").focus();
     }
   };
-
+  let stocks = [];
+  for (let i = 1; i <= 100; i++) {
+    if (i < 10) stocks.push("00" + i);
+    else if (i < 100) stocks.push("0" + i);
+    else stocks.push("" + i);
+  }
   const handlePartTwoChange = (target, setFieldValue) => {
     let value = target.value.replace(/\D/g, "");
-    if (value.length <= 3) setFieldValue("part2", value);
+    if (value.length <= 3) setFieldValue("sizeTwo", value);
   };
+
   return (
     <Formik
       initialValues={{
-        firstName: "",
-        lastName: "",
-        email: "",
-        part1: "",
-        part2: "",
+        tags: "",
+        name: "",
+        sizeOne: "",
+        sizeTwo: "",
+        description: "",
+        royalty: "",
+        price: "",
+        stock: "",
+        typeCrypto: "",
       }}
       validationSchema={Yup.object({
-        part1: Yup.string()
+        sizeOne: Yup.string()
           .matches(/^\d{3}$/, "Must be exactly 3 digits")
           .required("Required"),
-        part2: Yup.string()
+        sizeTwo: Yup.string()
           .matches(/^\d{3}$/, "Must be exactly 3 digits")
           .required("Required"),
-        firstName: Yup.string()
-          .max(15, "Must be 15 characters or less")
-          .required("Required"),
-        lastName: Yup.string()
-          .max(20, "Must be 20 characters or less")
-          .required("Required"),
-        email: Yup.string().email("Invalid email address").required("Required"),
+        name: Yup.string().required("Required"),
+        description: Yup.string().required("Required"),
+        royalty: Yup.string().required("Required"),
+        price: Yup.string().required("Required"),
+        stock: Yup.string().required("Required"),
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
@@ -46,35 +56,140 @@ const CreateNFTForm = () => {
       }}
     >
       {({ values, setFieldValue }) => (
-        <Form>
-          <div className="flex justify-center items-center desktop:w-[131px] desktop:h-[63px] desktop:rounded-[12.33px] bg-[#EFEFEF]  text-[#9596A6]">
-            <span>Ex - </span>
+        <Form className="flex justify-evenly flex-col  desktop:h-[999px] desktop:w-[702.1px] laptop:h-[710.38px] laptop:w-[499.32px] tablet:h-[710.38px] tablet:w-[710.38px] mobile:h-[644.12px] mobile:w-[313.46px]">
+          <section className="containerField">
+            <label htmlFor="name" className="labelForm">
+              Name
+            </label>
+            <img src={iconEdit} alt="iconEdit" className="formIconEdit" />
             <Field
+              name="name"
+              className="fieldForm"
+              placeholder="ArtWork Name"
               type="text"
-              name="part1"
-              placeholder="000"
-              onChange={({ target }) =>
-                handlePartOneChange(target, setFieldValue, values)
-              }
-              className="w-[25%] text-center border-none focus:outline-none bg-[#EFEFEF]"
             />
-            <span> x </span>
+          </section>
+          <section className="relative flex flex-col justify-between desktop:h-[210px] laptop:h-[149.35px] tablet:h-[149.35px]  mobile:h-[135.39px]">
+            <label htmlFor="description" className="labelForm">
+              Description
+            </label>
+            <img
+              src={iconEdit}
+              alt="iconEdit"
+              className="formIconEdit top-[30%]"
+            />
             <Field
-              id="part2"
-              type="text"
-              name="part2"
-              placeholder="000"
-              onChange={({ target }) =>
-                handlePartTwoChange(target, setFieldValue, values)
-              }
-              maxLength={3}
-              className="w-[25%] text-center  border-none hover:border-none focus:outline-none bg-[#EFEFEF]"
+              name="description"
+              as="textarea"
+              placeholder="Enter Your Description"
+              className="fieldForm pt-5 desktop:h-[165px] laptop:h-[117.35px] tablet:h-[117.35px] mobile:h-[106.38px]"
             />
+          </section>
+          <div className="flex  containerSizeAndRoyalty">
+            <section className="flex flex-col  justify-between selectRoyaltyFormCreateNFTContainer">
+              <label htmlFor="royal" className="labelForm">
+                Royalty
+              </label>
+              <Field
+                as="select"
+                className="fieldForm selectRoyaltyFormCreateNFT text-[#9596A6] fieldsSizeAndRoyaltyText desktop:w-[146.95px] desktop:h-[63.39px]  laptop:w-[104.51px] laptop:h-[45.08px] tablet:w-[104.51px] tablet:h-[45.08px] mobile:w-[94.74px] mobile:h-[40.87px] desktop:rounded-[12.33px] laptop:rounded-[8.77px] tablet:rounded-[8.77px] mobile:rounded-[7.95px] "
+                name="price"
+              >
+                <option value="Royalty">Royalty</option>
+                <option value="Royalty">Royalty</option>
+                <option value="Royalty">Royalty</option>
+              </Field>
+            </section>
+            <section className="flex flex-col justify-between ml-9 ">
+              <label htmlFor="sizeOne" className="labelForm">
+                Size
+              </label>
+              <section className="flex justify-center items-center desktop:w-[131px] desktop:h-[63px] laptop:w-[93.17px] laptop:h-[44.8px] tablet:w-[93.17px] tablet:h-[44.8px] mobile:w-[84.46px] mobile:h-[40.62px] desktop:rounded-[12.33px] laptop:rounded-[8.77px] tablet:rounded-[8.77px] mobile:rounded-[7.95px]  bg-[#EFEFEF]  text-[#9596A6] fieldsSizeAndRoyaltyText">
+                <span>Ex - </span>
+                <Field
+                  type="text"
+                  name="sizeOne"
+                  placeholder="000"
+                  onChange={({ target }) =>
+                    handlePartOneChange(target, setFieldValue, values)
+                  }
+                  className="w-[25%] text-center border-none focus:outline-none bg-[#EFEFEF]"
+                />
+                <span> x </span>
+                <Field
+                  id="sizeTwo"
+                  type="text"
+                  name="sizeTwo"
+                  placeholder="000"
+                  onChange={({ target }) =>
+                    handlePartTwoChange(target, setFieldValue, values)
+                  }
+                  className="w-[25%] text-center  border-none focus:outline-none bg-[#EFEFEF]"
+                />
+              </section>
+            </section>
           </div>
-          <label htmlFor="email">Email Address</label>
-          <Field name="email" type="email" />
-          <ErrorMessage name="email" />
-          <button type="submit">Submit</button>
+
+          <section className="containerField">
+            <label htmlFor="name" className="labelForm">
+              Tags
+            </label>
+            <img src={iconEdit} alt="iconEdit" className="formIconEdit" />
+            <Field
+              name="tags"
+              className="fieldForm"
+              placeholder="Beautiful Castle, Monkeys ETC"
+              type="text"
+            />
+          </section>
+          <section className="flex justify-between">
+            <div className="containerField w-full">
+              <label htmlFor="name" className="labelForm">
+                Price
+              </label>
+              <div className="selectFormCreateNFTContainer flex">
+                <Field
+                  as="select"
+                  className="fieldForm selectFormCreateNFT text-[#9596A6] rounded-tr-[0px] rounded-br-[0px] pr-6"
+                  name="typeCrypto"
+                >
+                  <option value="eth">eth</option>
+                  <option value="eth">eth</option>
+                  <option value="eth">eth</option>
+                </Field>
+                <span className="bg-[#EFEFEF] text-[#DADADA] flex justify-center items-center text-[30px] laptop:text-[25px] tablet:text-[25px] mobile:text-[25px]">
+                  |
+                </span>
+                <Field
+                  name="price"
+                  className="fieldForm rounded-tl-[0px] rounded-bl-[0px] w-[70%] mobile:w-[50%] pr-1"
+                  placeholder="0.00007 ETC"
+                  type="text"
+                />
+              </div>
+            </div>
+            <section className="flex flex-col  justify-between selectRoyaltyFormCreateNFTContainer">
+              <label htmlFor="royal" className="labelForm">
+                In stock
+              </label>
+              <Field
+                as="select"
+                className="fieldForm selectRoyaltyFormCreateNFT text-[#9596A6] fieldsSizeAndRoyaltyText desktop:w-[146.95px] desktop:h-[63.39px]  laptop:w-[104.51px] laptop:h-[44.09px] tablet:w-[104.51px] tablet:h-[45.08px] mobile:w-[94.74px] mobile:h-[40.87px] desktop:rounded-[12.33px] laptop:rounded-[8.77px] tablet:rounded-[8.77px] mobile:rounded-[7.95px] "
+                name="stock"
+              >
+                {stocks &&
+                  stocks.map((stock) => (
+                    <option key={stock} value={stock}>
+                      {stock}
+                    </option>
+                  ))}
+              </Field>
+            </section>
+          </section>
+
+          <button type="submit" className="btnFormCreateNFT">
+            Create
+          </button>
         </Form>
       )}
     </Formik>

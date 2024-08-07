@@ -3,6 +3,80 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* Create NFT Page */
+  .titleCreateNFTPage {
+    @apply font-poppins font-[600] text-[#141416] desktop:text-[45px] laptop:text-[32px] tablet:text-[32px] desktop:leading-[30px] laptop:leading-[21.34px] tablet:leading-[21.34px] text-center mobile:hidden;
+  }
+  .containerSizeAndRoyalty {
+    @apply laptop:h-[77.09px] tablet:h-[77.09px] desktop:h-[108.39px] mobile:h-[69.88px];
+  }
+  .fieldsSizeAndRoyaltyText {
+    @apply font-poppins font-[400] desktop:text-[13.45px] laptop:text-[9.56px] tablet:text-[9.56px] desktop:leading-[13.45px] laptop:leading-[20.17px] tablet:leading-[20.17px] mobile:leading-[13px] mobile:text-[8.67px]   tracking-[-2%];
+  }
+  .selectRoyaltyFormCreateNFTContainer {
+    @apply relative;
+  }
+  .selectRoyaltyFormCreateNFT {
+    @apply text-[#FFFFFF]  appearance-none pl-[25%] desktop:w-[100px] desktop:h-[70.9px] laptop:w-[104.51px] laptop:h-[44.8px] tablet:w-[112.05px] tablet:h-[50.42px]  mobile:w-[111.41px] mobile:h-[50.13px]  desktop:rounded-[12.33px] laptop:rounded-[8.77px] tablet:rounded-[8.77px] mobile:rounded-[7.95px];
+  }
+  .selectRoyaltyFormCreateNFTContainer::after {
+    @apply absolute top-1/2 desktop:right-[13%] tablet:right-[13%] laptop:right-[13%] mobile:right-[13%] desktop:top-[70%] laptop:top-[70%] tablet:top-[69%] mobile:top-[68%] desktop:w-[7.88px] desktop:h-[15.76px]  laptop:w-[7px] laptop:h-[19px]  transform -translate-y-1/2 pointer-events-none text-[12px];
+  }
+  @media screen and (min-width: 1280px) {
+    .selectRoyaltyFormCreateNFTContainer::after {
+      content: url("./assets/IconFormMarkCreateNFT.svg");
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .selectRoyaltyFormCreateNFTContainer::after {
+      content: url("./assets/IconFormMarkCreateNFTLaptop.svg");
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .selectRoyaltyFormCreateNFTContainer::after {
+      content: url("./assets/IconFormMarkCreateNFTMobile.svg");
+    }
+  }
+
+  .selectFormCreateNFTContainer {
+    @apply relative;
+  }
+  .selectFormCreateNFT {
+    @apply text-[#FFFFFF] font-poppins font-[400] uppercase appearance-none pl-[25%];
+  }
+  .selectFormCreateNFTContainer::after {
+    @apply absolute top-1/2 desktop:right-[91%] tablet:right-[92.9%] laptop:right-[89%] mobile:right-[81%] desktop:top-[48%] laptop:top-[48%] tablet:top-[47%] mobile:top-[45%] desktop:w-[7.88px] desktop:h-[15.76px]  laptop:w-[7px] laptop:h-[19px]  transform -translate-y-1/2 pointer-events-none text-[12px];
+  }
+  @media screen and (min-width: 1280px) {
+    .selectFormCreateNFTContainer::after {
+      content: url("./assets/IconFormMarkCreateNFT.svg");
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .selectFormCreateNFTContainer::after {
+      content: url("./assets/IconFormMarkCreateNFTLaptop.svg");
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .selectFormCreateNFTContainer::after {
+      content: url("./assets/IconFormMarkCreateNFTMobile.svg");
+    }
+  }
+  .labelForm {
+    @apply text-[#000000] font-poppins font-[500] desktop:text-[20px] desktop:leading-[24.9px] laptop:text-[14.22px] laptop:leading-[17.71px] tablet:text-[14.22px] tablet:leading-[17.71px] mobile:text-[12.89px] mobile:leading-[16.05px];
+  }
+  .fieldForm {
+    @apply font-[400] border-none focus:outline-none text-[#000000] font-poppins desktop:leading-[16.74px] desktop:text-[13.45px] laptop:text-[9.56px] laptop:leading-[11.91px] tablet:text-[9.56px] tablet:leading-[11.91px] mobile:text-[8.67px] mobile:leading-[10.79px]  bg-[#EFEFEF] desktop:h-[62.43px]  desktop:rounded-[12.33px] laptop:h-[44.4px] laptop:rounded-[8.77px] tablet:h-[44.4px] tablet:rounded-[8.77px] mobile:rounded-[7.95px] mobile:h-[39.5px]  pl-[0.7rem] pr-10;
+  }
+  .containerField {
+    @apply relative flex flex-col justify-between desktop:h-[107.43px] laptop:h-[76.4px] tablet:h-[76.4px] mobile:h-[68.5px];
+  }
+  .formIconEdit {
+    @apply absolute left-[90%] desktop:left-[93%] laptop:left-[94%] tablet:left-[96%] top-[60%] laptop:top-[62%] tablet:top-[62%] laptop:w-[13px] tablet:w-[13px] mobile:w-[13.01px] mobile:left-[92%] mobile:top-[63%];
+  }
+  .btnFormCreateNFT {
+    @apply bg-[#141416] font-poppins font-[500] desktop:h-[66px] desktop:rounded-[11.99px]  desktop:text-[16px] desktop:leading-[18.45px] laptop:h-[46.94px] laptop:rounded-[8.53px] laptop:text-[11.38px] laptop:leading-[13.12px]  tablet:h-[46.94px] tablet:rounded-[8.53px] tablet:text-[11.38px] tablet:leading-[13.12px] mobile:rounded-[15.2px] mobile:h-[59.83px];
+  }
   /* CreatorPage */
   .imgMarkPriceCreatorPage {
     @apply laptop:w-[12px] laptop:h-[12.62px] tablet:w-[12px] tablet:h-[12.62px] mobile:w-[12px] mobile:h-[12.62px];
@@ -312,6 +386,10 @@
     @apply desktop:tracking-[0.1px] desktop:leading-[17.28px] desktop:text-[11.52px] desktop:w-[21.13px] desktop:h-[21.13px];
   }
   /* UnleashBtnContainer */
+
+  .unleashBtnContainerMobile {
+    @apply mobile:rounded-[11.99px] mobile:w-[154px] mobile:h-[49px];
+  }
   .unleashBtnContainerTablet {
     @apply tablet:rounded-[8.53px] tablet:w-[130px] tablet:h-[41.96px];
   }
@@ -368,7 +446,7 @@
     @apply mobile:h-[16.15px] mobile:w-[16.15px] tablet:w-[19.03px] tablet:h-[19.03px] laptop:w-[19.03px] laptop:h-[19.03px];
   }
   .filerBtns {
-    @apply bg-white font-[600] font-manrope border-[2.21px] border-solid rounded-lg border-[#141416] flex justify-center mobile:justify-between items-center mobile:text-[9.92px] mobile:leading-[14.88px] mobile:tracking-[0.14px] tablet:text-[11.69px] tablet:leading-[17.53px] tablet:tracking-[0.17px]   laptop:text-[11.69px] laptop:leading-[17.53px] laptop:tracking-[0.17px];
+    @apply bg-white font-[600] p-2 font-manrope border-[2.21px] border-solid rounded-lg border-[#141416] flex justify-center mobile:justify-between items-center mobile:text-[9.92px] mobile:leading-[14.88px] mobile:tracking-[0.14px] tablet:text-[11.69px] tablet:leading-[17.53px] tablet:tracking-[0.17px]   laptop:text-[11.69px] laptop:leading-[17.53px] laptop:tracking-[0.17px];
   }
   /* table top collection */
   .titleTopCollection {
@@ -550,7 +628,7 @@
 
   /* btnWallet */
   .sizeDesktopBtnSpanWallet {
-    @apply font-inter font-semibold w-[151px] h-[25px] leading-[24.26px] text-[16.17px];
+    @apply font-inter font-semibold w-[152px] h-[25px] leading-[24.26px] text-[16.17px];
   }
 
   .sizeTabletBtnSpanWallet {
@@ -678,7 +756,7 @@
   }
   /* NFT Btns text */
   .sizeDesktopTextNftBtns {
-    @apply desktop:text-[16.27px] desktop:leading-[24.41px];
+    @apply desktop:text-[16.27px] desktop:leading-[24.41px] pr-3 pl-3;
   }
   .sizeLaptopTextNftBtns {
     @apply laptop:text-[16.27px] laptop:leading-[24.41px];
