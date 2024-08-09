@@ -4,6 +4,27 @@
 @tailwind components;
 @layer components {
   /* Create NFT Page */
+  .containerToggle {
+    @apply flex justify-between cursor-pointer select-none desktop:w-[699px] desktop:h-[54px] laptop:w-[497.12px] laptop:h-[38.32px] tablet:w-full tablet:h-[38.32px] mobile:h-[34.86px] mobile:w-[313.46px] items-center;
+  }
+  .toggleTitle {
+    @apply text-[#000000] font-poppins font-[500] desktop:leading-[24.9px] desktop:text-[20px] laptop:text-[14.22px] laptop:leading-[17.71px] tablet:text-[14.22px] tablet:leading-[17.71px] mobile:text-[12.89px] mobile:leading-[16.05px];
+  }
+  .toggleSubtitle {
+    @apply text-[#9596A6] font-poppins font-[400] desktop:leading-[16.74px] desktop:text-[13.45px] laptop:text-[9.56px] laptop:leading-[11.91px] tablet:text-[9.56px] tablet:leading-[11.91px] mobile:text-[8.67px] mobile:leading-[10.79px];
+  }
+  .toggleFormBg {
+    @apply block desktop:w-[55px] desktop:h-[30px]  desktop:rounded-[20px]  laptop:w-[39.11px] laptop:h-[21.34px]  laptop:rounded-[14.22px]  tablet:w-[39.11px] tablet:h-[21.34px] tablet:rounded-[14.22px] mobile:w-[35.46px] mobile:h-[19.34px] mobile:rounded-[12.89px];
+  }
+  .toggleFormCircle {
+    @apply absolute left-1 top-[0.2rem] desktop:top-[0.30rem] flex desktop:w-[20px] desktop:h-[20px] laptop:w-[14.22px] laptop:h-[14.22px] mobile:w-[12.9px] mobile:h-[12.9px] tablet:w-[14.22px] tablet:h-[14.22px] items-center justify-center desktop:rounded-[20px] laptop:rounded-[14.22px] tablet:rounded-[14.22px]  mobile:rounded-[12.89px]  transition;
+  }
+  .toggleFormCircleActive {
+    @apply bg-white translate-x-full desktop:left-[0.6rem] laptop:left-[0.4rem] tablet:left-[0.4rem];
+  }
+  .toggleFormCircleNotActive {
+    @apply bg-black;
+  }
   .titleCreateNFTPage {
     @apply font-poppins font-[600] text-[#141416] desktop:text-[45px] laptop:text-[32px] tablet:text-[32px] desktop:leading-[30px] laptop:leading-[21.34px] tablet:leading-[21.34px] text-center mobile:hidden;
   }

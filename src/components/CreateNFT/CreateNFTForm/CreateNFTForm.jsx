@@ -1,8 +1,18 @@
+import { useState } from "react";
 import iconEdit from "../../../assets/edit.svg";
 
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 const CreateNFTForm = () => {
+  const [isCheckedDirectSale, setIsCheckedDirectSale] = useState(false);
+  const [isCheckedPutOnSale, setIsCheckedPutOnSale] = useState(false);
+
+  const handleCheckboxChangeDirectSale = () => {
+    setIsCheckedDirectSale(!isCheckedDirectSale);
+  };
+  const handleCheckboxChangePutOnSale = () => {
+    setIsCheckedPutOnSale(!isCheckedPutOnSale);
+  };
   const handlePartOneChange = (e, setFieldValue) => {
     const value = e.value.replace(/\D/g, "");
     let newValue = value;
@@ -34,6 +44,8 @@ const CreateNFTForm = () => {
         price: "",
         stock: "",
         typeCrypto: "",
+        putOnSale: false,
+        directSale: false,
       }}
       validationSchema={Yup.object({
         sizeOne: Yup.string()
@@ -56,7 +68,7 @@ const CreateNFTForm = () => {
       }}
     >
       {({ values, setFieldValue }) => (
-        <Form className="flex justify-evenly flex-col  desktop:h-[999px] desktop:w-[702.1px] laptop:h-[710.38px] laptop:w-[499.32px] tablet:h-[710.38px] tablet:w-[710.38px] mobile:h-[644.12px] mobile:w-[313.46px]">
+        <Form className="flex justify-evenly flex-col  desktop:h-[1200px] desktop:w-[702.1px] laptop:h-[900px] laptop:w-[499.32px] tablet:h-[900px] tablet:w-[710.38px] mobile:h-[1000px] mobile:w-[313.46px]">
           <section className="containerField">
             <label htmlFor="name" className="labelForm">
               Name
@@ -187,6 +199,63 @@ const CreateNFTForm = () => {
             </section>
           </section>
 
+          <label className="containerToggle">
+            <section className="flex flex-col justify-between h-full">
+              <span className="toggleTitle">Put On Sale</span>
+              <p className="toggleSubtitle">
+                People Will Bids On Your NFT Project
+              </p>
+            </section>
+            <div className="relative">
+              <Field
+                type="checkbox"
+                checked={isCheckedPutOnSale}
+                onChange={handleCheckboxChangePutOnSale}
+                className="sr-only"
+                name="putOnSale"
+              />
+              <div
+                className={`toggleFormBg ${
+                  isCheckedPutOnSale ? "bg-black" : "bg-[#E7E4E4]"
+                }`}
+              ></div>
+              <div
+                className={`toggleFormCircle ${
+                  isCheckedPutOnSale
+                    ? "toggleFormCircleActive"
+                    : "toggleFormCircleNotActive"
+                }`}
+              ></div>
+            </div>
+          </label>
+
+          <label className="containerToggle">
+            <section className="flex flex-col justify-between h-full">
+              <span className="toggleTitle">Direct Sale</span>
+              <p className="toggleSubtitle">No Bids - Only Direct Selling</p>
+            </section>
+            <div className="relative">
+              <Field
+                type="checkbox"
+                checked={isCheckedDirectSale}
+                onChange={handleCheckboxChangeDirectSale}
+                className="sr-only"
+                name="directSale"
+              />
+              <div
+                className={`toggleFormBg ${
+                  isCheckedDirectSale ? "bg-black" : "bg-[#E7E4E4]"
+                }`}
+              ></div>
+              <div
+                className={`toggleFormCircle ${
+                  isCheckedDirectSale
+                    ? "toggleFormCircleActive"
+                    : "toggleFormCircleNotActive"
+                }`}
+              ></div>
+            </div>
+          </label>
           <button type="submit" className="btnFormCreateNFT">
             Create
           </button>
