@@ -26,7 +26,7 @@
     @apply bg-black;
   }
   .titleCreateNFTPage {
-    @apply font-poppins font-[600] text-[#141416] desktop:text-[45px] laptop:text-[32px] tablet:text-[32px] desktop:leading-[30px] laptop:leading-[21.34px] tablet:leading-[21.34px] text-center mobile:hidden;
+    @apply font-poppins font-[600] text-[#141416] desktop:text-[45px] laptop:text-[32px] tablet:text-[32px] desktop:leading-[30px] laptop:leading-[21.34px] tablet:leading-[21.34px] text-center mobile:hidden tablet:mb-4;
   }
   .containerSizeAndRoyalty {
     @apply laptop:h-[77.09px] tablet:h-[77.09px] desktop:h-[108.39px] mobile:h-[69.88px];
@@ -95,8 +95,11 @@
   .formIconEdit {
     @apply absolute left-[90%] desktop:left-[93%] laptop:left-[94%] tablet:left-[96%] top-[60%] laptop:top-[62%] tablet:top-[62%] laptop:w-[13px] tablet:w-[13px] mobile:w-[13.01px] mobile:left-[92%] mobile:top-[63%];
   }
+  .formBtnTextCreateNFT {
+    @apply text-[#FFFFFF] font-poppins font-[500] desktop:text-[16px] desktop:leading-[18.45px] laptop:text-[11.38px] laptop:leading-[13.12px]  tablet:text-[11.38px] tablet:leading-[13.12px];
+  }
   .btnFormCreateNFT {
-    @apply bg-[#141416] font-poppins font-[500] desktop:h-[66px] desktop:rounded-[11.99px]  desktop:text-[16px] desktop:leading-[18.45px] laptop:h-[46.94px] laptop:rounded-[8.53px] laptop:text-[11.38px] laptop:leading-[13.12px]  tablet:h-[46.94px] tablet:rounded-[8.53px] tablet:text-[11.38px] tablet:leading-[13.12px] mobile:rounded-[15.2px] mobile:h-[59.83px];
+    @apply bg-[#141416]  desktop:h-[66px] desktop:rounded-[11.99px] laptop:h-[46.94px] laptop:rounded-[8.53px] tablet:rounded-[8.53px] mobile:rounded-[15.2px]  tablet:h-[46.94px]  mobile:h-[59.83px] formBtnTextCreateNFT;
   }
   /* CreatorPage */
   .imgMarkPriceCreatorPage {
