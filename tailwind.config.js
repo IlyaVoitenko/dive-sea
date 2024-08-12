@@ -12,6 +12,8 @@ export default {
       creatorCard: "28.22px 8.55px 42.75px 0px #C7C7C799",
       activityBtnShadow: "19.38px 12.92px 66.19px 0px #61616140",
       activityCardItem: "18.78px 12.52px 64.15px 0px #61616140",
+      boxShadowUpload:
+        "0px 81.98px 81.98px -8.49px rgba(15, 15, 15, 0.1), 0px -81.98px 80px 0px rgba(0, 0, 0, 0.05)",
     },
     screens: {
       mobile: { max: "430px" },

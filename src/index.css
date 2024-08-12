@@ -4,6 +4,9 @@
 @tailwind components;
 @layer components {
   /* Create NFT Page */
+  .uploadSizeContainer {
+    @apply desktop:rounded-[30.74px] desktop:h-[413px] desktop:w-[468px]  laptop:rounded-[21.86px] laptop:h-[293.72px] laptop:w-[332.83px] tablet:rounded-[21.86px] tablet:h-[293.72px] tablet:w-[332.83px] mobile:rounded-[22.79px] mobile:h-[375.14px] mobile:w-[310.56px];
+  }
   .containerToggle {
     @apply flex justify-between cursor-pointer select-none desktop:w-[699px] desktop:h-[54px] laptop:w-[497.12px] laptop:h-[38.32px] tablet:w-full tablet:h-[38.32px] mobile:h-[34.86px] mobile:w-[313.46px] items-center;
   }

@@ -1,11 +1,13 @@
 import { useState } from "react";
 import iconEdit from "../../../assets/edit.svg";
+import iconUpload from "../../../assets/icons/File Upload/Line.svg";
 
-import { Formik, Field, Form, ErrorMessage } from "formik";
+import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 const CreateNFTForm = () => {
   const [isCheckedDirectSale, setIsCheckedDirectSale] = useState(false);
   const [isCheckedPutOnSale, setIsCheckedPutOnSale] = useState(false);
+  const [uploadFile, setUploadUser] = useState(null);
 
   const handleCheckboxChangeDirectSale = () =>
     setIsCheckedDirectSale(!isCheckedDirectSale);
@@ -46,7 +48,7 @@ const CreateNFTForm = () => {
         typeCrypto: "",
         putOnSale: false,
         directSale: false,
-        file: "",
+        fileUser: "",
       }}
       validationSchema={Yup.object({
         sizeOne: Yup.string()
@@ -70,46 +72,50 @@ const CreateNFTForm = () => {
       }}
     >
       {({ values, setFieldValue }) => (
-        <Form className="flex w-full justify-evenly flex-row-reverse mobile:flex-col tablet:flex-col">
+        <Form className="flex w-full justify-evenly mobile:items-center flex-row-reverse mobile:flex-col tablet:flex-col">
           <div className="flex items-start justify-center pt-[4%]">
-            <div className="flex flex-col justify-between items-center w-full desktop:w-[468px] desktop:h-[533px] laptop:w-[332.83px] laptop:h-[379.06px] tablet:w-[332.83px] tablet:h-[379.06px] mobile:h-[496px] mobile:w-[310.56px]">
+            <div className="  flex flex-col justify-between items-center w-full desktop:w-[468px] desktop:h-[533px] laptop:w-[332.83px] laptop:h-[379.06px] tablet:w-[332.83px] tablet:h-[379.06px] mobile:h-[496px] mobile:w-[310.56px]">
               <label
-                htmlFor="dropzone-file"
-                className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50  hover:bg-gray-100 "
+                htmlFor="fileUser"
+                className="shadow-boxShadowUpload bg-[#FCFCFD] flex flex-col border-none items-center justify-center cursor-pointer uploadSizeContainer"
               >
-                <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                  <svg
-                    className="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 20 16"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                {uploadFile ? (
+                  <img
+                    className="uploadSizeContainer "
+                    src={uploadFile && uploadFile}
+                  />
+                ) : (
+                  <div className="flex  flex-col items-center justify-between  desktop:w-[178.06px] desktop:h-[116.05px] laptop:w-[126.63px] laptop:h-[82.58px] tablet:w-[126.63px] tablet:h-[82.58px] mobile:w-[132.01px] mobile:h-[85.49px]">
+                    <img
+                      src={uploadFile ? uploadFile : iconUpload}
+                      className=" desktop:h-[51.24px] desktop:w-[51.24px] laptop:w-[36.47px] laptop:h-[36.47px] tablet:w-[36.47px] tablet:h-[36.47px] mobile:w-[37.99px] mobile:h-[37.99px]"
                     />
-                  </svg>
-                  <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                    <span className="font-semibold">Click to upload</span> or
-                    drag and drop
-                  </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
-                    SVG, PNG, JPG or GIF (MAX. 800x400px)
-                  </p>
-                </div>
-                <Field name="file" type="file" className="hidden" />
+                    <span className=" font-poppins text-center text-[#777E90] font-[400] desktop:text-[15.37px] desktop:leading-[25.62px] laptop:text-[10.93px] laptop:leading-[18.22px] tablet:text-[10.93px] tablet:leading-[18.22px] mobile:text-[11.4px] mobile:leading-[18.99px]">
+                      PNG, GIF, WEBP, MP4 or MP3. Max 1Gb.
+                    </span>
+                  </div>
+                )}
               </label>
-              <button
+              <Field
+                id="fileUser"
+                name="fileUser"
                 type="file"
-                name="file"
-                className="formBtnTextCreateNFT bg-[#141416] desktop:w-[327px] desktop:h-[63px]  laptop:w-[232.56px] laptop:h-[44.8px]  tablet:w-[232.56px] tablet:h-[44.8px]  mobile:w-[224px] mobile:h-[60px]"
+                placeholder="Upload"
+                accept="image/png,.jpg,.jpeg,.svg"
+                onChange={({ currentTarget }) => {
+                  if (!currentTarget.files) return;
+
+                  setUploadUser(URL.createObjectURL(currentTarget.files[0]));
+                  setFieldValue("image", currentTarget.files[0]);
+                }}
+                className="hidden"
+              />
+              <label
+                htmlFor="fileUser"
+                className="formBtnTextCreateNFT flex justify-center items-center desktop:rounded-[16px] laptop:rounded-[11.38px] tablet:rounded-[11.38px] mobile:rounded-[15.2px] bg-[#141416] desktop:w-[327px] desktop:h-[63px]  laptop:w-[232.56px] laptop:h-[44.8px]  tablet:w-[232.56px] tablet:h-[44.8px]  mobile:w-[224px] mobile:h-[60px]"
               >
                 Upload
-              </button>
+              </label>
             </div>
           </div>
           <div className="flex justify-evenly flex-col  desktop:h-[1200px] desktop:w-[702.1px] laptop:h-[900px] laptop:w-[499.32px] tablet:h-[900px] tablet:w-[710.38px] mobile:h-[1000px] mobile:w-[313.46px]">
