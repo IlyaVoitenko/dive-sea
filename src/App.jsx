@@ -4,6 +4,7 @@ import { lazy } from "react";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const DiscoverPage = lazy(() => import("./pages/DiscoverPage"));
+const CreatorPage = lazy(() => import("./pages/CreatorPage"));
 const CreatorsPage = lazy(() => import("./pages/CreatorsPage"));
 const ProductDetailsPage = lazy(() => import("./pages/ProductDetailsPage"));
 const CreateNFTPage = lazy(() => import("./pages/CreateNFTPage"));
@@ -20,6 +21,8 @@ function App() {
             element={<ProductDetailsPage />}
           />
           <Route path="/creators" element={<CreatorsPage />} />
+          <Route path="/creators/creator" element={<CreatorPage />} />
+
           <Route path="/creators-nft" element={<CreateNFTPage />} />
         </Route>
       </Routes>

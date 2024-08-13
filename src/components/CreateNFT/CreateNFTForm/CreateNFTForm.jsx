@@ -1,6 +1,6 @@
 import { useState } from "react";
 import iconEdit from "../../../assets/edit.svg";
-import iconUpload from "../../../assets/icons/File Upload/Line.svg";
+import iconUpload from "../../../assets/Line.svg";
 import { renderOneToHundredRange } from "../../../helper";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";

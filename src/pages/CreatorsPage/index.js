@@ -1,2 +1,2 @@
-import CreatorsPage from "./CreatorsPage";
-export default CreatorsPage;
+import Creators from "./CreatorsPage";
+export default Creators;

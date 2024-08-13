@@ -3,6 +3,16 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* Creators Page */
+  .infoCardIcon {
+    @apply desktop:w-[12.85px] desktop:h-[17.85px] laptop:w-[9.14px] laptop:h-[12.66px] tablet:w-[9.14px] tablet:h-[12.66px] mobile:w-[10.73px] mobile:h-[14.86px];
+  }
+  .titleCard {
+    @apply text-[#141416] text-center font-poppins font-[500] desktop:text-[17.79px] desktop:leading-[25.7px] laptop:text-[12.65px] laptop:leading-[18.28px] tablet:text-[12.65px] tablet:leading-[18.28px]  mobile:text-[14.86px] mobile:leading-[21.47px];
+  }
+  .subtitleCard {
+    @apply text-[#828282]  text-center  font-poppins font-[400] desktop:text-[12.85px] desktop:leading-[15.82px] laptop:text-[9.14px] laptop:leading-[11.25px] tablet:text-[9.14px] tablet:leading-[11.25px]  mobile:text-[10.73px] mobile:leading-[13.21px];
+  }
   /* Create NFT Page */
   .uploadSizeContainer {
     @apply desktop:rounded-[30.74px] desktop:h-[413px] desktop:w-[468px]  laptop:rounded-[21.86px] laptop:h-[293.72px] laptop:w-[332.83px] tablet:rounded-[21.86px] tablet:h-[293.72px] tablet:w-[332.83px] mobile:rounded-[22.79px] mobile:h-[375.14px] mobile:w-[310.56px];
