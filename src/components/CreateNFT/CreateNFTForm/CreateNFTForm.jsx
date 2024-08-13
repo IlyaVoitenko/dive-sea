@@ -1,7 +1,7 @@
 import { useState } from "react";
 import iconEdit from "../../../assets/edit.svg";
 import iconUpload from "../../../assets/icons/File Upload/Line.svg";
-
+import { renderOneToHundredRange } from "../../../helper";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 const CreateNFTForm = () => {
@@ -23,12 +23,9 @@ const CreateNFTForm = () => {
       if (value.length === 3) document.getElementById("sizeTwo").focus();
     }
   };
-  let stocks = [];
-  for (let i = 1; i <= 100; i++) {
-    if (i < 10) stocks.push("00" + i);
-    else if (i < 100) stocks.push("0" + i);
-    else stocks.push("" + i);
-  }
+  const stocks = renderOneToHundredRange("amounts");
+  const royalty = renderOneToHundredRange("percentage");
+
   const handlePartTwoChange = (target, setFieldValue) => {
     let value = target.value.replace(/\D/g, "");
     if (value.length <= 3) setFieldValue("sizeTwo", value);
@@ -158,8 +155,12 @@ const CreateNFTForm = () => {
                   name="price"
                 >
                   <option value="Royalty">Royalty</option>
-                  <option value="Royalty">Royalty</option>
-                  <option value="Royalty">Royalty</option>
+                  {royalty &&
+                    royalty.map((item) => (
+                      <option key={item} value={item}>
+                        {item} %
+                      </option>
+                    ))}
                 </Field>
               </section>
               <section className="flex flex-col justify-between ml-9 ">

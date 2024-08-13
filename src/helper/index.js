@@ -104,3 +104,26 @@ export const checkStyleForInfoCardItem = (
   else
     return "containerDefaultInfoCard pl-[5%] pr-[5%] tablet:pl-[8%] tablet:pr-[8%] mobile:pl-[0%] mobile:pr-[0%]";
 };
+export const renderOneToHundredRange = (typeRender) => {
+  switch (typeRender) {
+    case "percentage": {
+      const list = [];
+      for (let i = 1; i <= 100; i++) {
+        list.push(i);
+      }
+      return list;
+    }
+    case "amounts": {
+      const list = [];
+      for (let i = 1; i <= 100; i++) {
+        if (i < 10) list.push("00" + i);
+        else if (i < 100) list.push("0" + i);
+        else list.push("" + i);
+      }
+      return list;
+    }
+
+    default:
+      break;
+  }
+};
