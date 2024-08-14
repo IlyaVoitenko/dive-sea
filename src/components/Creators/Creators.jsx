@@ -105,9 +105,9 @@ const Creators = () => {
                           .map((image, index) => (
                             <div key={index} className="relative">
                               {index === 2 && (
-                                <span className="absolute z-10 translate-x-[50%] translate-y-[50%] desktop:top-[30%]  desktop:left-[19%] laptop:top-[19%]  laptop:left-[19%]  tablet:top-[19%]  tablet:left-[19%]  mobile:top-[22%]  mobile:left-[21%]  tracking-[1%] text-[#FFFFFF] text-center font-[700] desktop:text-[19.86px] desktop:leading-[21.85px]">
+                                <div className="font-urbanist flex justify-center items-center h-[25px] w-[50px]  absolute z-10 translate-x-[50%] translate-y-[50%] desktop:top-[27%]  desktop:left-[-2%] laptop:top-[18%]  laptop:left-[-22%]  tablet:top-[16%]  tablet:left-[-23%]  mobile:top-[22%]  mobile:left-[-12%]  tracking-[1%] text-[#FFFFFF] text-center font-[700] desktop:text-[19.86px] desktop:leading-[21.85px]">
                                   +{card.gallery.length - 2}
-                                </span>
+                                </div>
                               )}
 
                               <img

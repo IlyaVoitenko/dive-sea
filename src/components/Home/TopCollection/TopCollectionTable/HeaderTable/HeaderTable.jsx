@@ -1,7 +1,13 @@
-const HeaderTable = () => {
+const HeaderTable = ({ isStatPage = false }) => {
   return (
     <thead>
-      <tr className="font-poppins text-[#93989A]  font-medium   text-center  tableHeaderTr">
+      <tr
+        className={`${
+          isStatPage
+            ? "font-manrope"
+            : "font-poppins text-[#93989A] font-medium text-center tableHeaderTr"
+        }`}
+      >
         <th className=" text-left">Collection</th>
         <th>Volume</th>
         <th className="mobile:hidden">24h %</th>
