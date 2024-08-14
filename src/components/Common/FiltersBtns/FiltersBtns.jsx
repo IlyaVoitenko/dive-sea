@@ -9,17 +9,19 @@ import {
 import iconCategory from "../../../assets/IconCategory.svg";
 import iconCollection from "../../../assets/IconCollection.svg";
 import iconPrice from "../../../assets/IconPrice.svg";
-const FiltersBtns = ({ isShowAllBtn = false }) => {
+const FiltersBtns = ({ isShowAllBtn = false, isStatPage = false }) => {
   const dispatch = useDispatch();
   return (
     <div
-      className={`flex justify-evenly items-center   text-[#141416] tablet:w-[75%] laptop:w-[60%] mobile:w-full desktop:w-[545.8px]  ${
-        !isShowAllBtn && "laptop:w-[500px] mt-[2rem]"
-      }`}
+      className={`flex justify-evenly items-center   text-[#141416] tablet:w-[75%] laptop:w-[60%] mobile:w-full desktop:w-[545.8px] ${
+        isStatPage && "mb-12 mt-1"
+      }  ${!isShowAllBtn && "laptop:w-[500px] mt-[2rem]"}`}
     >
       <button
         onClick={() => dispatch(setAllProducts())}
-        className={`filerBtns mobile:hidden ${!isShowAllBtn && "hidden"}`}
+        className={`filerBtns mobile:hidden ${!isShowAllBtn && "hidden"} ${
+          isStatPage && "hidden"
+        }`}
       >
         <span>All</span>
       </button>
@@ -48,5 +50,5 @@ const FiltersBtns = ({ isShowAllBtn = false }) => {
     </div>
   );
 };
-FiltersBtns.propTypes = { isShowAllBtn: bool };
+FiltersBtns.propTypes = { isShowAllBtn: bool, isStatPage: bool };
 export default FiltersBtns;

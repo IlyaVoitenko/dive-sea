@@ -8,6 +8,7 @@ const CreatorPage = lazy(() => import("./pages/CreatorPage"));
 const CreatorsPage = lazy(() => import("./pages/CreatorsPage"));
 const ProductDetailsPage = lazy(() => import("./pages/ProductDetailsPage"));
 const CreateNFTPage = lazy(() => import("./pages/CreateNFTPage"));
+const StatsPage = lazy(() => import("./pages/StatsPage"));
 
 function App() {
   return (
@@ -22,8 +23,8 @@ function App() {
           />
           <Route path="/creators" element={<CreatorsPage />} />
           <Route path="/creators/creator" element={<CreatorPage />} />
-
           <Route path="/creators-nft" element={<CreateNFTPage />} />
+          <Route path="/stats" element={<StatsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

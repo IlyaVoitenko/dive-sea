@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { discoverList } from "../../components/Discover/constants";
 import { creatorsList } from "../../components/Creators/constants";
+import { users } from "../../components/Home/TopCollection/TopCollectionTable/constants";
 
 import { sortString } from "../../helper";
 
@@ -8,6 +9,7 @@ const initialState = {
   isShowModalHistoryBid: false,
   arrayCreators: [...creatorsList],
   arrayCards: [...discoverList],
+  arrayStats: [...users],
   productDetails: null,
   arrayCardsFilteredByTitle: null,
   bidProductsList: [],

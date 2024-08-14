@@ -3,6 +3,19 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* Stats Page */
+  .ownersAndItemsText {
+    @apply text-[#010101] font-poppins font-[500] desktop:text-[22.04px] desktop:leading-[28.66px] laptop:text-[15.68px] laptop:leading-[20.38px]  tablet:text-[15.68px] tablet:leading-[20.38px]  tracking-[1%];
+  }
+  .textWithCardMarkImg {
+    @apply text-[#141416] font-poppins font-semibold desktop:text-[22.84px] desktop:leading-[31.98px] laptop:text-[16.25px] laptop:leading-[22.74px] tablet:text-[16.25px] tablet:leading-[22.74px] mobile:text-[15.36px] mobile:leading-[21.5px];
+  }
+  .cardMarkImg {
+    @apply desktop:h-[29.37px] desktop:w-[29.37px] laptop:w-[20.89px] laptop:h-[20.89px] tablet:w-[20.89px] tablet:h-[20.89px] mobile:w-[17.28px] mobile:h-[17.28px];
+  }
+  .arrowsDownUp {
+    @apply desktop:w-[19.9px] desktop:h-[19.9px] laptop:w-[14.15px] laptop:h-[14.15px] tablet:w-[14.15px] tablet:h-[14.15px] mobile:hidden;
+  }
   /* Creators Page */
   .infoCardIcon {
     @apply desktop:w-[12.85px] desktop:h-[17.85px] laptop:w-[9.14px] laptop:h-[12.66px] tablet:w-[9.14px] tablet:h-[12.66px] mobile:w-[10.73px] mobile:h-[14.86px];
