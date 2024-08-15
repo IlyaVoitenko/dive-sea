@@ -9,7 +9,6 @@ const BtnsArrows = ({
   isWeekly = false,
   scrollPosition,
   setScrollPosition,
-
   containerTrendiesListRef,
 }) => {
   return (

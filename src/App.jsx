@@ -9,13 +9,15 @@ const CreatorsPage = lazy(() => import("./pages/CreatorsPage"));
 const ProductDetailsPage = lazy(() => import("./pages/ProductDetailsPage"));
 const CreateNFTPage = lazy(() => import("./pages/CreateNFTPage"));
 const StatsPage = lazy(() => import("./pages/StatsPage"));
+const AuthPage = lazy(() => import("./pages/AuthPage"));
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route index element={<AuthPage />} />
           <Route path="/discover" element={<DiscoverPage />} />
           <Route
             path="/discover/product-details"

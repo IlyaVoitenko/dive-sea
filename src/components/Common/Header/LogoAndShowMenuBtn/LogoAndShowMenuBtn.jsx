@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const LogoAndShowMenuBtn = ({ setIsOpenMenu, windowWidth, isShowMenu }) => {
   return (
     <>
-      <Link to={"/"} className="mobile:hidden">
+      <Link to={"/home"} className="mobile:hidden">
         <img
           src={logo}
           className={`sizeDesktopImgLogo sizeTabletImgLogo sizeMobileImgLogo`}
@@ -17,7 +17,7 @@ const LogoAndShowMenuBtn = ({ setIsOpenMenu, windowWidth, isShowMenu }) => {
       {windowWidth < 768 && (
         <div className="flex justify-between items-center w-[95%] ">
           <figure className="flex justify-between items-center w-[141.46px] ">
-            <Link to={"/"}>
+            <Link to={"/home"}>
               <img
                 src={logo}
                 className={`sizeDesktopImgLogo sizeTabletImgLogo sizeMobileImgLogo`}

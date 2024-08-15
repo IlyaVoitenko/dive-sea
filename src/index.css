@@ -3,6 +3,22 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  /* Auth Page */
+  .btnModelNav {
+    @apply bg-[#FCFCFD] flex justify-center items-center;
+  }
+  .titleNFTGalleryTitle {
+    @apply text-[#FFFFFF] font-dm font-[700] text-center tracking-[-2%] desktop:text-[47.34px] desktop:leading-[56.81px] laptop:text-[33.67px] laptop:leading-[40.4px] tablet:text-[33.67px] tablet:leading-[40.4px];
+  }
+  .subtitleNFTGalleryTitle {
+    @apply text-[#6D6D6D] font-poppins font-[400] text-center tracking-[-2%] desktop:text-[16.57px] desktop:leading-[28.4px] laptop:text-[11.78px] laptop:leading-[20.2px] tablet:text-[11.78px] tablet:leading-[20.2px];
+  }
+  .imgStonesWithShadows {
+    @apply z-10 desktop:w-[391px] desktop:h-[394.59px] laptop:w-[278.07px] laptop:h-[280.62px] tablet:w-[278.07px] tablet:h-[280.62px];
+  }
+  .imgStonesBlur {
+    @apply absolute desktop:top-[10%] desktop:w-full desktop:h-[90%] laptop:top-[4%] laptop:w-[90%] laptop:h-[98%] tablet:top-[4%] tablet:w-[90%] tablet:h-[98%] opacity-[70%];
+  }
   /* Stats Page */
   .ownersAndItemsText {
     @apply text-[#010101] font-poppins font-[500] desktop:text-[22.04px] desktop:leading-[28.66px] laptop:text-[15.68px] laptop:leading-[20.38px]  tablet:text-[15.68px] tablet:leading-[20.38px]  tracking-[1%];

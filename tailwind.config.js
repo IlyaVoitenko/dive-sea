@@ -16,6 +16,7 @@ export default {
         "0px 81.98px 81.98px -8.49px rgba(15, 15, 15, 0.1), 0px -81.98px 80px 0px rgba(0, 0, 0, 0.05)",
 
       boxCreatorsCards: "30px 15px 80px 0px #BFBFBF99",
+      boxBtnModelNav: "0px 47.34px 37.87px -28.4px #0F0F0F1F",
     },
     screens: {
       mobile: { max: "430px" },
