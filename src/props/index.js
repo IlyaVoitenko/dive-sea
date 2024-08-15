@@ -3,6 +3,7 @@ import { number, bool, string, oneOfType, oneOf, func } from "prop-types";
 export const windowWidth = oneOfType([number, oneOf([""])]);
 export const isShowMenu = bool.isRequired;
 export const setIsOpenMenu = func.isRequired;
+export const isAuthPage = bool;
 
 export const widthAndIsShowMenuProps = {
   windowWidth,
@@ -17,6 +18,7 @@ export const headerWithShowMenuFuncProps = {
   windowWidth,
   isShowMenu,
   setIsOpenMenu,
+  isAuthPage,
 };
 
 export const topCollectionUsersProps = {

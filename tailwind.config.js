@@ -17,6 +17,9 @@ export default {
 
       boxCreatorsCards: "30px 15px 80px 0px #BFBFBF99",
       boxBtnModelNav: "0px 47.34px 37.87px -28.4px #0F0F0F1F",
+      boxWalletBtns: "5px 10px 50px 0px #0000001A",
+      boxWalletBtnsLaptop: " 3.56px 7.11px 35.56px 0px #0000001A",
+      boxWalletBtnsMobile: "4px 8px 40px 0px #0000001A",
     },
     screens: {
       mobile: { max: "430px" },

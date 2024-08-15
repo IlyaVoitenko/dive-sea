@@ -4,6 +4,30 @@
 @tailwind components;
 @layer components {
   /* Auth Page */
+  .btnsWalletsNextBtnText {
+    @apply text-[#F3F5F6] tracking-[3%] font-poppins font-[600] desktop:text-[17.94px] desktop:leading-[26.91px] laptop:text-[12.76px] laptop:leading-[19.14px] tablet:text-[12.76px] tablet:leading-[19.14px] mobile:text-[14.35px] mobile:leading-[21.53px];
+  }
+  .btnsWalletsNextBtn {
+    @apply desktop:rounded-[15.7px] desktop:w-[385.76px] desktop:h-[75.13px] laptop:rounded-[11.17px] laptop:w-[274.32px] laptop:h-[53.43px] tablet:rounded-[11.17px] tablet:w-[274.32px] tablet:h-[53.43px] mobile:rounded-[7.72px] mobile:w-[316.02px] mobile:h-[67.2px];
+  }
+  .btnsWalletsImg {
+    @apply desktop:w-[38.58px] desktop:h-[38.58px] laptop:w-[27.44px] laptop:h-[27.44px] tablet:w-[27.44px] tablet:h-[27.44px] mobile:w-[30.86px] mobile:h-[30.86px];
+  }
+  .btnsWalletsText {
+    @apply pl-5 text-[#000000] font-poppins font-[600] desktop:text-[18.08px] desktop:leading-[27.73px] laptop:text-[12.86px] laptop:leading-[19.72px] tablet:text-[12.86px] tablet:leading-[19.72px] mobile:text-[14.47px] mobile:leading-[22.18px];
+  }
+  .btnsWallets {
+    @apply bg-[#FFFFFF] text-[#000000]  desktop:shadow-boxWalletBtns laptop:shadow-boxWalletBtnsLaptop tablet:shadow-boxWalletBtnsLaptop pl-8 mobile:shadow-boxWalletBtnsMobile flex justify-start items-center desktop:rounded-[9.64px] desktop:w-[395px] desktop:h-[86px] laptop:rounded-[6.86px] laptop:w-[280.92px] laptop:h-[61.16px] tablet:rounded-[6.86px] tablet:w-[280.92px] tablet:h-[61.16px] mobile:rounded-[7.72px] mobile:w-[316.02px] mobile:h-[67.2px];
+  }
+  .btnsWalletsArrow {
+    @apply ml-3 text-[#23262F] desktop:w-[28.93px] desktop:h-[28.93px] laptop:w-[20.58px] laptop:h-[20.58px]  tablet:w-[20.58px] tablet:h-[20.58px] mobile:w-[23.15px] mobile:h-[23.15px];
+  }
+  .titleAuthPage {
+    @apply text-[#323142] text-center font-poppins font-[600] desktop:text-[35.25px] desktop:leading-[44.06px] laptop:text-[25.07px] laptop:leading-[31.34px] tablet:text-[25.07px] tablet:leading-[31.34px] mobile:text-[28.2px] mobile:leading-[35.25px]  tracking-[-4%];
+  }
+  .textPrivacyAndCopyright {
+    @apply text-[#AAAAAA] font-poppins font-[500] desktop:tracking-[0.2px] desktop:text-[16px] desktop:leading-[24px] laptop:tracking-[0.14px] laptop:text-[11.38px] laptop:leading-[17.07px] tablet:tracking-[0.14px] tablet:text-[11.38px] tablet:leading-[17.07px];
+  }
   .btnModelNav {
     @apply bg-[#FCFCFD] flex justify-center items-center;
   }
@@ -17,7 +41,7 @@
     @apply z-10 desktop:w-[391px] desktop:h-[394.59px] laptop:w-[278.07px] laptop:h-[280.62px] tablet:w-[278.07px] tablet:h-[280.62px];
   }
   .imgStonesBlur {
-    @apply absolute desktop:top-[10%] desktop:w-full desktop:h-[90%] laptop:top-[4%] laptop:w-[90%] laptop:h-[98%] tablet:top-[4%] tablet:w-[90%] tablet:h-[98%] opacity-[70%];
+    @apply absolute desktop:top-[10%] desktop:w-full desktop:h-[90%] laptop:top-[4%] laptop:w-[90%] laptop:h-[98%] tablet:top-[4%] tablet:w-[100%] tablet:h-[100%] opacity-[70%];
   }
   /* Stats Page */
   .ownersAndItemsText {

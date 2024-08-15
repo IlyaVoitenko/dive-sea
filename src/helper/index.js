@@ -127,3 +127,8 @@ export const renderOneToHundredRange = (typeRender) => {
       break;
   }
 };
+export const checkBgHeader = (isChangeBgColor, isAuthPage) => {
+  if (isAuthPage) return "bg-[#F9F9F9]";
+
+  return isChangeBgColor ? "bg-[#FAFAFA]" : "bg-white";
+};

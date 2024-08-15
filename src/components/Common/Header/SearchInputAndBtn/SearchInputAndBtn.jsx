@@ -8,7 +8,7 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
     <div
       className={`flex  flex-row mobile:flex-col desktop:w-[44%] laptop:w-[55%] laptop:justify-end desktop:justify-between tablet:justify-end items-center  mobile:justify-center xl:w-[46%] max-[1197px]:w-[53%] max-[1024px]:w-[58%] mobile:bg-white mobile:z-40 mobile:w-full ${
         windowWidth < 768 && isShowMenu === false ? "hidden" : "block"
-      } `}
+      }  `}
     >
       <div className="flex relative  mobile:w-[80%] tablet:w-[50%] laptop:w-[55%]  tablet:mr-4 laptop:mr-4 ">
         <img

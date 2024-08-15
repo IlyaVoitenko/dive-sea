@@ -3,7 +3,12 @@ import menuMobileOpen from "../../../../assets/menuMobileOpen.svg";
 import logo from "../../../../assets/logo.svg";
 import { Link } from "react-router-dom";
 
-const LogoAndShowMenuBtn = ({ setIsOpenMenu, windowWidth, isShowMenu }) => {
+const LogoAndShowMenuBtn = ({
+  setIsOpenMenu,
+  windowWidth,
+  isShowMenu,
+  isAuthPage,
+}) => {
   return (
     <>
       <Link to={"/home"} className="mobile:hidden">
@@ -15,7 +20,11 @@ const LogoAndShowMenuBtn = ({ setIsOpenMenu, windowWidth, isShowMenu }) => {
       </Link>
 
       {windowWidth < 768 && (
-        <div className="flex justify-between items-center w-[95%] ">
+        <div
+          className={`flex justify-between items-center w-[95%] ${
+            isAuthPage && "bg-[#F9F9F9] w-full"
+          } `}
+        >
           <figure className="flex justify-between items-center w-[141.46px] ">
             <Link to={"/home"}>
               <img
