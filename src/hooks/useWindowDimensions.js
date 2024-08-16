@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 const useWindowDimensions = () => {
   const [windowSize, setWindowSize] = useState(getWindowSize());
+
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());

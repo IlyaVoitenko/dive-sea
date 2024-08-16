@@ -6,10 +6,12 @@ const ImageCard = ({
   time,
   isCreatorCardProductDetail,
   isCreatorPage,
+  isWeekly,
 }) => {
   const styleForCardItemForImage = checkStyleForCardItemForImage(
     isCreatorCardProductDetail,
-    isCreatorPage
+    isCreatorPage,
+    isWeekly
   );
   return (
     <figure className="relative">
@@ -19,12 +21,13 @@ const ImageCard = ({
         } ${
           isCreatorPage &&
           "desktop:w-[84.75px] desktop:h-[27.36px] laptop:w-[60.27px] laptop:h-[19.46px] laptop:rounded-[4.86px] tablet:w-[60.27px] tablet:h-[19.46px] tablet:rounded-[4.86px] mobile:w-[60.8px] mobile:h-[19.63px] mobile:rounded-[4.91px]"
-        }`}
+        }
+        ${isWeekly && "containerTimeStyleWeekly"}`}
       >
         <span
           className={` ${
             isCreatorPage ? "timeSpanStyleCreatorPage" : "timeSpanStyleDefault"
-          }`}
+          } ${isWeekly && "timeSpanStyleWeekly"} `}
         >
           {time}
         </span>
@@ -42,5 +45,6 @@ ImageCard.propTypes = {
   time: CardNftTrendProps.time,
   isCreatorCardProductDetail: bool,
   isCreatorPage: bool,
+  isWeekly: bool,
 };
 export default ImageCard;

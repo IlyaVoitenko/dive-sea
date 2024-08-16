@@ -48,21 +48,25 @@ export const fetchLoadingItems = (
 
 export const checkStyleForCardItem = (
   isCreatorCardProductDetail,
-  isCreatorPage
+  isCreatorPage,
+  isWeekly
 ) => {
   if (isCreatorCardProductDetail === true)
     return "containerTrendiesCardForCreatorList";
 
   if (isCreatorPage === true) return "cardForCreatorPage";
+  if (isWeekly) return "containerIsWeeklyTrendiesCard";
   else return "containerDefaultTrendiesCard";
 };
 export const checkStyleForCardItemForImage = (
   isCreatorCardProductDetail,
-  isCreatorPage
+  isCreatorPage,
+  isWeekly
 ) => {
   if (isCreatorCardProductDetail === true) return "imgCardSizeForCreatorList";
 
   if (isCreatorPage === true) return "imgCardForCreatorPage";
+  if (isWeekly) return "imgCardSizeByWeekly";
   else return "imgCardSizeByDefault";
 };
 export const checkStyleForCardItemForTitle = (
@@ -95,14 +99,17 @@ export const checkStyleForCardItemForPrice = (
 };
 export const checkStyleForInfoCardItem = (
   isCreatorCardProductDetail,
-  isCreatorPage
+  isCreatorPage,
+  isWeekly
 ) => {
   if (isCreatorCardProductDetail === true)
     return "containerInfoCardForCreatorList";
 
   if (isCreatorPage === true) return "containerInfoCardForCreatorPage";
+  if (isWeekly)
+    return "containerWeeklyInfoCard pl-[5%] pr-[5%] tablet:pl-[8%] tablet:pr-[8%] ";
   else
-    return "containerDefaultInfoCard pl-[5%] pr-[5%] tablet:pl-[8%] tablet:pr-[8%] mobile:pl-[0%] mobile:pr-[0%]";
+    return "containerDefaultInfoCard pl-[5%] pr-[5%] tablet:pl-[8%] tablet:pr-[8%] ";
 };
 export const renderOneToHundredRange = (typeRender) => {
   switch (typeRender) {

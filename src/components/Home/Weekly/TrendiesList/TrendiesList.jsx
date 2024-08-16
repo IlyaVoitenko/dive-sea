@@ -1,9 +1,10 @@
 import { useRef, useState } from "react";
 import CardItem from "../../../Common/CardItem";
+import { bool } from "prop-types";
 import { discoverList } from "../../../Discover/constants";
 import BtnsArrows from "../../NftTitleAndImages/NftImages/BtnsArrows";
 
-const TrendiesList = () => {
+const TrendiesList = ({ isWeekly = false }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const containerTrendiesListRef = useRef();
   return (
@@ -13,10 +14,10 @@ const TrendiesList = () => {
           ref={containerTrendiesListRef}
           className="w-full scroll-smooth overflow-style "
         >
-          <div className="flex w-full items-center h-[600px] gap-[40px] ">
+          <div className="flex w-full items-center h-[600px] mobile:h-[350px]  gap-[40px] ">
             {discoverList &&
               discoverList.map((card) => (
-                <CardItem key={card.id} card={card} />
+                <CardItem key={card.id} card={card} isWeekly={isWeekly} />
               ))}
           </div>
         </div>
@@ -32,5 +33,7 @@ const TrendiesList = () => {
     </>
   );
 };
-
+TrendiesList.propTypes = {
+  isWeekly: bool,
+};
 export default TrendiesList;

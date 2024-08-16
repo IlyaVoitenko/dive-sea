@@ -13,11 +13,17 @@ import {
   checkStyleForInfoCardItem,
 } from "../../../../helper";
 
-const InfoCard = ({ card, isCreatorCardProductDetail, isCreatorPage }) => {
+const InfoCard = ({
+  card,
+  isCreatorCardProductDetail,
+  isCreatorPage,
+  isWeekly,
+}) => {
   const { title, subtitle, price, amountLikes } = card;
   const styleForInfoCardItem = checkStyleForInfoCardItem(
     isCreatorCardProductDetail,
-    isCreatorPage
+    isCreatorPage,
+    isWeekly
   );
   const styleForCardItemForTitle = checkStyleForCardItemForTitle(
     isCreatorCardProductDetail,
@@ -33,7 +39,7 @@ const InfoCard = ({ card, isCreatorCardProductDetail, isCreatorPage }) => {
   );
   const dispatch = useDispatch();
   return (
-    <div className={` flex flex-col justify-around ${styleForInfoCardItem}`}>
+    <div className={` flex flex-col justify-around ${styleForInfoCardItem} `}>
       {isCreatorCardProductDetail && (
         <div className="flex justify-between items-center desktop:w-[94.13px] laptop:w-[67.03px] tablet:w-[66px]  ">
           <span className="text-[#141416] font-poppins font-[700] desktop:text-[14px] desktop:leading-[22px] laptop:text-[9.96px] laptop:leading-[15.65px] tablet:text-[9.96px] tablet:leading-[15.65px]">
@@ -81,7 +87,7 @@ const InfoCard = ({ card, isCreatorCardProductDetail, isCreatorPage }) => {
           </figure>
         </div>
         {isCreatorCardProductDetail ? (
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center ">
             <img
               src={heart}
               alt="likes amount"
@@ -119,6 +125,7 @@ InfoCard.propTypes = {
   card: shape(CardNftTrendProps),
   isCreatorCardProductDetail: bool,
   isCreatorPage: bool,
+  isWeekly: bool,
 };
 
 export default InfoCard;

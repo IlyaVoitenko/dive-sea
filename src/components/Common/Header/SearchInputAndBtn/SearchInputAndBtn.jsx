@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { widthAndIsShowMenuProps } from "../../../../props";
 import loupe from "../../../../assets/loupe.svg";
 import { handleSearchInput } from "../../../../helper";
+import { Link } from "react-router-dom";
 const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
   const searchRef = useRef(null);
   return (
@@ -10,7 +11,7 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
         windowWidth < 768 && isShowMenu === false ? "hidden" : "block"
       }  `}
     >
-      <div className="flex relative  mobile:w-[80%] tablet:w-[50%] laptop:w-[55%]  tablet:mr-4 laptop:mr-4 ">
+      <div className="flex relative  mobile:w-[80%] tablet:w-[50%] laptop:w-[55%]  tablet:mr-4 laptop:mr-4 laptop:ml-4">
         <img
           src={loupe}
           className={` z-20 absolute first-letter:absolute  sizeTabletLoupeImg sizeDesktopLoupeImg sizeMobileLoupeImg`}
@@ -24,15 +25,17 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
           className={` z-10  top-[1%] focus:outline-none   text-black border-none font-poppins sizeDesktopSearchInput sizeTabletSearchInput sizeMobileSearchInput`}
         />
       </div>
-      <button
-        className={`flex justify-center items-center sizeDesktopBtnWallet sizeTabletBtnWallet sizeMobileBtnWallet`}
-      >
-        <span
-          className={`uppercase sizeDesktopBtnSpanWallet sizeTabletBtnSpanWallet sizeMobileBtnSpanWallet`}
+      <Link to={"/"} className="flex justify-center items-center w-full">
+        <button
+          className={`flex justify-center items-center sizeDesktopBtnWallet sizeTabletBtnWallet sizeMobileBtnWallet`}
         >
-          Connect Wallet
-        </span>
-      </button>
+          <span
+            className={`uppercase sizeDesktopBtnSpanWallet sizeTabletBtnSpanWallet sizeMobileBtnSpanWallet`}
+          >
+            Connect Wallet
+          </span>
+        </button>
+      </Link>
     </div>
   );
 };
