@@ -3,6 +3,9 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+  .btnsBannerNft {
+    @apply flex justify-center items-center  mobile:h-[33.65px] laptop:rounded-[8.69px] laptop:w-[130.32px] laptop:h-[48.24px] tablet:rounded-[8.69px] tablet:w-[130.32px] tablet:h-[48.24px] desktop:w-[183.06px] desktop:h-[67.66px] desktop:rounded-[12.2px] mobile:rounded-[6.05px] mobile:p-1;
+  }
   /* Auth Page */
   .btnsWalletsNextBtnText {
     @apply text-[#F3F5F6] tracking-[3%] font-poppins font-[600] desktop:text-[17.94px] desktop:leading-[26.91px] laptop:text-[12.76px] laptop:leading-[19.14px] tablet:text-[12.76px] tablet:leading-[19.14px] mobile:text-[14.35px] mobile:leading-[21.53px];
