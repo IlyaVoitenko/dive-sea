@@ -13,7 +13,7 @@ import logo from "../../assets/logo.svg";
 import Footer from "../Common/Footer";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-const Auth = () => {
+const Wallets = () => {
   const windowWidth = useWindowDimensions();
   useEffect(() => {}, [windowWidth]);
   return (
@@ -128,4 +128,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;
+export default Wallets;
