@@ -18,7 +18,7 @@ const Auth = () => {
   useEffect(() => {}, [windowWidth]);
   return (
     <main className="flex w-full h-full mobile:flex-col desktop:w-[1496px] laptop:w-[1024px] tablet:w-[768px] macbook16:w-[1496px]  mobile:w-screen ">
-      <section className="flex flex-col justify-between items-center w-[60%] mobile:w-full mobile:h-[1200px] macbook16:w-[62%] macbook16:h-[677px]  bg-[#F9F9F9]">
+      <section className="flex flex-col justify-between items-center w-[60%] mobile:w-full desktop:h-[850px] mobile:h-[1200px] macbook16:w-[62%] macbook16:h-[677px]  bg-[#F9F9F9]">
         {windowWidth <= 426 ? (
           <Headers isAuthPage={true} />
         ) : (
@@ -86,7 +86,7 @@ const Auth = () => {
           </div>
         )}
       </section>
-      <section className="flex flex-col justify-center items-center desktop:w-[663px] desktop:h-[1014px] macbook16:h-[677px] laptop:w-[471.51px] laptop:h-[710px] tablet:w-[450.51px] tablet:h-[710px] mobile:hidden bg-[#141416] ">
+      <section className="flex flex-col justify-center items-center desktop:w-[663px] desktop:h-[850px] macbook16:h-[677px] laptop:w-[471.51px] laptop:h-[710px] tablet:w-[450.51px] tablet:h-[710px] mobile:hidden bg-[#141416] ">
         <div className="relative w-full h-[60%] flex justify-center items-center">
           <img src={stones} alt="stones" className={`imgStonesWithShadows`} />
           <img
@@ -95,7 +95,7 @@ const Auth = () => {
             className={`imgStonesBlur`}
           />
         </div>
-        <div className="flex flex-col items-center justify-between desktop:w-[381.08px] desktop:h-[323.92px] laptop:w-[271.02px] laptop:h-[249.63px] tablet:w-[271.02px] tablet:h-[249.63px] macbook16:h-[200px]">
+        <div className="flex flex-col items-center justify-between desktop:w-[381.08px] desktop:h-[300px] laptop:w-[271.02px] laptop:h-[249.63px] tablet:w-[271.02px] tablet:h-[249.63px] macbook16:h-[200px]">
           <span className="titleNFTGalleryTitle">
             Start Your Own NFT Gallery
           </span>
