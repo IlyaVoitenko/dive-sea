@@ -17,7 +17,7 @@ const Auth = () => {
   const windowWidth = useWindowDimensions();
   useEffect(() => {}, [windowWidth]);
   return (
-    <main className="flex w-full h-full mobile:flex-col desktop:w-[1440px] laptop:w-[1024px] tablet:w-[768px] macbook16:w-[1197px]  mobile:w-screen bg-red-600">
+    <main className="flex w-full h-full mobile:flex-col desktop:w-[1440px] laptop:w-[1024px] tablet:w-[768px] macbook16:w-[1496px]  mobile:w-screen bg-red-600">
       <section className="flex flex-col justify-between items-center w-[60%] mobile:w-full mobile:h-[1200px] macbook16:w-[62%] macbook16:h-[677px]  bg-[#F9F9F9]">
         {windowWidth <= 426 ? (
           <Headers isAuthPage={true} />
