@@ -1,6 +1,4 @@
-import { topCollectionUsersProps } from "../../../../../../../props";
-import { bool } from "prop-types";
-const { owners, items } = topCollectionUsersProps;
+import { bool, number, string } from "prop-types";
 const OwnersAndItems = ({ owners, items, isStatPage }) => {
   return (
     <>
@@ -29,5 +27,5 @@ const OwnersAndItems = ({ owners, items, isStatPage }) => {
     </>
   );
 };
-OwnersAndItems.propTypes = { owners, items, isStatPage: bool };
+OwnersAndItems.propTypes = { owners: string, items: number, isStatPage: bool };
 export default OwnersAndItems;

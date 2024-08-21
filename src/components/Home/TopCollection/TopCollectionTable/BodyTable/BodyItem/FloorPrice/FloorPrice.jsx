@@ -1,7 +1,5 @@
 import cardMark from "../../../../../../../assets/cardMark.svg";
-import { topCollectionUsersProps } from "../../../../../../../props";
-import { bool } from "prop-types";
-const { floorPrice } = topCollectionUsersProps;
+import { bool, string } from "prop-types";
 
 const FloorPrice = ({ floorPrice, isStatPage }) => {
   return (
@@ -25,5 +23,5 @@ const FloorPrice = ({ floorPrice, isStatPage }) => {
     </td>
   );
 };
-FloorPrice.propTypes = { floorPrice, isStatPage: bool };
+FloorPrice.propTypes = { floorPrice: string, isStatPage: bool };
 export default FloorPrice;

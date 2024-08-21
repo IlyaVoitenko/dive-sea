@@ -1,5 +1,4 @@
-import { topCollectionUsersProps } from "../../../../../../../props";
-const { avatarImg, name, userName } = topCollectionUsersProps;
+import { string } from "prop-types";
 const AvatarUser = ({ avatarImg, name, userName }) => {
   return (
     <td>
@@ -26,8 +25,8 @@ const AvatarUser = ({ avatarImg, name, userName }) => {
   );
 };
 AvatarUser.propTypes = {
-  avatarImg,
-  name,
-  userName,
+  avatarImg: string,
+  name: string,
+  userName: string,
 };
 export default AvatarUser;

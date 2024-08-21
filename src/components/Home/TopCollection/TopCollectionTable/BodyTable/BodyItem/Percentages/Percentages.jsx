@@ -1,6 +1,4 @@
-import { topCollectionUsersProps } from "../../../../../../../props";
-import { bool } from "prop-types";
-const { percentagePerDay } = topCollectionUsersProps;
+import { bool, string } from "prop-types";
 
 const Percentages = ({ percentagePerDay, isStatPage = false }) => {
   return (
@@ -18,6 +16,6 @@ const Percentages = ({ percentagePerDay, isStatPage = false }) => {
   );
 };
 
-Percentages.propTypes = { percentagePerDay, isStatPage: bool };
+Percentages.propTypes = { percentagePerDay: string, isStatPage: bool };
 
 export default Percentages;

@@ -1,7 +1,5 @@
 import cardMark from "../../../../../../../assets/cardMark.svg";
-import { topCollectionUsersProps } from "../../../../../../../props";
-import { bool } from "prop-types";
-const { volume, percentagePerDay } = topCollectionUsersProps;
+import { bool, string } from "prop-types";
 
 const Volume = ({ volume, percentagePerDay, isStatPage = false }) => {
   return (
@@ -42,8 +40,8 @@ const Volume = ({ volume, percentagePerDay, isStatPage = false }) => {
   );
 };
 Volume.propTypes = {
-  volume,
-  percentagePerDay,
+  volume: string,
+  percentagePerDay: string,
   isStatPage: bool,
 };
 export default Volume;

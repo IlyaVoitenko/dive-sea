@@ -3,9 +3,11 @@ import Footer from "../Common/Footer";
 import Header from "../Common/Header";
 import FollowAndStatistics from "./FollowAndStatistics";
 import BioAndNetworks from "./BioAndNetworks";
-import Collection from "./Collection";
+import CardsList from "../Common/CardsList";
 import Activity from "./Activity";
 import BtnsFilter from "./BtnsFilter";
+import { arrayCardsSelector } from "../../../store/selectors";
+import InfiniteScrollHoc from "../../hooks/InfiniteScrollHoc";
 
 import BackgroundCreator from "../../assets/testBack.svg";
 import creatorAvatar from "../../assets/creatorImg.svg";
@@ -53,7 +55,15 @@ const Creator = () => {
                 isFilterActive={isFilterActive}
                 setIsFilterActive={setIsFilterActive}
               />
-              {isFilterActive ? <Collection /> : <Activity />}
+              {isFilterActive ? (
+                <InfiniteScrollHoc
+                  Component={CardsList}
+                  defaultList={arrayCardsSelector}
+                  isCreatorPage={true}
+                />
+              ) : (
+                <Activity />
+              )}
             </div>
           </div>
         </div>

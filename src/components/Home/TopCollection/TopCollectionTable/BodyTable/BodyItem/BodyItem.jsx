@@ -1,4 +1,4 @@
-import { shape, bool } from "prop-types";
+import { bool } from "prop-types";
 import AvatarUser from "./AvatarUser";
 import Volume from "./Volume";
 import Percentages from "./Percentages";
@@ -16,12 +16,12 @@ const BodyItem = ({ user, isStatPage = false }) => {
     volume,
     userName,
     name,
-  } = user;
+  } = user || {};
   return (
     <tr
-      className={` border-b-[1.69px]   laptop:h border-[#EBE9E9] ${
+      className={` border-b-[1.69px]  laptop:h border-[#EBE9E9] ${
         isStatPage &&
-        "desktop:h-[101.99px] laptop:h-[72.54px] tablet:h-[72.54px] mobile:h-[61.42px] "
+        "desktop:h-[101.99px]  laptop:h-[72.54px] tablet:h-[72.54px] mobile:h-[61.42px] "
       }`}
     >
       <AvatarUser
@@ -45,7 +45,7 @@ const BodyItem = ({ user, isStatPage = false }) => {
   );
 };
 BodyItem.propTypes = {
-  user: shape(topCollectionUsersProps).isRequired,
+  user: topCollectionUsersProps,
   isStatPage: bool,
 };
 export default BodyItem;

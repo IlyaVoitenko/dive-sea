@@ -1,23 +1,12 @@
-import { useState } from "react";
 import { arrayCardsSelector } from "../../../store/selectors";
-import { fetchLoadingItems } from "../../../helper";
-import { useSelector } from "react-redux";
 
 import shop from "../../../assets/shop.svg";
 import chains from "../../../assets/chains.svg";
 import vectorDark from "../../../assets/VectorDark.svg";
 
-import InfiniteScroll from "react-infinite-scroll-component";
-import SpinnerLoader from "../../Common/SpinnerLoader";
-import ActivityCard from "./ActivityCard";
-
-const LIMIT_ITEMS = 2;
+import ActivityList from "../ActivityList";
+import InfiniteScrollHoc from "../../../hooks/InfiniteScrollHoc";
 const Activity = () => {
-  const cardsList = useSelector(arrayCardsSelector);
-
-  const [postData, setPostData] = useState(cardsList.slice(0, LIMIT_ITEMS));
-  const [visible, setVisible] = useState(LIMIT_ITEMS);
-  const [hasMore, setHasMore] = useState(false);
   return (
     <>
       <div className="flex justify-between desktop:w-[663px] laptop:w-[479.27px] tablet:w-[360px] mobile:w-[309.07px] mt-[5rem] ">
@@ -44,26 +33,11 @@ const Activity = () => {
           />
         </button>
       </div>
-      <InfiniteScroll
-        dataLength={postData.length}
-        next={() =>
-          fetchLoadingItems(
-            cardsList,
-            postData,
-            setHasMore,
-            setVisible,
-            visible,
-            setPostData,
-            LIMIT_ITEMS
-          )
-        }
-        hasMore={hasMore}
-        loader={<SpinnerLoader />}
-      >
-        <div className={`flex  flex-wrap  "desktop:gap-[27px] justify-center `}>
-          {postData && postData.map((card) => <ActivityCard key={card.id} />)}
-        </div>
-      </InfiniteScroll>
+      <InfiniteScrollHoc
+        Component={ActivityList}
+        defaultList={arrayCardsSelector}
+        LIMIT_ITEMS={2}
+      />
     </>
   );
 };

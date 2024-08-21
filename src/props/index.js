@@ -1,4 +1,12 @@
-import { number, bool, string, oneOfType, oneOf, func } from "prop-types";
+import {
+  number,
+  bool,
+  string,
+  oneOfType,
+  oneOf,
+  func,
+  shape,
+} from "prop-types";
 
 export const windowWidth = oneOfType([number, oneOf([""])]);
 export const isShowMenu = bool.isRequired;
@@ -21,17 +29,17 @@ export const headerWithShowMenuFuncProps = {
   isAuthPage,
 };
 
-export const topCollectionUsersProps = {
-  id: string.isRequired,
-  name: string.isRequired,
-  userName: string.isRequired,
-  avatarImg: string.isRequired,
-  volume: string.isRequired,
-  percentagePerDay: string.isRequired,
+export const topCollectionUsersProps = shape({
+  id: string,
+  name: string,
+  userName: string,
+  avatarImg: string,
+  volume: string,
+  percentagePerDay: string,
   floorPrice: string,
   owners: string,
   items: number,
-};
+});
 export const CardNftTrendProps = {
   amountLikes: number,
   id: oneOfType([string, number]),

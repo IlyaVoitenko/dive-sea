@@ -1,4 +1,4 @@
-import { number, shape } from "prop-types";
+import { number } from "prop-types";
 import cardMark from "../../../../../assets/cardMark.svg";
 import { topCollectionUsersProps } from "../../../../../props";
 const UnleashRecentViewedItem = ({ user, index }) => {
@@ -51,7 +51,7 @@ const UnleashRecentViewedItem = ({ user, index }) => {
   );
 };
 UnleashRecentViewedItem.propTypes = {
-  user: shape(topCollectionUsersProps).isRequired,
+  user: topCollectionUsersProps,
   index: number,
 };
 export default UnleashRecentViewedItem;
