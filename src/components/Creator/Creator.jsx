@@ -6,7 +6,7 @@ import BioAndNetworks from "./BioAndNetworks";
 import CardsList from "../Common/CardsList";
 import Activity from "./Activity";
 import BtnsFilter from "./BtnsFilter";
-import { arrayCardsSelector } from "../../../store/selectors";
+import { arrayCardsSelector } from "../../store/selectors";
 import InfiniteScrollHoc from "../../hooks/InfiniteScrollHoc";
 
 import BackgroundCreator from "../../assets/testBack.svg";
