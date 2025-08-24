@@ -16,7 +16,6 @@ import { useEffect } from "react";
 
 const Wallets = () => {
   const windowWidth = useWindowDimensions();
-  //  desktop:w-[1496px]
   useEffect(() => {}, [windowWidth]);
   return (
     <main className="flex  max-w-full h-full mobile:flex-col desktop4K:w-screen desktop4K:h-screen desktop4K:max-h-full desktop:w-screen  laptop:w-[1024px] tablet:w-[768px] mobile:w-screen ">
@@ -39,7 +38,7 @@ const Wallets = () => {
             </Link>
           </div>
         )}
-        <section className="flex flex-col justify-between items-center desktop:w-[385.76px] desktop:h-[632.45px] laptop:w-[274.32px] laptop:h-[449.79px] tablet:w-[274.32px] tablet:h-[449.79px] mobile:w-[316.02px] mobile:h-[506px]">
+        <section className="flex flex-col justify-between items-center desktop4K:w-[500px] desktop:w-[385.76px] desktop:h-[632.45px] laptop:w-[274.32px] laptop:h-[449.79px] tablet:w-[274.32px] tablet:h-[449.79px] mobile:w-[316.02px] mobile:h-[506px]">
           <span className="titleAuthPage">Choose Wallet</span>
           <div className="flex flex-col justify-between h-[50%]">
             <button className="btnsWallets">
