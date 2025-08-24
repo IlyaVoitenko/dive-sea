@@ -27,6 +27,7 @@ export default {
       laptop: { min: "1024px", max: "1279px" },
       desktop: { min: "1280px" },
       macbook16: { min: "1196px", max: "1236px" },
+      desktop4K: { min: "2559px" },
     },
     extend: {
       fontFamily: {

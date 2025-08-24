@@ -35,13 +35,13 @@
     @apply bg-[#FCFCFD] flex justify-center items-center;
   }
   .titleNFTGalleryTitle {
-    @apply text-[#FFFFFF] font-dm font-[700] text-center tracking-[-2%] desktop:text-[47.34px] desktop:leading-[56.81px] laptop:text-[33.67px] laptop:leading-[40.4px] tablet:text-[33.67px] tablet:leading-[40.4px];
+    @apply text-[#FFFFFF] font-dm font-[700] text-center tracking-[-2%] desktop4K:text-[61px] desktop4K:leading-[65px]  desktop:text-[47.34px] desktop:leading-[56.81px] laptop:text-[33.67px] laptop:leading-[40.4px] tablet:text-[33.67px] tablet:leading-[40.4px];
   }
   .subtitleNFTGalleryTitle {
-    @apply text-[#6D6D6D] font-poppins font-[400] text-center tracking-[-2%] desktop:text-[16.57px] desktop:leading-[28.4px] laptop:text-[11.78px] laptop:leading-[20.2px] tablet:text-[11.78px] tablet:leading-[20.2px];
+    @apply text-[#6D6D6D] font-poppins font-[400] text-center tracking-[-2%] desktop4K:text-[24.57px] desktop4K:leading-[28.4px] desktop:text-[16.57px] desktop:leading-[28.4px] laptop:text-[11.78px] laptop:leading-[20.2px] tablet:text-[11.78px] tablet:leading-[20.2px];
   }
   .imgStonesWithShadows {
-    @apply z-10 desktop:w-[391px] desktop:h-[394.59px] laptop:w-[278.07px] laptop:h-[280.62px] tablet:w-[278.07px] tablet:h-[280.62px];
+    @apply z-10 desktop4K:w-[600px] desktop4K:h-[600px] desktop:w-[391px] desktop:h-[394.59px] laptop:w-[278.07px] laptop:h-[280.62px] tablet:w-[278.07px] tablet:h-[280.62px];
   }
   .imgStonesBlur {
     @apply absolute desktop:top-[10%] desktop:w-full desktop:h-[90%] laptop:top-[4%] laptop:w-[90%] laptop:h-[98%] tablet:top-[4%] tablet:w-[100%] tablet:h-[100%] opacity-[70%];

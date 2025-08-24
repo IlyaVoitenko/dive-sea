@@ -13,12 +13,14 @@ import logo from "../../assets/logo.svg";
 import Footer from "../Common/Footer";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+
 const Wallets = () => {
   const windowWidth = useWindowDimensions();
+  //  desktop:w-[1496px]
   useEffect(() => {}, [windowWidth]);
   return (
-    <main className="flex w-full h-full mobile:flex-col desktop:w-[1496px] laptop:w-[1024px] tablet:w-[768px] macbook16:w-[1496px]  mobile:w-screen ">
-      <section className="flex flex-col justify-between items-center w-[60%] mobile:w-full desktop:h-[850px] mobile:h-[1200px] macbook16:w-[62%] macbook16:h-[677px]  bg-[#F9F9F9]">
+    <main className="flex  max-w-full h-full mobile:flex-col desktop4K:w-screen desktop4K:h-screen desktop4K:max-h-full desktop:w-screen  laptop:w-[1024px] tablet:w-[768px] mobile:w-screen ">
+      <section className="flex flex-col justify-between items-center  h-screen max-h-full w-[60%]  mobile:w-full macbook16:w-[62%] bg-[#F9F9F9]">
         {windowWidth <= 426 ? (
           <Headers isAuthPage={true} />
         ) : (
@@ -76,7 +78,6 @@ const Wallets = () => {
             </button>
           </Link>
         </section>
-
         {windowWidth <= 426 ? (
           <Footer />
         ) : (
@@ -86,8 +87,8 @@ const Wallets = () => {
           </div>
         )}
       </section>
-      <section className="flex flex-col justify-center items-center desktop:w-[663px] desktop:h-[850px] macbook16:h-[677px] laptop:w-[471.51px] laptop:h-[710px] tablet:w-[450.51px] tablet:h-[710px] mobile:hidden bg-[#141416] ">
-        <div className="relative w-full h-[60%] flex justify-center items-center">
+      <section className="flex flex-col justify-center items-center h-screen max-h-full desktop4K:w-[40%] desktop:w-[663px] laptop:w-[471.51px]  tablet:w-[450.51px] mobile:hidden bg-[#141416] ">
+        <div className="relative  h-[60%] flex justify-center items-center">
           <img src={stones} alt="stones" className={`imgStonesWithShadows`} />
           <img
             src={stonesBlurImg}
@@ -95,7 +96,7 @@ const Wallets = () => {
             className={`imgStonesBlur`}
           />
         </div>
-        <div className="flex flex-col items-center justify-between desktop:w-[381.08px] desktop:h-[300px] laptop:w-[271.02px] laptop:h-[249.63px] tablet:w-[271.02px] tablet:h-[249.63px] macbook16:h-[200px]">
+        <div className="flex flex-col items-center justify-between desktop4K:w-[50%] desktop4K:h-[20%] desktop:w-[381.08px] desktop:h-[300px] laptop:w-[271.02px] laptop:h-[249.63px] tablet:w-[271.02px] tablet:h-[249.63px] macbook16:h-[200px]">
           <span className="titleNFTGalleryTitle">
             Start Your Own NFT Gallery
           </span>
@@ -103,21 +104,23 @@ const Wallets = () => {
             CloseSea Is A Great Platform For Discover Largest NFTs And Other
             Stuff !!
           </span>
-          <div className="shadow-boxBtnModelNav flex justify-center items-center desktop:rounded-[18.94px] desktop:h-[75.74px] desktop:w-[182.26px] laptop:rounded-[13.48px]  laptop:h-[53.92px]  laptop:w-[129.74px] tablet:rounded-[13.48px]   tablet:h-[53.92px]  tablet:w-[129.74px] bg-[#FCFCFD]">
+          <div className="shadow-boxBtnModelNav flex justify-center items-center desktop:rounded-[18.94px] desktop4K:w-[240px] desktop4K:h-[90px] desktop:h-[75.74px] desktop:w-[182.26px] laptop:rounded-[13.48px]  laptop:h-[53.92px]  laptop:w-[129.74px] tablet:rounded-[13.48px]   tablet:h-[53.92px]  tablet:w-[129.74px] bg-[#FCFCFD]">
             <section className="flex justify-evenly w-full">
               <button className="btnModelNav">
                 <img
                   alt="arrow left"
                   src={arrowLeft}
-                  className="mobile:w-[15.9px] mobile:h-[15.9px]"
+                  className="mobile:w-[15.9px] mobile:h-[15.9px] tablet:w-[20px] tablet:h-[20px] laptop:w-[20px] laptop:h-[20px] desktop:w-[27px] desktop:h-[27px] desktop4K:w-[30px] desktop4K:h-[30px]"
                 />
               </button>
-              <span className="text-[#E6E8EC] bg-[#FCFCFD]">|</span>
+              <span className="text-[#E6E8EC] bg-[#FCFCFD] desktop4K:text-[30px]">
+                |
+              </span>
               <button className="btnModelNav">
                 <img
                   alt="arrow right"
                   src={arrowRight}
-                  className="mobile:w-[15.9px] mobile:h-[15.9px]"
+                  className="mobile:w-[15.9px] mobile:h-[15.9px] tablet:w-[20px] tablet:h-[20px] laptop:w-[20px] laptop:h-[20px] desktop:w-[27px] desktop:h-[27px] desktop4K:w-[30px] desktop4K:h-[30px]"
                 />
               </button>
             </section>
