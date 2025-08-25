@@ -9,7 +9,7 @@ const Stats = () => {
   return (
     <main className="containerPage">
       <Header />
-      <section className="flex flex-col justify-between items-center mt-[4rem] mb-[4rem] ">
+      <section className="flex flex-col w-screen w-max-full  justify-between items-center mt-[4rem] mb-[4rem] ">
         <section className=" flex flex-col justify-between items-center mobile:w-[70%] ] mb-[4%]">
           <h2 className="discoverTitle text-center">Leaderboard NFTs</h2>
         </section>

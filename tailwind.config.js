@@ -22,6 +22,7 @@ export default {
       boxWalletBtnsMobile: "4px 8px 40px 0px #0000001A",
     },
     screens: {
+      mobileS: { max: "320px" },
       mobile: { max: "430px" },
       tablet: { min: "640px", max: "1023px" },
       laptop: { min: "1024px", max: "1279px" },

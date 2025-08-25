@@ -7,7 +7,7 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
   const searchRef = useRef(null);
   return (
     <div
-      className={`flex  flex-row mobile:flex-col desktop:w-[44%] laptop:w-[55%] laptop:justify-end desktop:justify-between tablet:justify-end items-center  mobile:justify-center xl:w-[46%] max-[1197px]:w-[53%] max-[1024px]:w-[58%] mobile:bg-white mobile:z-40 mobile:w-full ${
+      className={`flex  flex-row mobile:flex-col desktop4K:w-[27%] desktop:w-[44%] laptop:w-[55%] laptop:justify-end desktop:justify-between tablet:justify-end items-center  mobile:justify-center xl:w-[46%] max-[1197px]:w-[53%] max-[1024px]:w-[58%] mobile:bg-white mobile:z-40 mobile:w-full ${
         windowWidth < 768 && isShowMenu === false ? "hidden" : "block"
       }  `}
     >

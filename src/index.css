@@ -339,7 +339,7 @@
 
   /* pages */
   .containerPage {
-    @apply h-full max-w-full w-screen flex flex-col items-center bg-white;
+    @apply h-full w-full flex flex-col items-center bg-white;
   }
   /* Unleash */
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -774,7 +774,7 @@
 
   /* search input */
   .sizeDesktopSearchInput {
-    @apply bg-[#EDEDED] left-11 leading-[18.46px]  pl-[3.5rem] w-[348.45px] h-[57px] rounded-lg   font-medium text-[15.71px];
+    @apply bg-[#EDEDED] left-11 leading-[18.46px]  pl-[3.5rem] w-[348.45px] h-[57px] rounded-lg   font-medium mobileS:text-[12px] desktop:text-[15px];
   }
 
   .sizeTabletSearchInput {
@@ -782,7 +782,7 @@
   }
 
   .sizeMobileSearchInput {
-    @apply mobile:left-[-7px] mobile:pl-[3.5rem] mobile:w-full;
+    @apply mobile:left-[-7px] mobile:pl-[3.5rem] mobile:w-full mobileS:text-[12px];
   }
 
   /* navList */
@@ -1077,6 +1077,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
