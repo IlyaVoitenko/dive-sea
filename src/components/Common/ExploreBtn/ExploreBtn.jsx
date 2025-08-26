@@ -10,6 +10,7 @@ const ExploreBtn = () => {
           </span>{" "}
           <img
             src={exploreRightArrow}
+            alt="Explore Right Arrow"
             className="fill-[#ACADB9] text-[#ACADB9]"
           />
         </button>

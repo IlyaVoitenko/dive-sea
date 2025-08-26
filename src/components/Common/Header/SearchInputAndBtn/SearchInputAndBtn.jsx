@@ -1,10 +1,14 @@
-import { useRef } from "react";
+import { useState, memo } from "react";
 import { widthAndIsShowMenuProps } from "../../../../props";
 import loupe from "../../../../assets/loupe.svg";
-import { handleSearchInput } from "../../../../helper";
 import { Link } from "react-router-dom";
+
 const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
-  const searchRef = useRef(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const validateInput = (input) => {
+    const sanitizedInput = input.replace(/[^a-zA-Z0-9 ]/g, "");
+    return sanitizedInput;
+  };
   return (
     <div
       className={`flex  flex-row mobile:flex-col desktop4K:w-[27%] desktop:w-[44%] laptop:w-[55%] laptop:justify-end desktop:justify-between tablet:justify-end items-center  mobile:justify-center xl:w-[46%] max-[1197px]:w-[53%] max-[1024px]:w-[58%] mobile:bg-white mobile:z-40 mobile:w-full ${
@@ -19,8 +23,11 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
         />
         <input
           type="text"
-          ref={searchRef}
-          onChange={() => handleSearchInput(searchRef)}
+          value={searchTerm}
+          onChange={({ target }) => {
+            const sanitized = validateInput(target.value);
+            setSearchTerm(sanitized);
+          }}
           placeholder="Search Art Work / Creator"
           className={` z-10  top-[1%] focus:outline-none   text-black border-none font-poppins sizeDesktopSearchInput sizeTabletSearchInput sizeMobileSearchInput`}
         />
@@ -40,4 +47,5 @@ const SearchInputAndBtn = ({ isShowMenu, windowWidth }) => {
   );
 };
 SearchInputAndBtn.propTypes = widthAndIsShowMenuProps;
-export default SearchInputAndBtn;
+const memoizedSearchInputAndBtn = memo(SearchInputAndBtn);
+export default memoizedSearchInputAndBtn;

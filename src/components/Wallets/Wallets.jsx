@@ -72,7 +72,11 @@ const Wallets = () => {
             </button>
           </div>
           <Link to={"/home"}>
-            <button className="btnsWalletsNextBtn btnsWalletsNextBtnText">
+            <button
+              type="button"
+              className="btnsWalletsNextBtn btnsWalletsNextBtnText"
+              aria-label="Next"
+            >
               NEXT
             </button>
           </Link>
