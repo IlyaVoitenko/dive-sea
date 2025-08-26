@@ -13,6 +13,7 @@
     "@reduxjs/toolkit": "^2.2.4",
     "formik": "^2.4.6",
     "generate-unique-id": "^2.0.3",
+    "postcss-svgo": "^7.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.3.1",
     "react-infinite-scroll-component": "^6.1.0",
@@ -22,6 +23,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@svgr/plugin-svgo": "^8.1.0",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
@@ -34,6 +36,6 @@
     "rollup-plugin-visualizer": "^6.0.3",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.8",
-    "vite-plugin-svgo": "^2.0.0"
+    "vite-plugin-svgr": "^4.5.0"
   }
 }
